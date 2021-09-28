@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Address module renders 1`] = `
+<Fragment>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      House Number
+    </FormLabel>
+    <FormControl
+      id="housenumber"
+      onChange={[Function]}
+      placeholder="Enter House Number"
+      required={true}
+      type="text"
+      value=""
+    />
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Street
+    </FormLabel>
+    <FormControl
+      id="street"
+      onChange={[Function]}
+      placeholder="Enter Street Name"
+      required={true}
+      type="text"
+      value=""
+    />
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      City
+    </FormLabel>
+    <FormControl
+      id="city"
+      onChange={[Function]}
+      placeholder="Enter City Name"
+      required={true}
+      type="text"
+      value=""
+    />
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      State
+    </FormLabel>
+    <FormControl
+      id="state"
+      onChange={[Function]}
+      placeholder="Enter State Name"
+      type="text"
+      value=""
+    />
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Postal Code
+    </FormLabel>
+    <FormControl
+      id="postalCode"
+      onChange={[Function]}
+      placeholder="Enter Postal Code"
+      required={true}
+      type="text"
+      value=""
+    />
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Neighborhood
+    </FormLabel>
+    <FormControl
+      id="neighborhood"
+      onChange={[Function]}
+      placeholder="Enter Neighborhood Name"
+      type="text"
+      value=""
+    />
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Country Code
+    </FormLabel>
+    <FormControl
+      id="countryCode"
+      onChange={[Function]}
+      placeholder="Enter Country Code"
+      required={true}
+      type="text"
+      value=""
+    />
+  </FormGroup>
+</Fragment>
+`;

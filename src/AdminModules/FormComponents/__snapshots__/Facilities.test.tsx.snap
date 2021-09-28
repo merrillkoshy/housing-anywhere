@@ -1,0 +1,2096 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FacilitiesModule module renders 1`] = `
+<Fragment>
+  <FormGroup
+    as={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": Object {
+          "noGutters": false,
+        },
+        "render": [Function],
+      }
+    }
+    className="mb-3"
+  >
+    <FormLabel
+      as="legend"
+      column={true}
+      srOnly={false}
+    >
+      Allergy Friendly?
+    </FormLabel>
+    <Col>
+      <ReactSwitch
+        activeBoxShadow="0 0 2px 3px #3bf"
+        boxShadow={null}
+        checked={false}
+        checkedIcon={
+          <svg
+            height="100%"
+            style={
+              Object {
+                "position": "absolute",
+                "top": 0,
+              }
+            }
+            viewBox="-2 -5 17 21"
+            width="100%"
+          >
+            <path
+              d="M11.264 0L5.26 6.004 2.103 2.847 0 4.95l5.26 5.26 8.108-8.107L11.264 0"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        }
+        disabled={false}
+        height={28}
+        id="allergyFriendly"
+        offColor="#888"
+        offHandleColor="#fff"
+        onChange={[Function]}
+        onColor="#080"
+        onHandleColor="#fff"
+        uncheckedIcon={
+          <svg
+            height="100%"
+            style={
+              Object {
+                "position": "absolute",
+                "top": 0,
+              }
+            }
+            viewBox="-2 -5 14 20"
+            width="100%"
+          >
+            <path
+              d="M9.9 2.12L7.78 0 4.95 2.828 2.12 0 0 2.12l2.83 2.83L0 7.776 2.123 9.9 4.95 7.07 7.78 9.9 9.9 7.776 7.072 4.95 9.9 2.12"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        }
+        width={56}
+      />
+    </Col>
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <Dropdown
+      navbar={false}
+    >
+      <DropdownToggle
+        id="housematesGender"
+        variant="primary"
+      />
+      <DropdownMenu
+        align="left"
+        alignRight={false}
+        flip={true}
+      >
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Boys
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Girls
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Mixed
+        </DropdownItem>
+      </DropdownMenu>
+    </Dropdown>
+  </FormGroup>
+  <FormGroup
+    as={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": Object {
+          "noGutters": false,
+        },
+        "render": [Function],
+      }
+    }
+    className="mb-3"
+  >
+    <FormLabel
+      as="legend"
+      column={true}
+      srOnly={false}
+    >
+      Registration Possible?
+    </FormLabel>
+    <Col>
+      <ReactSwitch
+        activeBoxShadow="0 0 2px 3px #3bf"
+        boxShadow={null}
+        checked={false}
+        checkedIcon={
+          <svg
+            height="100%"
+            style={
+              Object {
+                "position": "absolute",
+                "top": 0,
+              }
+            }
+            viewBox="-2 -5 17 21"
+            width="100%"
+          >
+            <path
+              d="M11.264 0L5.26 6.004 2.103 2.847 0 4.95l5.26 5.26 8.108-8.107L11.264 0"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        }
+        disabled={false}
+        height={28}
+        id="registrationPossible"
+        offColor="#888"
+        offHandleColor="#fff"
+        onChange={[Function]}
+        onColor="#080"
+        onHandleColor="#fff"
+        uncheckedIcon={
+          <svg
+            height="100%"
+            style={
+              Object {
+                "position": "absolute",
+                "top": 0,
+              }
+            }
+            viewBox="-2 -5 14 20"
+            width="100%"
+          >
+            <path
+              d="M9.9 2.12L7.78 0 4.95 2.828 2.12 0 0 2.12l2.83 2.83L0 7.776 2.123 9.9 4.95 7.07 7.78 9.9 9.9 7.776 7.072 4.95 9.9 2.12"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        }
+        width={56}
+      />
+    </Col>
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Tenant Status
+    </FormLabel>
+    <Dropdown
+      navbar={false}
+    >
+      <DropdownToggle
+        id="tenantStatus"
+        variant="primary"
+      >
+        Any
+      </DropdownToggle>
+      <DropdownMenu
+        align="left"
+        alignRight={false}
+        flip={true}
+      >
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Working Professional
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Student
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Working Student
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Looking For A Job
+        </DropdownItem>
+      </DropdownMenu>
+    </Dropdown>
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Free Places
+    </FormLabel>
+    <FormControl
+      id="freePlaces"
+      onChange={[Function]}
+      placeholder="Number of places available for the listing. This Number is just informative and does not have any impact on the booking."
+      type="number"
+      value={0}
+    />
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Bedrooms
+    </FormLabel>
+    <FormControl
+      id="bedrooms"
+      onChange={[Function]}
+      placeholder="Number of bedrooms in the listing."
+      type="number"
+      value={0}
+    />
+  </FormGroup>
+  <FormGroup
+    as={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": Object {
+          "noGutters": false,
+        },
+        "render": [Function],
+      }
+    }
+    className="mb-3"
+  >
+    <FormLabel
+      as="legend"
+      column={true}
+      srOnly={false}
+    >
+      Bedroom Furnished?
+    </FormLabel>
+    <Col>
+      <ReactSwitch
+        activeBoxShadow="0 0 2px 3px #3bf"
+        boxShadow={null}
+        checked={false}
+        checkedIcon={
+          <svg
+            height="100%"
+            style={
+              Object {
+                "position": "absolute",
+                "top": 0,
+              }
+            }
+            viewBox="-2 -5 17 21"
+            width="100%"
+          >
+            <path
+              d="M11.264 0L5.26 6.004 2.103 2.847 0 4.95l5.26 5.26 8.108-8.107L11.264 0"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        }
+        disabled={false}
+        height={28}
+        id="bedroomFurnished"
+        offColor="#888"
+        offHandleColor="#fff"
+        onChange={[Function]}
+        onColor="#080"
+        onHandleColor="#fff"
+        uncheckedIcon={
+          <svg
+            height="100%"
+            style={
+              Object {
+                "position": "absolute",
+                "top": 0,
+              }
+            }
+            viewBox="-2 -5 14 20"
+            width="100%"
+          >
+            <path
+              d="M9.9 2.12L7.78 0 4.95 2.828 2.12 0 0 2.12l2.83 2.83L0 7.776 2.123 9.9 4.95 7.07 7.78 9.9 9.9 7.776 7.072 4.95 9.9 2.12"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        }
+        width={56}
+      />
+    </Col>
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Bedroom Size
+    </FormLabel>
+    <FormControl
+      id="bedroomSize"
+      onChange={[Function]}
+      placeholder="Enter Bedroom Size"
+      type="number"
+      value={0}
+    />
+  </FormGroup>
+  <FormGroup
+    as={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": Object {
+          "noGutters": false,
+        },
+        "render": [Function],
+      }
+    }
+    className="mb-3"
+  >
+    <FormLabel
+      as="legend"
+      column={true}
+      srOnly={false}
+    >
+      Bedroom Lockable?
+    </FormLabel>
+    <Col>
+      <ReactSwitch
+        activeBoxShadow="0 0 2px 3px #3bf"
+        boxShadow={null}
+        checked={false}
+        checkedIcon={
+          <svg
+            height="100%"
+            style={
+              Object {
+                "position": "absolute",
+                "top": 0,
+              }
+            }
+            viewBox="-2 -5 17 21"
+            width="100%"
+          >
+            <path
+              d="M11.264 0L5.26 6.004 2.103 2.847 0 4.95l5.26 5.26 8.108-8.107L11.264 0"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        }
+        disabled={false}
+        height={28}
+        id="bedroomLock"
+        offColor="#888"
+        offHandleColor="#fff"
+        onChange={[Function]}
+        onColor="#080"
+        onHandleColor="#fff"
+        uncheckedIcon={
+          <svg
+            height="100%"
+            style={
+              Object {
+                "position": "absolute",
+                "top": 0,
+              }
+            }
+            viewBox="-2 -5 14 20"
+            width="100%"
+          >
+            <path
+              d="M9.9 2.12L7.78 0 4.95 2.828 2.12 0 0 2.12l2.83 2.83L0 7.776 2.123 9.9 4.95 7.07 7.78 9.9 9.9 7.776 7.072 4.95 9.9 2.12"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        }
+        width={56}
+      />
+    </Col>
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Balcony in Terrace
+    </FormLabel>
+    <Dropdown
+      navbar={false}
+    >
+      <DropdownToggle
+        id="balconyTerrace"
+        variant="primary"
+      />
+      <DropdownMenu
+        align="left"
+        alignRight={false}
+        flip={true}
+      >
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          No
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Shared
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Private
+        </DropdownItem>
+      </DropdownMenu>
+    </Dropdown>
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Basement
+    </FormLabel>
+    <Dropdown
+      navbar={false}
+    >
+      <DropdownToggle
+        id="basement"
+        variant="primary"
+      />
+      <DropdownMenu
+        align="left"
+        alignRight={false}
+        flip={true}
+      >
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          No
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Shared
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Private
+        </DropdownItem>
+      </DropdownMenu>
+    </Dropdown>
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Bathroom
+    </FormLabel>
+    <Dropdown
+      navbar={false}
+    >
+      <DropdownToggle
+        id="bathroom"
+        variant="primary"
+      />
+      <DropdownMenu
+        align="left"
+        alignRight={false}
+        flip={true}
+      >
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          No
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Private
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          With Boys
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          With Girls
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          With Both
+        </DropdownItem>
+      </DropdownMenu>
+    </Dropdown>
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Garden
+    </FormLabel>
+    <Dropdown
+      navbar={false}
+    >
+      <DropdownToggle
+        id="garden"
+        variant="primary"
+      />
+      <DropdownMenu
+        align="left"
+        alignRight={false}
+        flip={true}
+      >
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          No
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Shared
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Private
+        </DropdownItem>
+      </DropdownMenu>
+    </Dropdown>
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Kitchen
+    </FormLabel>
+    <Dropdown
+      navbar={false}
+    >
+      <DropdownToggle
+        id="kitchen"
+        variant="primary"
+      />
+      <DropdownMenu
+        align="left"
+        alignRight={false}
+        flip={true}
+      >
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          No
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Shared
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Private
+        </DropdownItem>
+      </DropdownMenu>
+    </Dropdown>
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Parking
+    </FormLabel>
+    <Dropdown
+      navbar={false}
+    >
+      <DropdownToggle
+        id="parking"
+        variant="primary"
+      />
+      <DropdownMenu
+        align="left"
+        alignRight={false}
+        flip={true}
+      >
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          No
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Shared
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Private
+        </DropdownItem>
+      </DropdownMenu>
+    </Dropdown>
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Toilet
+    </FormLabel>
+    <Dropdown
+      navbar={false}
+    >
+      <DropdownToggle
+        id="toilet"
+        variant="primary"
+      />
+      <DropdownMenu
+        align="left"
+        alignRight={false}
+        flip={true}
+      >
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          No
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Shared
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Private
+        </DropdownItem>
+      </DropdownMenu>
+    </Dropdown>
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Total Size
+    </FormLabel>
+    <FormControl
+      id="totalSize"
+      onChange={[Function]}
+      placeholder="This is the total area of the listing (apartment or house) in square meters, including all private and shared spaces."
+      required={true}
+      type="number"
+      value={0}
+    />
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Living Room
+    </FormLabel>
+    <FormControl
+      id="livingRoom"
+      onChange={[Function]}
+      placeholder="Is there a living room?"
+      type="text"
+      value=""
+    />
+  </FormGroup>
+  <FormGroup
+    as={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": Object {
+          "noGutters": false,
+        },
+        "render": [Function],
+      }
+    }
+    className="mb-3"
+  >
+    <FormLabel
+      as="legend"
+      column={true}
+      srOnly={false}
+    >
+      Wheelchair Accessibility
+    </FormLabel>
+    <Col>
+      <ReactSwitch
+        activeBoxShadow="0 0 2px 3px #3bf"
+        boxShadow={null}
+        checked={false}
+        checkedIcon={
+          <svg
+            height="100%"
+            style={
+              Object {
+                "position": "absolute",
+                "top": 0,
+              }
+            }
+            viewBox="-2 -5 17 21"
+            width="100%"
+          >
+            <path
+              d="M11.264 0L5.26 6.004 2.103 2.847 0 4.95l5.26 5.26 8.108-8.107L11.264 0"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        }
+        disabled={false}
+        height={28}
+        id="wheelchairAccessible"
+        offColor="#888"
+        offHandleColor="#fff"
+        onChange={[Function]}
+        onColor="#080"
+        onHandleColor="#fff"
+        uncheckedIcon={
+          <svg
+            height="100%"
+            style={
+              Object {
+                "position": "absolute",
+                "top": 0,
+              }
+            }
+            viewBox="-2 -5 14 20"
+            width="100%"
+          >
+            <path
+              d="M9.9 2.12L7.78 0 4.95 2.828 2.12 0 0 2.12l2.83 2.83L0 7.776 2.123 9.9 4.95 7.07 7.78 9.9 9.9 7.776 7.072 4.95 9.9 2.12"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        }
+        width={56}
+      />
+    </Col>
+  </FormGroup>
+  <FormGroup
+    as={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": Object {
+          "noGutters": false,
+        },
+        "render": [Function],
+      }
+    }
+    className="mb-3"
+  >
+    <FormLabel
+      as="legend"
+      column={true}
+      srOnly={false}
+    >
+      Air Conditioning
+    </FormLabel>
+    <Col>
+      <ReactSwitch
+        activeBoxShadow="0 0 2px 3px #3bf"
+        boxShadow={null}
+        checked={false}
+        checkedIcon={
+          <svg
+            height="100%"
+            style={
+              Object {
+                "position": "absolute",
+                "top": 0,
+              }
+            }
+            viewBox="-2 -5 17 21"
+            width="100%"
+          >
+            <path
+              d="M11.264 0L5.26 6.004 2.103 2.847 0 4.95l5.26 5.26 8.108-8.107L11.264 0"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        }
+        disabled={false}
+        height={28}
+        id="airConditioning"
+        offColor="#888"
+        offHandleColor="#fff"
+        onChange={[Function]}
+        onColor="#080"
+        onHandleColor="#fff"
+        uncheckedIcon={
+          <svg
+            height="100%"
+            style={
+              Object {
+                "position": "absolute",
+                "top": 0,
+              }
+            }
+            viewBox="-2 -5 14 20"
+            width="100%"
+          >
+            <path
+              d="M9.9 2.12L7.78 0 4.95 2.828 2.12 0 0 2.12l2.83 2.83L0 7.776 2.123 9.9 4.95 7.07 7.78 9.9 9.9 7.776 7.072 4.95 9.9 2.12"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        }
+        width={56}
+      />
+    </Col>
+  </FormGroup>
+  <FormGroup
+    as={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": Object {
+          "noGutters": false,
+        },
+        "render": [Function],
+      }
+    }
+    className="mb-3"
+  >
+    <FormLabel
+      as="legend"
+      column={true}
+      srOnly={false}
+    >
+      Bed
+    </FormLabel>
+    <Col>
+      <ReactSwitch
+        activeBoxShadow="0 0 2px 3px #3bf"
+        boxShadow={null}
+        checked={false}
+        checkedIcon={
+          <svg
+            height="100%"
+            style={
+              Object {
+                "position": "absolute",
+                "top": 0,
+              }
+            }
+            viewBox="-2 -5 17 21"
+            width="100%"
+          >
+            <path
+              d="M11.264 0L5.26 6.004 2.103 2.847 0 4.95l5.26 5.26 8.108-8.107L11.264 0"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        }
+        disabled={false}
+        height={28}
+        id="bed"
+        offColor="#888"
+        offHandleColor="#fff"
+        onChange={[Function]}
+        onColor="#080"
+        onHandleColor="#fff"
+        uncheckedIcon={
+          <svg
+            height="100%"
+            style={
+              Object {
+                "position": "absolute",
+                "top": 0,
+              }
+            }
+            viewBox="-2 -5 14 20"
+            width="100%"
+          >
+            <path
+              d="M9.9 2.12L7.78 0 4.95 2.828 2.12 0 0 2.12l2.83 2.83L0 7.776 2.123 9.9 4.95 7.07 7.78 9.9 9.9 7.776 7.072 4.95 9.9 2.12"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        }
+        width={56}
+      />
+    </Col>
+  </FormGroup>
+  <FormGroup
+    as={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": Object {
+          "noGutters": false,
+        },
+        "render": [Function],
+      }
+    }
+    className="mb-3"
+  >
+    <FormLabel
+      as="legend"
+      column={true}
+      srOnly={false}
+    >
+      Closet
+    </FormLabel>
+    <Col>
+      <ReactSwitch
+        activeBoxShadow="0 0 2px 3px #3bf"
+        boxShadow={null}
+        checked={false}
+        checkedIcon={
+          <svg
+            height="100%"
+            style={
+              Object {
+                "position": "absolute",
+                "top": 0,
+              }
+            }
+            viewBox="-2 -5 17 21"
+            width="100%"
+          >
+            <path
+              d="M11.264 0L5.26 6.004 2.103 2.847 0 4.95l5.26 5.26 8.108-8.107L11.264 0"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        }
+        disabled={false}
+        height={28}
+        id="closet"
+        offColor="#888"
+        offHandleColor="#fff"
+        onChange={[Function]}
+        onColor="#080"
+        onHandleColor="#fff"
+        uncheckedIcon={
+          <svg
+            height="100%"
+            style={
+              Object {
+                "position": "absolute",
+                "top": 0,
+              }
+            }
+            viewBox="-2 -5 14 20"
+            width="100%"
+          >
+            <path
+              d="M9.9 2.12L7.78 0 4.95 2.828 2.12 0 0 2.12l2.83 2.83L0 7.776 2.123 9.9 4.95 7.07 7.78 9.9 9.9 7.776 7.072 4.95 9.9 2.12"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        }
+        width={56}
+      />
+    </Col>
+  </FormGroup>
+  <FormGroup
+    as={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": Object {
+          "noGutters": false,
+        },
+        "render": [Function],
+      }
+    }
+    className="mb-3"
+  >
+    <FormLabel
+      as="legend"
+      column={true}
+      srOnly={false}
+    >
+      Desk
+    </FormLabel>
+    <Col>
+      <ReactSwitch
+        activeBoxShadow="0 0 2px 3px #3bf"
+        boxShadow={null}
+        checked={false}
+        checkedIcon={
+          <svg
+            height="100%"
+            style={
+              Object {
+                "position": "absolute",
+                "top": 0,
+              }
+            }
+            viewBox="-2 -5 17 21"
+            width="100%"
+          >
+            <path
+              d="M11.264 0L5.26 6.004 2.103 2.847 0 4.95l5.26 5.26 8.108-8.107L11.264 0"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        }
+        disabled={false}
+        height={28}
+        id="desk"
+        offColor="#888"
+        offHandleColor="#fff"
+        onChange={[Function]}
+        onColor="#080"
+        onHandleColor="#fff"
+        uncheckedIcon={
+          <svg
+            height="100%"
+            style={
+              Object {
+                "position": "absolute",
+                "top": 0,
+              }
+            }
+            viewBox="-2 -5 14 20"
+            width="100%"
+          >
+            <path
+              d="M9.9 2.12L7.78 0 4.95 2.828 2.12 0 0 2.12l2.83 2.83L0 7.776 2.123 9.9 4.95 7.07 7.78 9.9 9.9 7.776 7.072 4.95 9.9 2.12"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        }
+        width={56}
+      />
+    </Col>
+  </FormGroup>
+  <FormGroup
+    as={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": Object {
+          "noGutters": false,
+        },
+        "render": [Function],
+      }
+    }
+    className="mb-3"
+  >
+    <FormLabel
+      as="legend"
+      column={true}
+      srOnly={false}
+    >
+      Dishwasher
+    </FormLabel>
+    <Col>
+      <ReactSwitch
+        activeBoxShadow="0 0 2px 3px #3bf"
+        boxShadow={null}
+        checked={false}
+        checkedIcon={
+          <svg
+            height="100%"
+            style={
+              Object {
+                "position": "absolute",
+                "top": 0,
+              }
+            }
+            viewBox="-2 -5 17 21"
+            width="100%"
+          >
+            <path
+              d="M11.264 0L5.26 6.004 2.103 2.847 0 4.95l5.26 5.26 8.108-8.107L11.264 0"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        }
+        disabled={false}
+        height={28}
+        id="dishwasher"
+        offColor="#888"
+        offHandleColor="#fff"
+        onChange={[Function]}
+        onColor="#080"
+        onHandleColor="#fff"
+        uncheckedIcon={
+          <svg
+            height="100%"
+            style={
+              Object {
+                "position": "absolute",
+                "top": 0,
+              }
+            }
+            viewBox="-2 -5 14 20"
+            width="100%"
+          >
+            <path
+              d="M9.9 2.12L7.78 0 4.95 2.828 2.12 0 0 2.12l2.83 2.83L0 7.776 2.123 9.9 4.95 7.07 7.78 9.9 9.9 7.776 7.072 4.95 9.9 2.12"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        }
+        width={56}
+      />
+    </Col>
+  </FormGroup>
+  <FormGroup
+    as={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": Object {
+          "noGutters": false,
+        },
+        "render": [Function],
+      }
+    }
+    className="mb-3"
+  >
+    <FormLabel
+      as="legend"
+      column={true}
+      srOnly={false}
+    >
+      Dryer
+    </FormLabel>
+    <Col>
+      <ReactSwitch
+        activeBoxShadow="0 0 2px 3px #3bf"
+        boxShadow={null}
+        checked={false}
+        checkedIcon={
+          <svg
+            height="100%"
+            style={
+              Object {
+                "position": "absolute",
+                "top": 0,
+              }
+            }
+            viewBox="-2 -5 17 21"
+            width="100%"
+          >
+            <path
+              d="M11.264 0L5.26 6.004 2.103 2.847 0 4.95l5.26 5.26 8.108-8.107L11.264 0"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        }
+        disabled={false}
+        height={28}
+        id="dryer"
+        offColor="#888"
+        offHandleColor="#fff"
+        onChange={[Function]}
+        onColor="#080"
+        onHandleColor="#fff"
+        uncheckedIcon={
+          <svg
+            height="100%"
+            style={
+              Object {
+                "position": "absolute",
+                "top": 0,
+              }
+            }
+            viewBox="-2 -5 14 20"
+            width="100%"
+          >
+            <path
+              d="M9.9 2.12L7.78 0 4.95 2.828 2.12 0 0 2.12l2.83 2.83L0 7.776 2.123 9.9 4.95 7.07 7.78 9.9 9.9 7.776 7.072 4.95 9.9 2.12"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        }
+        width={56}
+      />
+    </Col>
+  </FormGroup>
+  <FormGroup
+    as={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": Object {
+          "noGutters": false,
+        },
+        "render": [Function],
+      }
+    }
+    className="mb-3"
+  >
+    <FormLabel
+      as="legend"
+      column={true}
+      srOnly={false}
+    >
+      Internet
+    </FormLabel>
+    <Col>
+      <ReactSwitch
+        activeBoxShadow="0 0 2px 3px #3bf"
+        boxShadow={null}
+        checked={false}
+        checkedIcon={
+          <svg
+            height="100%"
+            style={
+              Object {
+                "position": "absolute",
+                "top": 0,
+              }
+            }
+            viewBox="-2 -5 17 21"
+            width="100%"
+          >
+            <path
+              d="M11.264 0L5.26 6.004 2.103 2.847 0 4.95l5.26 5.26 8.108-8.107L11.264 0"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        }
+        disabled={false}
+        height={28}
+        id="internet"
+        offColor="#888"
+        offHandleColor="#fff"
+        onChange={[Function]}
+        onColor="#080"
+        onHandleColor="#fff"
+        uncheckedIcon={
+          <svg
+            height="100%"
+            style={
+              Object {
+                "position": "absolute",
+                "top": 0,
+              }
+            }
+            viewBox="-2 -5 14 20"
+            width="100%"
+          >
+            <path
+              d="M9.9 2.12L7.78 0 4.95 2.828 2.12 0 0 2.12l2.83 2.83L0 7.776 2.123 9.9 4.95 7.07 7.78 9.9 9.9 7.776 7.072 4.95 9.9 2.12"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        }
+        width={56}
+      />
+    </Col>
+  </FormGroup>
+  <FormGroup
+    as={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": Object {
+          "noGutters": false,
+        },
+        "render": [Function],
+      }
+    }
+    className="mb-3"
+  >
+    <FormLabel
+      as="legend"
+      column={true}
+      srOnly={false}
+    >
+      Room Furniture
+    </FormLabel>
+    <Col>
+      <ReactSwitch
+        activeBoxShadow="0 0 2px 3px #3bf"
+        boxShadow={null}
+        checked={false}
+        checkedIcon={
+          <svg
+            height="100%"
+            style={
+              Object {
+                "position": "absolute",
+                "top": 0,
+              }
+            }
+            viewBox="-2 -5 17 21"
+            width="100%"
+          >
+            <path
+              d="M11.264 0L5.26 6.004 2.103 2.847 0 4.95l5.26 5.26 8.108-8.107L11.264 0"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        }
+        disabled={false}
+        height={28}
+        id="roomFurniture"
+        offColor="#888"
+        offHandleColor="#fff"
+        onChange={[Function]}
+        onColor="#080"
+        onHandleColor="#fff"
+        uncheckedIcon={
+          <svg
+            height="100%"
+            style={
+              Object {
+                "position": "absolute",
+                "top": 0,
+              }
+            }
+            viewBox="-2 -5 14 20"
+            width="100%"
+          >
+            <path
+              d="M9.9 2.12L7.78 0 4.95 2.828 2.12 0 0 2.12l2.83 2.83L0 7.776 2.123 9.9 4.95 7.07 7.78 9.9 9.9 7.776 7.072 4.95 9.9 2.12"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        }
+        width={56}
+      />
+    </Col>
+  </FormGroup>
+  <FormGroup
+    as={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": Object {
+          "noGutters": false,
+        },
+        "render": [Function],
+      }
+    }
+    className="mb-3"
+  >
+    <FormLabel
+      as="legend"
+      column={true}
+      srOnly={false}
+    >
+      TV
+    </FormLabel>
+    <Col>
+      <ReactSwitch
+        activeBoxShadow="0 0 2px 3px #3bf"
+        boxShadow={null}
+        checked={false}
+        checkedIcon={
+          <svg
+            height="100%"
+            style={
+              Object {
+                "position": "absolute",
+                "top": 0,
+              }
+            }
+            viewBox="-2 -5 17 21"
+            width="100%"
+          >
+            <path
+              d="M11.264 0L5.26 6.004 2.103 2.847 0 4.95l5.26 5.26 8.108-8.107L11.264 0"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        }
+        disabled={false}
+        height={28}
+        id="tv"
+        offColor="#888"
+        offHandleColor="#fff"
+        onChange={[Function]}
+        onColor="#080"
+        onHandleColor="#fff"
+        uncheckedIcon={
+          <svg
+            height="100%"
+            style={
+              Object {
+                "position": "absolute",
+                "top": 0,
+              }
+            }
+            viewBox="-2 -5 14 20"
+            width="100%"
+          >
+            <path
+              d="M9.9 2.12L7.78 0 4.95 2.828 2.12 0 0 2.12l2.83 2.83L0 7.776 2.123 9.9 4.95 7.07 7.78 9.9 9.9 7.776 7.072 4.95 9.9 2.12"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        }
+        width={56}
+      />
+    </Col>
+  </FormGroup>
+  <FormGroup
+    as={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": Object {
+          "noGutters": false,
+        },
+        "render": [Function],
+      }
+    }
+    className="mb-3"
+  >
+    <FormLabel
+      as="legend"
+      column={true}
+      srOnly={false}
+    >
+      Washing Machine
+    </FormLabel>
+    <Col>
+      <ReactSwitch
+        activeBoxShadow="0 0 2px 3px #3bf"
+        boxShadow={null}
+        checked={false}
+        checkedIcon={
+          <svg
+            height="100%"
+            style={
+              Object {
+                "position": "absolute",
+                "top": 0,
+              }
+            }
+            viewBox="-2 -5 17 21"
+            width="100%"
+          >
+            <path
+              d="M11.264 0L5.26 6.004 2.103 2.847 0 4.95l5.26 5.26 8.108-8.107L11.264 0"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        }
+        disabled={false}
+        height={28}
+        id="washingMachine"
+        offColor="#888"
+        offHandleColor="#fff"
+        onChange={[Function]}
+        onColor="#080"
+        onHandleColor="#fff"
+        uncheckedIcon={
+          <svg
+            height="100%"
+            style={
+              Object {
+                "position": "absolute",
+                "top": 0,
+              }
+            }
+            viewBox="-2 -5 14 20"
+            width="100%"
+          >
+            <path
+              d="M9.9 2.12L7.78 0 4.95 2.828 2.12 0 0 2.12l2.83 2.83L0 7.776 2.123 9.9 4.95 7.07 7.78 9.9 9.9 7.776 7.072 4.95 9.9 2.12"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        }
+        width={56}
+      />
+    </Col>
+  </FormGroup>
+  <FormGroup
+    as={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": Object {
+          "noGutters": false,
+        },
+        "render": [Function],
+      }
+    }
+    className="mb-3"
+  >
+    <FormLabel
+      as="legend"
+      column={true}
+      srOnly={false}
+    >
+      WiFi
+    </FormLabel>
+    <Col>
+      <ReactSwitch
+        activeBoxShadow="0 0 2px 3px #3bf"
+        boxShadow={null}
+        checked={false}
+        checkedIcon={
+          <svg
+            height="100%"
+            style={
+              Object {
+                "position": "absolute",
+                "top": 0,
+              }
+            }
+            viewBox="-2 -5 17 21"
+            width="100%"
+          >
+            <path
+              d="M11.264 0L5.26 6.004 2.103 2.847 0 4.95l5.26 5.26 8.108-8.107L11.264 0"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        }
+        disabled={false}
+        height={28}
+        id="wifi"
+        offColor="#888"
+        offHandleColor="#fff"
+        onChange={[Function]}
+        onColor="#080"
+        onHandleColor="#fff"
+        uncheckedIcon={
+          <svg
+            height="100%"
+            style={
+              Object {
+                "position": "absolute",
+                "top": 0,
+              }
+            }
+            viewBox="-2 -5 14 20"
+            width="100%"
+          >
+            <path
+              d="M9.9 2.12L7.78 0 4.95 2.828 2.12 0 0 2.12l2.83 2.83L0 7.776 2.123 9.9 4.95 7.07 7.78 9.9 9.9 7.776 7.072 4.95 9.9 2.12"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        }
+        width={56}
+      />
+    </Col>
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Flooring
+    </FormLabel>
+    <Dropdown
+      navbar={false}
+    >
+      <DropdownToggle
+        id="flooring"
+        variant="primary"
+      />
+      <DropdownMenu
+        align="left"
+        alignRight={false}
+        flip={true}
+      >
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Laminated
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Carpet Flooring
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Store
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Wooden Flooring
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Plastic Flooring
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Other
+        </DropdownItem>
+      </DropdownMenu>
+    </Dropdown>
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Heating
+    </FormLabel>
+    <Dropdown
+      navbar={false}
+    >
+      <DropdownToggle
+        id="heating"
+        variant="primary"
+      />
+      <DropdownMenu
+        align="left"
+        alignRight={false}
+        flip={true}
+      >
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          NA
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Central
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Gas
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Wood Stove
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Electrical
+        </DropdownItem>
+      </DropdownMenu>
+    </Dropdown>
+    <FormControl
+      id="heating"
+      onChange={[Function]}
+      placeholder="Is there heating?"
+      type="text"
+      value=""
+    />
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Kitchenware
+    </FormLabel>
+    <Dropdown
+      navbar={false}
+    >
+      <DropdownToggle
+        id="kitchenware"
+        variant="primary"
+      />
+      <DropdownMenu
+        align="left"
+        alignRight={false}
+        flip={true}
+      >
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          No
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Shared
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Private
+        </DropdownItem>
+      </DropdownMenu>
+    </Dropdown>
+  </FormGroup>
+  <AdditionalCosts />
+</Fragment>
+`;

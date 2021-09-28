@@ -1,0 +1,253 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Description module renders 1`] = `
+<Fragment>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Type
+    </FormLabel>
+    <Dropdown
+      navbar={false}
+    >
+      <DropdownToggle
+        id="type"
+        variant="primary"
+      >
+        --
+      </DropdownToggle>
+      <DropdownMenu
+        align="left"
+        alignRight={false}
+        flip={true}
+      >
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          House
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Building
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Apartment
+        </DropdownItem>
+      </DropdownMenu>
+    </Dropdown>
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Kind
+    </FormLabel>
+    <Dropdown
+      navbar={false}
+    >
+      <DropdownToggle
+        id="kind"
+        variant="primary"
+      >
+        --
+      </DropdownToggle>
+      <DropdownMenu
+        align="left"
+        alignRight={false}
+        flip={true}
+      >
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+          type="text"
+        >
+          Entire Place
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+          type="text"
+        >
+          Private Room
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+          type="text"
+        >
+          Shared Room
+        </DropdownItem>
+      </DropdownMenu>
+    </Dropdown>
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Description
+    </FormLabel>
+    <FormControl
+      id="description"
+      onChange={[Function]}
+      placeholder="Enter description"
+      required={true}
+      type="text"
+      value=""
+    />
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Deposit
+    </FormLabel>
+    <FormControl
+      id="deposit"
+      onChange={[Function]}
+      placeholder="Enter deposit"
+      type="number"
+      value={0}
+    />
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Estimated Bills
+    </FormLabel>
+    <FormControl
+      id="estimatedBills"
+      onChange={[Function]}
+      placeholder="Enter estimatedBills"
+      type="number"
+      value={0}
+    />
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Minimum Stay Months
+    </FormLabel>
+    <FormControl
+      id="minimumStayMonths"
+      onChange={[Function]}
+      placeholder="Enter Minimum Stay Months"
+      type="text"
+      value=""
+    />
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Max Bookable Days
+    </FormLabel>
+    <FormControl
+      id="maxBookableDays"
+      onChange={[Function]}
+      placeholder="Enter Max Bookable Days"
+      type="number"
+      value={0}
+    />
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Move In Window
+    </FormLabel>
+    <FormControl
+      id="moveInWindow"
+      onChange={[Function]}
+      placeholder="Enter Move In Window"
+      type="number"
+      value={0}
+    />
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Current Occupancy
+    </FormLabel>
+    <FormControl
+      id="currentOccupancy"
+      onChange={[Function]}
+      placeholder="Enter Current Occupancy"
+      type="number"
+      value={0}
+    />
+  </FormGroup>
+</Fragment>
+`;

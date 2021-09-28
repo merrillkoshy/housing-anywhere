@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Admin panel renders 1`] = `
+<Form
+  className="w-100 input-form px-5"
+  inline={false}
+>
+  <Pricing />
+  <Accordion
+    defaultActiveKey="0"
+  >
+    <Card
+      body={false}
+    >
+      <ForwardRef
+        as={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "defaultProps": undefined,
+            "render": [Function],
+          }
+        }
+        eventKey="0"
+      >
+        Address
+      </ForwardRef>
+      <AccordionCollapse
+        eventKey="0"
+      >
+        <CardBody>
+          <Address />
+        </CardBody>
+      </AccordionCollapse>
+    </Card>
+    <Description />
+    <Card
+      body={false}
+    >
+      <ForwardRef
+        as={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "defaultProps": undefined,
+            "render": [Function],
+          }
+        }
+        eventKey="1"
+      >
+        Rules
+      </ForwardRef>
+      <AccordionCollapse
+        eventKey="1"
+      >
+        <CardBody>
+          <Rules />
+        </CardBody>
+      </AccordionCollapse>
+    </Card>
+    <Preferences />
+    <Card
+      body={false}
+    >
+      <ForwardRef
+        as={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "defaultProps": undefined,
+            "render": [Function],
+          }
+        }
+        eventKey="2"
+      >
+        Facilities
+      </ForwardRef>
+      <AccordionCollapse
+        eventKey="2"
+      >
+        <CardBody>
+          <Facilities />
+        </CardBody>
+      </AccordionCollapse>
+    </Card>
+    <Card
+      body={false}
+    >
+      <ForwardRef
+        as={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "defaultProps": undefined,
+            "render": [Function],
+          }
+        }
+        eventKey="3"
+      >
+        Calendar Operations
+      </ForwardRef>
+      <AccordionCollapse
+        eventKey="3"
+      >
+        <CardBody>
+          <CalendarOperations />
+        </CardBody>
+      </AccordionCollapse>
+    </Card>
+    <Card
+      body={false}
+    >
+      <ForwardRef
+        as={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "defaultProps": undefined,
+            "render": [Function],
+          }
+        }
+        eventKey="4"
+      >
+        Images
+      </ForwardRef>
+      <AccordionCollapse
+        eventKey="4"
+      >
+        <CardBody>
+          <Images />
+        </CardBody>
+      </AccordionCollapse>
+    </Card>
+    <Card
+      body={false}
+    >
+      <ForwardRef
+        as={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "defaultProps": undefined,
+            "render": [Function],
+          }
+        }
+        eventKey="5"
+      >
+        Costs
+      </ForwardRef>
+      <AccordionCollapse
+        eventKey="5"
+      >
+        <CardBody>
+          <Costs />
+        </CardBody>
+      </AccordionCollapse>
+    </Card>
+  </Accordion>
+</Form>
+`;

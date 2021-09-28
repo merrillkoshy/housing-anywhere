@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pricing module renders 1`] = `
+<Fragment>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Price
+    </FormLabel>
+    <FormControl
+      id="price"
+      onChange={[Function]}
+      placeholder="Enter Price"
+      required={true}
+      type="number"
+      value={0}
+    />
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Currency Code
+    </FormLabel>
+    <FormControl
+      id="currency"
+      onChange={[Function]}
+      placeholder="EUR"
+      required={true}
+      type="text"
+      value=""
+    />
+  </FormGroup>
+</Fragment>
+`;

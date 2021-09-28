@@ -1,5 +1,4 @@
 import React from "react";
-import { JsxElement } from "typescript";
 import Logo from "./Logo";
 import Navigation from "./Navigation";
 
@@ -9,9 +8,9 @@ export interface LayoutProps {
 const Layout = ({ children }: LayoutProps) => {
 	return (
 		<>
-			<header>
+			<header className="d-flex ">
 				<Logo />
-				<nav>
+				<nav className="d-flex align-items-center justify-content-end">
 					<Navigation />
 				</nav>
 			</header>

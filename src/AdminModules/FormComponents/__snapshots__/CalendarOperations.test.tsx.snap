@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CostsModule module renders 1`] = `
+<Fragment>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Type
+    </FormLabel>
+    <Dropdown
+      navbar={false}
+    >
+      <DropdownToggle
+        id="type"
+        variant="primary"
+      />
+      <DropdownMenu
+        align="left"
+        alignRight={false}
+        flip={true}
+      >
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Available
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Unavailable
+        </DropdownItem>
+      </DropdownMenu>
+    </Dropdown>
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Date From
+    </FormLabel>
+    <FormControl
+      id="dateFrom"
+      onChange={[Function]}
+      pattern="/^d{4}-d{2}-d{2}/"
+      placeholder="YYYY-MM-DD"
+      type="text"
+      value=""
+    />
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Date To
+    </FormLabel>
+    <FormControl
+      id="dateTo"
+      onChange={[Function]}
+      pattern="/^d{4}-d{2}-d{2}/"
+      placeholder="YYYY-MM-DD"
+      type="text"
+      value=""
+    />
+  </FormGroup>
+</Fragment>
+`;

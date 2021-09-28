@@ -1,4 +1,6 @@
-@import ".~/bootstrap/scss/bootstrap";
+$primary: #fa7009;
+
+@import ".~bootstrap/scss/bootstrap";
 
 body {
 	margin: 0;
@@ -16,39 +18,100 @@ code {
 
 .App {
 	text-align: center;
-}
-
-.App-logo {
-	height: 40vmin;
-	pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-	.App-logo {
-		animation: App-logo-spin infinite 20s linear;
+	header {
+		.logobar {
+			width: 30vw;
+			@include media-breakpoint-down(sm) {
+				width: 70vw;
+			}
+			@include media-breakpoint-down(md) {
+				width: 70vw;
+			}
+		}
+		.App-logo {
+			width: 100%;
+			height: auto;
+			max-width: 100px;
+		}
+		.ha-logo {
+			width: 100%;
+			height: auto;
+			max-width: 100px;
+		}
+		nav {
+			width: 70vw;
+			@include media-breakpoint-down(sm) {
+				width: 28vw;
+			}
+			@include media-breakpoint-down(md) {
+				width: 28vw;
+			}
+			.nav-link {
+				width: 10vw;
+			}
+		}
 	}
-}
 
-.App-header {
-	background-color: #282c34;
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	font-size: calc(10px + 2vmin);
-	color: white;
-}
-
-.App-link {
-	color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-	from {
-		transform: rotate(0deg);
+	@media (prefers-reduced-motion: no-preference) {
+		.App-logo {
+			animation: App-logo-spin infinite 20s linear;
+		}
 	}
-	to {
-		transform: rotate(360deg);
+
+	.App-header {
+		background-color: #282c34;
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		font-size: calc(10px + 2vmin);
+		color: white;
+	}
+
+	.App-link {
+		color: #61dafb;
+	}
+
+	@keyframes App-logo-spin {
+		from {
+			transform: rotate(0deg);
+		}
+		to {
+			transform: rotate(360deg);
+		}
+	}
+
+	.showdown {
+		height: 80vh;
+		@include media-breakpoint-down(sm) {
+			height: auto;
+		}
+		@include media-breakpoint-down(md) {
+			height: auto;
+		}
+
+		.asset-image {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	#admin-side,
+	#result-panel,
+	#pg-code {
+		overflow: scroll;
+		height: 80vh;
+		width: 25vw;
+		text-align: left;
+		@include media-breakpoint-down(sm) {
+			width: 100%;
+		}
+		@include media-breakpoint-down(md) {
+			width: 100%;
+		}
+	}
+	.pg-code {
+		width: 20vw;
 	}
 }

@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Preferences module renders 1`] = `
+<Fragment>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Min Age
+    </FormLabel>
+    <FormControl
+      id="minAge"
+      min={18}
+      onChange={[Function]}
+      placeholder="Enter minAge"
+      type="number"
+      value={0}
+    />
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Max Age
+    </FormLabel>
+    <FormControl
+      id="maxAge"
+      min={35}
+      onChange={[Function]}
+      placeholder="Enter maxAge"
+      type="number"
+      value={0}
+    />
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <Dropdown
+      navbar={false}
+    >
+      <DropdownToggle
+        id="preferredGender"
+        variant="primary"
+      >
+        No Preference
+      </DropdownToggle>
+      <DropdownMenu
+        align="left"
+        alignRight={false}
+        flip={true}
+      >
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Male
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Female
+        </DropdownItem>
+        <DropdownItem
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            }
+          }
+          disabled={false}
+          onClick={[Function]}
+        >
+          Other
+        </DropdownItem>
+      </DropdownMenu>
+    </Dropdown>
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Alias
+    </FormLabel>
+    <FormControl
+      id="alias"
+      onChange={[Function]}
+      placeholder="Enter Alias"
+      type="text"
+      value=""
+    />
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      External Reference
+    </FormLabel>
+    <FormControl
+      id="externalReference"
+      onChange={[Function]}
+      placeholder="Enter External Reference"
+      type="text"
+      value=""
+    />
+  </FormGroup>
+  <FormGroup
+    className="mb-3"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Extra Data
+    </FormLabel>
+    <FormControl
+      id="extraData"
+      onChange={[Function]}
+      placeholder="A JSON field with extra information important for the listing which doesn't fit in other fields. Make sure to escape the quotes!"
+      type="text"
+      value=""
+    />
+  </FormGroup>
+</Fragment>
+`;

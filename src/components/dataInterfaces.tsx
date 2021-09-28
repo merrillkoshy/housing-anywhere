@@ -1,6 +1,6 @@
 import React from "react";
 
-interface Address {
+export interface Address {
 	housenumber: string;
 	street: string;
 	city: string;
@@ -24,7 +24,7 @@ interface AdditionalCosts {
 	electricity: boolean;
 	internet: boolean;
 }
-interface Facilities {
+export interface Facilities {
 	allergyFriendly: boolean;
 	housematesGender: string;
 	registrationPossible: boolean;
@@ -63,7 +63,7 @@ interface Facilities {
 
 interface Costs {
 	type: string;
-	value: string;
+	value: number;
 	payableAt: string;
 	payableBy: string;
 	refundable: boolean;
@@ -85,10 +85,10 @@ export interface HAData {
 	type: number;
 	kind: number;
 	description: string;
-	deposit: number;
-	estimatedBills: number;
+	deposit?: number;
+	estimatedBills?: number;
 	minimumStayMonths: string;
-	maxBookableDays: number;
+	maxBookableDays?: number;
 	moveInWindow: number;
 	currentOccupancy: number;
 	rules: Rules;
