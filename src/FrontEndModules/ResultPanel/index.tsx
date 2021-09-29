@@ -6,10 +6,15 @@ import DetailsModal from "../ResultComponents/DetailsModal";
 import ImageSpace from "../ResultComponents/ImageSpace";
 
 import Title from "../ResultComponents/Title";
+import sanitizeListings from "../../components/sanitizeListings";
+
+import { HAData } from "../../components/dataInterfaces";
+import Downloader from "./Downloader";
 
 const Result = () => {
-	const [listing, setListing] = useState([]);
-	const [show, setShow] = useState(false);
+	const [listing, setListing] = useState<HAData[]>([]);
+
+	const [show, setShow] = useState<boolean>(false);
 	const handleShow = () => {
 		setShow(true);
 	};
@@ -22,15 +27,16 @@ const Result = () => {
 
 	const getter = () => {
 		axios.get("http://localhost:3001/listing").then((response) => {
-			console.log(response.data);
-			setListing(response.data);
+			const sanitized = sanitizeListings(response.data);
+			console.log(sanitized);
+			setListing(sanitized);
 		});
 	};
 	return (
 		<section id="result-panel">
 			<div className="d-flex justify-content-center w-100 result-panel">
 				{listing ? (
-					listing?.map((listed: any) => {
+					listing?.map((listed: HAData) => {
 						return (
 							<Card key={uuidv4()} className="w-100">
 								<Card.Header>
@@ -43,13 +49,14 @@ const Result = () => {
 									</>
 								</Card.Body>
 								<Card.Footer>
+									<DetailsModal
+										show={show}
+										details={listed}
+										handleClose={handleClose}
+									/>
+									<Downloader data={listing} />
 									<Button onClick={handleShow}>Details</Button>
 								</Card.Footer>
-								<DetailsModal
-									show={show}
-									details={listed}
-									handleClose={handleClose}
-								/>
 							</Card>
 						);
 					})

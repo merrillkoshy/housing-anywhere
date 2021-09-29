@@ -3,7 +3,7 @@ import React from "react";
 const SettingUpCode = () => {
 	return (
 		<section id="pg-code">
-			<div className="d-flex flex-column px-3 col-3 pg-code align-items-center justify-content-center">
+			<div className="d-flex flex-column px-3 col-3 pg-code align-items-left justify-content-center w-100">
 				<header>The Postgres Side of it</header>
 				<details>
 					<summary>Creation Commands</summary>
@@ -95,35 +95,34 @@ const SettingUpCode = () => {
 								Images[], costs Costs[] );
 							</p>
 						</details>
-						<details>
-							<summary>INSERT INTO hadata</summary>
-							<p>
-								INSERT INTO hadata ( id, price, currencycode, address, type,
-								kind, description, deposit, estimatedbills, minimumstaymonths,
-								maxbookabledays, moveinwindow, currentoccupancy, rules, maxage,
-								preferredgender, alias, externalreference, extradata,
-								facilities, calendaroperations, images, costs) VALUES (
-								'1'::integer, '56700'::numeric, 'EUR'::character varying,
-								'("81A","Oostplein","Rotterdam",
-								"South-Holland","3071VN","Oostplein Metro Station",
-								"NL")','1'::numeric, '1'::numeric, 'Centrally located apartment,
-								very close to public transport and supermarkets. It comes with a
-								fully equipped kitchen with all cooking, cleaning appliances.
-								Registration is possible. There is a parking spot directly in
-								front of the building.'::text, '24000'::numeric,
-								'15000'::numeric, '26'::character varying, '30'::numeric,
-								'30'::numeric, '2'::numeric,
-								'("no",true,true,"no","no","yes")'::rules,'23'::numeric,
-								'male'::character varying, 'the-left-room'::character varying,
-								'any-identifier'::character
-								varying,'\"onBoardingLink\":\"https://termsandconditions.com/uniqueId\"'::character
-								varying,
-								'(false,"boys",false,"working",3,3,false,60,true,"no","no","no","no","no","no","no","no",80,true,true,true,true,true,true,true,true,true,true,true,true,"laminate","na","no","(t,t,t,t)")'::facilities,
-								ARRAY['(1,"2019-05-29","2020-07-29")']::calendaroperations[],
-								ARRAY['("https://via.placeholder.com/300")']::images[],ARRAY['("security-deposit","8000","move-in","tenant",true,false,true)']::costs[])
-								returning id;
-							</p>
-						</details>
+					</code>
+				</details>
+				<details>
+					<summary>INSERT Command</summary>
+					<code>
+						INSERT INTO hadata ( id, price, currencycode, address, type, kind,
+						description, deposit, estimatedbills, minimumstaymonths,
+						maxbookabledays, moveinwindow, currentoccupancy, rules, maxage,
+						preferredgender, alias, externalreference, extradata, facilities,
+						calendaroperations, images, costs) VALUES ( '1'::integer,
+						'56700'::numeric, 'EUR'::character varying,
+						'("81A","Oostplein","Rotterdam", "South-Holland","3071VN","Oostplein
+						Metro Station", "NL")','1'::numeric, '1'::numeric, 'Centrally
+						located apartment, very close to public transport and supermarkets.
+						It comes with a fully equipped kitchen with all cooking, cleaning
+						appliances. Registration is possible. There is a parking spot
+						directly in front of the building.'::text, '24000'::numeric,
+						'15000'::numeric, '26'::character varying, '30'::numeric,
+						'30'::numeric, '2'::numeric,
+						'("no",true,true,"no","no","yes")'::rules,'23'::numeric,
+						'male'::character varying, 'the-left-room'::character varying,
+						'any-identifier'::character
+						varying,'\"onBoardingLink\":\"https://termsandconditions.com/uniqueId\"'::character
+						varying,
+						'(false,"boys",false,"working",3,3,false,60,true,"no","no","no","no","no","no","no","no",80,true,true,true,true,true,true,true,true,true,true,true,true,"laminate","na","no","(t,t,t,t)")'::facilities,
+						ARRAY['(1,"2019-05-29","2020-07-29")']::calendaroperations[],
+						ARRAY['("https://via.placeholder.com/300")']::images[],ARRAY['("security-deposit","8000","move-in","tenant",true,false,true)']::costs[])
+						returning id;
 					</code>
 				</details>
 			</div>

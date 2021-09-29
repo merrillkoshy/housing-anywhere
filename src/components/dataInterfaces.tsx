@@ -9,7 +9,7 @@ export interface Address {
 	neighborhood: string;
 	countryCode: string;
 }
-interface Rules {
+export interface Rules {
 	pets: string;
 	cleaningCommonRoomsIncluded: boolean;
 	cleaningPrivateRoomIncluded: boolean;
@@ -18,7 +18,7 @@ interface Rules {
 	couple: boolean;
 }
 
-interface AdditionalCosts {
+export interface AdditionalCosts {
 	water: boolean;
 	gas: boolean;
 	electricity: boolean;
@@ -27,7 +27,7 @@ interface AdditionalCosts {
 export interface Facilities {
 	allergyFriendly: boolean;
 	housematesGender: string;
-	registrationPossible: boolean;
+	registrationPossible: boolean | string;
 	tenantStatus: string;
 	freePlaces: number;
 	bedrooms: number;
@@ -51,7 +51,7 @@ export interface Facilities {
 	dishwasher: boolean;
 	dryer: boolean;
 	internet: boolean;
-	roomFurniture: boolean;
+	roomFurniture: boolean | string;
 	tv: boolean;
 	washingMachine: boolean;
 	wifi: boolean;
@@ -61,7 +61,7 @@ export interface Facilities {
 	additionalCosts: AdditionalCosts;
 }
 
-interface Costs {
+export interface Costs {
 	type: string;
 	value: number;
 	payableAt: string;
@@ -70,10 +70,10 @@ interface Costs {
 	estimated: boolean;
 	mandatory: boolean;
 }
-interface Images {
+export interface Images {
 	url: string;
 }
-interface CalendarOperations {
+export interface CalendarOperations {
 	type: number;
 	dateFrom: string;
 	dateTo: string;

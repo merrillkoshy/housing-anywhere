@@ -1,6 +1,7 @@
 import React from "react";
+import { Costs, Rules } from "../../components/dataInterfaces";
 import Costing from "./Costing";
-import Rules from "./Rules";
+import RulesComponent from "./Rules";
 
 const TLDR = ({
 	description,
@@ -12,8 +13,8 @@ const TLDR = ({
 	description: string;
 	currencycode: string;
 	price: number;
-	costs: string;
-	rules: string;
+	costs: Costs;
+	rules: Rules;
 }) => {
 	return (
 		<>
@@ -23,15 +24,19 @@ const TLDR = ({
 			</section>
 			<section className="d-flex" id="cost">
 				<>
-					<div className="col-1">{currencycode}</div>
-					<div className="col mx-2">{price}</div>
-					<div className="col-8 mx-2">
+					<div className="col-1 pricing-text">
+						<strong>{currencycode}</strong>
+					</div>
+					<div className="col mx-2 pricing-text">
+						<strong>{price}</strong>
+					</div>
+					<div className="col-8 mx-2 ">
 						<Costing costs={costs} />
 					</div>
 				</>
 			</section>
 			<section className="d-flex" id="rules">
-				<Rules rules={rules} />
+				<RulesComponent rules={rules} />
 			</section>
 		</>
 	);

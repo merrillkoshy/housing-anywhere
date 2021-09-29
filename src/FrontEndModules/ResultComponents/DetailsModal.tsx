@@ -49,7 +49,7 @@ const DetailsModal = ({
 						</div>
 					</div>
 					<div className="divider"></div>
-					<div className="d-flex px-3">
+					<div className="d-flex px-3 w-100 align-items-stretch">
 						<MainDetails
 							alias={details.alias}
 							currentoccupancy={details.currentoccupancy}

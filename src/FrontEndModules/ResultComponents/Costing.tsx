@@ -1,23 +1,22 @@
-import costsSplitter from "../../components/costsSplitter";
+import React from "react";
+import { Costs } from "../../components/dataInterfaces";
 
-const Costing = ({ costs }: { costs: string }) => {
-	const costing = costsSplitter(costs);
-
+const costs = ({ costs }: { costs: Costs }) => {
 	return (
 		<details>
 			<summary>
 				<strong>Costs</strong>
 			</summary>
 			<ul>
-				<li>Type:{costing.type}</li>
-				<li>Value:{costing.value}</li>
-				<li>Payable At:{costing.payableAt}</li>
-				<li>Payable By:{costing.payableBy}</li>
-				<li>Refundable:{costing.refundable ? "✅" : "❌"}</li>
-				<li>Estimated:{costing.estimated ? "✅" : "❌"}</li>
-				<li>Mandatory:{costing.mandatory ? "✅" : "❌"}</li>
+				<li>Type:{costs?.type}</li>
+				<li>Value:{costs?.value}</li>
+				<li>Payable At:{costs?.payableAt}</li>
+				<li>Payable By:{costs?.payableBy}</li>
+				<li>Refundable:{costs?.refundable ? "✅" : "❌"}</li>
+				<li>Estimated:{costs?.estimated ? "✅" : "❌"}</li>
+				<li>Mandatory:{costs?.mandatory ? "✅" : "❌"}</li>
 			</ul>
 		</details>
 	);
 };
-export default Costing;
+export default costs;

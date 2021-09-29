@@ -1,23 +1,26 @@
 import React from "react";
-import calendarSplitter from "../../components/calendarSplitter";
+import { CalendarOperations } from "../../components/dataInterfaces";
 
-const Calendar = ({ calendar }: { calendar: string }) => {
-	const calendarData = calendarSplitter(calendar);
+const Calendar = ({ calendar }: { calendar: CalendarOperations }) => {
 	return (
 		<div className="d-flex flex-column my-2">
 			<div className="row">
 				<div className="col">
-					{calendarData.type ? "Unavailable" : "Available"}
+					{calendar?.type ? (
+						<p className="text-danger">Unavailable</p>
+					) : (
+						<p className="text-success">Available</p>
+					)}
 				</div>
 			</div>
 			<div className="row">
 				<div className="col">
 					<strong>From:</strong>
-					{calendarData.dateFrom}
+					{calendar?.dateFrom}
 				</div>
 				<div className="col">
 					<strong>To:</strong>
-					{calendarData.dateTo}
+					{calendar?.dateTo}
 				</div>
 			</div>
 		</div>

@@ -5,10 +5,10 @@ const AdditionalCosts = ({ costs }: { costs: any }) => {
 				<strong>Additional Costs</strong>
 			</summary>
 			<ul>
-				<li>Water:{costs.water ? "✅" : "❌"}</li>
-				<li>Gas:{costs.gas ? "✅" : "❌"}</li>
-				<li>Electicity:{costs.electricity ? "✅" : "❌"}</li>
-				<li>Internet:{costs.internet ? "✅" : "❌"}</li>
+				<li>Water:{costs?.water ? "✅" : "❌"}</li>
+				<li>Gas:{costs?.gas ? "✅" : "❌"}</li>
+				<li>Electicity:{costs?.electricity ? "✅" : "❌"}</li>
+				<li>Internet:{costs?.internet ? "✅" : "❌"}</li>
 			</ul>
 		</details>
 	);

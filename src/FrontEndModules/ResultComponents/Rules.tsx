@@ -1,29 +1,27 @@
 import React from "react";
-import rulesSplitter from "../../components/rulesSplitter";
+import { Rules } from "../../components/dataInterfaces";
 
-const Rules = ({ rules }: { rules: any }) => {
-	const allRules = rulesSplitter(rules);
-
+const RulesComponent = ({ rules }: { rules: Rules }) => {
 	return (
 		<details>
 			<summary>
 				<strong>Rules</strong>
 			</summary>
 			<ul>
-				<li>Pets:{allRules.pets === "yes" ? "✅" : "❌"}</li>
+				<li>Pets:{rules?.pets === "yes" ? "✅" : "❌"}</li>
 				<li>
 					Cleaning Common Rooms Included:
-					{allRules.cleaningCommonRoomsIncluded ? "✅" : "❌"}
+					{rules?.cleaningCommonRoomsIncluded ? "✅" : "❌"}
 				</li>
 				<li>
 					Cleaning Private Rooms Included:
-					{allRules.cleaningPrivateRoomIncluded ? "✅" : "❌"}
+					{rules?.cleaningPrivateRoomIncluded ? "✅" : "❌"}
 				</li>
-				<li>Play Music:{allRules.playMusic === "yes" ? "✅" : "❌"}</li>
-				<li>Smoking:{allRules.smoking === "yes" ? "✅" : "❌"}</li>
-				<li>Couple:{allRules.couple ? "✅" : "❌"}</li>
+				<li>Play Music:{rules?.playMusic === "yes" ? "✅" : "❌"}</li>
+				<li>Smoking:{rules?.smoking === "yes" ? "✅" : "❌"}</li>
+				<li>Couple:{rules?.couple ? "✅" : "❌"}</li>
 			</ul>
 		</details>
 	);
 };
-export default Rules;
+export default RulesComponent;

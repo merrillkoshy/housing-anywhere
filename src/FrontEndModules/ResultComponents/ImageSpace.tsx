@@ -1,26 +1,18 @@
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
+import { Images } from "../../components/dataInterfaces";
 
-const ImageSpace = ({ images }: { images: string }) => {
-	const sanitize = images
-		.replace("(", "")
-		.replace(")", "")
-		.replace('"', "")
-		.replace("{", "")
-		.replace("}", "")
-		.split(",");
+const ImageSpace = ({ images }: { images: Images[] }) => {
 	return (
 		<>
-			{sanitize &&
-				sanitize.map((url) => {
+			{images &&
+				images?.map((image) => {
 					return (
 						<img
 							key={uuidv4()}
 							className="asset-image"
-							width="300"
-							height="300"
-							src={url}
-							alt={"stuff"}
+							src={image.url}
+							alt={"the-huis"}
 						/>
 					);
 				})}

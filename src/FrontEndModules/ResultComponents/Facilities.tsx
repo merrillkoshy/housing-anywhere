@@ -1,11 +1,11 @@
 import React from "react";
 import AdditionalCosts from "./AdditionalCosts";
-import facilitiesSplitter from "../../components/facilitiesSplitter";
 
-const FacilitiesComponent = ({ facilites }: any) => {
-	const { proto, child } = facilitiesSplitter(facilites);
-	const facility = proto;
-	const additionalCosts = child;
+import { Facilities } from "../../components/dataInterfaces";
+
+const FacilitiesComponent = ({ facilites }: { facilites: Facilities }) => {
+	const facility = facilites;
+	const additionalCosts = facilites.additionalCosts;
 	return (
 		<details>
 			<summary>
