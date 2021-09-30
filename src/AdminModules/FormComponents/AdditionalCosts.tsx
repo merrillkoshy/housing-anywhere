@@ -23,6 +23,7 @@ const AdditionalCosts = ({
 }) => {
 	return (
 		<>
+			<header>Additional Costs</header>
 			<Form.Group as={Row} className="mb-3">
 				<Form.Label as="legend" column>
 					Water

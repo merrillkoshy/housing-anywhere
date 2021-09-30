@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Admin from "./AdminModules/AdminPanel";
 
 import Layout from "./components/Layout";
@@ -6,6 +6,7 @@ import Result from "./FrontEndModules/ResultPanel";
 import SettingUpCode from "./PostgresFE/SettingUpCode";
 
 function App() {
+	const [sending, setSending] = useState({});
 	return (
 		<div className="App">
 			<Layout>
@@ -16,9 +17,9 @@ function App() {
                 flex-column justify-content-center
 				 justify-content-between align-items-center"
 					>
-						<Admin />
+						<Admin setSending={setSending} />
 						<Result />
-						<SettingUpCode />
+						<SettingUpCode sending={sending} />
 					</div>
 				</div>
 			</Layout>

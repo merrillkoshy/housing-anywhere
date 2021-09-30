@@ -173,6 +173,7 @@ const Facilities = ({
 				</Col>
 			</Form.Group>
 			<Form.Group className="mb-3">
+				<Form.Label>Housemates Gender</Form.Label>
 				<Dropdown>
 					<Dropdown.Toggle variant="primary" id="housematesGender">
 						{housematesGender}
@@ -895,16 +896,6 @@ const Facilities = ({
 						</Dropdown.Item>
 					</Dropdown.Menu>
 				</Dropdown>
-				<Form.Control
-					type="text"
-					id="heating"
-					value={heating}
-					onChange={(e) => {
-						e.preventDefault();
-						setHeating(e.currentTarget.value);
-					}}
-					placeholder="Is there heating?"
-				/>
 			</Form.Group>
 			<Form.Group className="mb-3">
 				<Form.Label>Kitchenware</Form.Label>

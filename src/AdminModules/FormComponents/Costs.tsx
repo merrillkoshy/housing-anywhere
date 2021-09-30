@@ -38,6 +38,7 @@ const CostsComponent = ({
 	costs: object[];
 	setCosts: React.Dispatch<React.SetStateAction<Costs[]>>;
 }) => {
+	const [enableAdd, setEnableAdd] = useState(false);
 	return (
 		<>
 			<Form.Group className="mb-3">
@@ -297,16 +298,6 @@ const CostsComponent = ({
 								</Dropdown.Item>
 							</Dropdown.Menu>
 						</Dropdown>
-						<Form.Control
-							type="text"
-							id="payableBy"
-							value={payableBy}
-							onChange={(e) => {
-								e.preventDefault();
-								setPayableBy(e.currentTarget.value);
-							}}
-							placeholder="payableBy?"
-						/>
 					</Form.Group>
 
 					<Form.Group as={Row} className="mb-3">
@@ -351,8 +342,15 @@ const CostsComponent = ({
 							/>
 						</Col>
 					</Form.Group>
+					<Form.Text className="text-muted">
+						Please save after each cost entry
+					</Form.Text>
+					<br></br>
+
 					<Button
-						id="addCost"
+						id="save"
+						variant="success"
+						className="my-2"
 						disabled={type === "" && payableAt === "" && payableBy === ""}
 						onClick={(e) => {
 							e.preventDefault();
@@ -368,6 +366,18 @@ const CostsComponent = ({
 								},
 								...prev,
 							]);
+							setEnableAdd(true);
+						}}
+					>
+						Save
+					</Button>
+					<Button
+						id="addCost"
+						disabled={!enableAdd}
+						className="my-2"
+						onClick={(e) => {
+							e.preventDefault();
+
 							setType("");
 						}}
 					>

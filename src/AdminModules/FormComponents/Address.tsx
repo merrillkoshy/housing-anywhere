@@ -1,5 +1,6 @@
-import React, { SetStateAction, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Form } from "react-bootstrap";
+import data from "../../components/country-codes.json";
 
 const Address = ({
 	houseNumber,
@@ -18,20 +19,37 @@ const Address = ({
 	setCountryCode,
 }: {
 	houseNumber: string;
-	setHouseNumber: React.Dispatch<SetStateAction<string>>;
+	setHouseNumber: React.Dispatch<React.SetStateAction<string>>;
 	street: string;
-	setStreet: React.Dispatch<SetStateAction<string>>;
+	setStreet: React.Dispatch<React.SetStateAction<string>>;
 	city: string;
-	setCity: React.Dispatch<SetStateAction<string>>;
+	setCity: React.Dispatch<React.SetStateAction<string>>;
 	state: string;
-	setState: React.Dispatch<SetStateAction<string>>;
+	setState: React.Dispatch<React.SetStateAction<string>>;
 	postalCode: string;
-	setPostalCode: React.Dispatch<SetStateAction<string>>;
+	setPostalCode: React.Dispatch<React.SetStateAction<string>>;
 	neighborhood: string;
-	setNeighborhood: React.Dispatch<SetStateAction<string>>;
+	setNeighborhood: React.Dispatch<React.SetStateAction<string>>;
 	countryCode: string;
-	setCountryCode: React.Dispatch<SetStateAction<string>>;
+	setCountryCode: React.Dispatch<React.SetStateAction<string>>;
 }) => {
+	const [filteredArray, setFilteredArray] = useState<any>([]);
+	const [panel, openPanel] = useState(false);
+	useEffect(() => {
+		return () => {
+			setFilteredArray([]);
+			openPanel(false);
+		};
+	}, []);
+	const checkVal = () => {
+		setFilteredArray(
+			data.filter((dt: any) => {
+				if (dt.name?.toLowerCase().includes(countryCode)) {
+					return dt;
+				}
+			})
+		);
+	};
 	return (
 		<>
 			<Form.Group className="mb-3">
@@ -124,12 +142,32 @@ const Address = ({
 					id="countryCode"
 					value={countryCode}
 					required
+					onKeyPress={checkVal}
 					onChange={(e) => {
 						e.preventDefault();
+						if (e.currentTarget.value !== "") openPanel(true);
 						setCountryCode(e.currentTarget.value);
 					}}
-					placeholder="Enter Country Code"
+					placeholder="Just type your Country name, we'll fetch your code"
 				/>
+				<div className={`d-${panel ? "flex" : "none"} autocomplete-items`}>
+					{filteredArray.length
+						? filteredArray.map((ar: any, i: number) => {
+								return (
+									<div
+										key={ar.code + i}
+										onClick={() => {
+											setCountryCode(ar.code);
+											setFilteredArray([]);
+											openPanel(false);
+										}}
+									>
+										{new Set(ar.code)}
+									</div>
+								);
+						  })
+						: null}
+				</div>
 			</Form.Group>
 		</>
 	);

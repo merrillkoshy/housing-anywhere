@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Accordion, Form, Card, Button } from "react-bootstrap";
-import insertThis from "../../components/apiCalls";
+import insertData from "../../components/apiCalls";
 import { Costs } from "../../components/dataInterfaces";
+import nullChecker from "../../components/nullChecker";
 import Address from "../FormComponents/Address";
 import CalendarOperations from "../FormComponents/CalendarOperations";
 import CostsComponent from "../FormComponents/Costs";
@@ -12,7 +13,11 @@ import Preferences from "../FormComponents/Preferences";
 import Pricing from "../FormComponents/Pricing";
 import Rules from "../FormComponents/Rules";
 
-const Admin = () => {
+const Admin = ({
+	setSending,
+}: {
+	setSending: React.Dispatch<React.SetStateAction<object>>;
+}) => {
 	// Pricing usestates
 	const [price, setPrice] = useState<number>(0);
 	const [currencyCode, setCurrencyCode] = useState<string>("");
@@ -108,9 +113,199 @@ const Admin = () => {
 	const [gas, setGas] = useState(false);
 	const [electricity, setElectricity] = useState(false);
 	const [internetCost, setInternetCost] = useState(false);
+	//data packet
+	const data = {
+		price: price,
+		currencyCode: currencyCode,
+		address: {
+			housenumber: houseNumber,
+			street: street,
+			city: city,
+			state: state,
+			postalCode: postalCode,
+			neighborhood: neighborhood,
+			countryCode: countryCode,
+		},
+		type: type,
+		kind: kind,
+		description: description,
+		deposit: deposit,
+		estimatedBills: estimatedBills,
+		minimumStayMonths: minimumStayMonths,
+		maxBookableDays: maxBookableDays,
+		moveInWindow: moveInWindow,
+		currentOccupancy: currentOccupancy,
+		rules: {
+			pets: pets,
+			cleaningCommonRoomsIncluded: cleaningCommonRoomsIncluded,
+			cleaningPrivateRoomIncluded: cleaningPrivateRoomIncluded,
+			playMusic: playMusic,
+			smoking: smoking,
+			couple: couple,
+		},
+		minAge: minAge,
+		maxAge: maxAge,
+		preferredGender: preferredGender,
+		alias: alias,
+		externalReference: externalReference,
+		extraData: extraData,
+		facilities: {
+			allergyFriendly: allergyFriendly,
+			housematesGender: housematesGender,
+			registrationPossible: registrationPossible,
+			tenantStatus: tenantStatus,
+			freePlaces: freePlaces,
+			bedrooms: bedrooms,
+			bedroomFurnished: bedroomFurnished,
+			bedroomSize: bedroomSize,
+			bedroomLock: bedroomLock,
+			balconyTerrace: balconyTerrace,
+			basement: basement,
+			bathroom: bathroom,
+			garden: garden,
+			kitchen: kitchen,
+			livingRoom: livingRoom,
+			parking: parking,
+			toilet: toilet,
+			totalSize: totalSize,
+			wheelchairAccessible: wheelchairAccessible,
+			airConditioning: airConditioning,
+			bed: bed,
+			closet: closet,
+			desk: desk,
+			dishwasher: dishwasher,
+			dryer: dryer,
+			internet: internet,
+			roomFurniture: roomFurniture,
+			tv: tv,
+			washingMachine: washingMachine,
+			wifi: wifi,
+			flooring: flooring,
+			heating: heating,
+			kitchenware: kitchenware,
+			additionalCosts: {
+				water: water,
+				gas: gas,
+				electricity: electricity,
+				internet: internet,
+			},
+		},
+		calendarOperations: [
+			{
+				type: typeCalendar,
+				dateFrom: dateFrom,
+				dateTo: dateTo,
+			},
+		],
+		images:
+			files &&
+			files?.map((file: any) => {
+				return { url: `${file?.preview}/${file?.path}` };
+			}),
+		costs: costs,
+	};
+	useEffect(() => {
+		return () => {
+			//should cleanup on load
+
+			setPrice(0);
+			setCurrencyCode("");
+			setHouseNumber("");
+			setStreet("");
+			setCity("");
+			setState("");
+			setPostalCode("");
+			setNeighborhood("");
+			setCountryCode("");
+			setType(0);
+			setKind(0);
+			setDescription("");
+			setDeposit(0);
+			setEstimatedBills(0);
+			setMinimumStayMonths("");
+			setMaxBookableDays(0);
+			setMoveInWindow(0);
+			setCurrentOccupancy(0);
+			setPets("");
+			setCleaningCommonRoomsIncluded(false);
+			setCleaningPrivateRoomIncluded(false);
+			setPlayMusic("");
+			setSmoking("");
+			setCouple(false);
+			setMinAge(0);
+			setMaxAge(0);
+			setPreferredGender("No Preference");
+			setAlias("");
+			setExternalReference("");
+			setExtraData("");
+			setAllergyFriendly(false);
+			setHousematesGender("");
+			setRegistrationPossible(false);
+			setTenantStatus("Any");
+			setFreePlaces(0);
+			setBedrooms(0);
+			setBedroomFurnished(false);
+			setBedroomSize(0);
+			setBedroomLock(false);
+			setBalconyTerrace("");
+			setBasement("");
+			setBathroom("");
+			setGarden("");
+			setKitchen("");
+			setLivingRoom("");
+			setParking("");
+			setToilet("");
+			setTotalSize(0);
+			setWheelchairAccessible(false);
+			setAirConditioning(false);
+			setBed(false);
+			setCloset(false);
+			setDesk(false);
+			setDishwasher(false);
+			setDryer(false);
+			setInternet(false);
+			setRoomFurniture(false);
+			setTv(false);
+			setWashingMachine(false);
+			setWifi(false);
+			setFlooring("");
+			setHeating("");
+			setKitchenware("");
+			setTypeCalendar(0);
+			setDateFrom("");
+			setDateTo("");
+			setFiles([]);
+			setTypeCost("");
+			setValue(0);
+			setPayableAt("");
+			setPayableBy("");
+			setRefundable(false);
+			setEstimated(false);
+			setMandatory(false);
+			setCosts([]);
+			setWater(false);
+			setGas(false);
+			setElectricity(false);
+			setInternetCost(false);
+		};
+	}, []);
 	return (
 		<section id="admin-side">
 			<Form className="w-100 input-form px-5">
+				<Form.Label className="my-2 w-100 d-flex justify-content-between">
+					<div className="d-flex justify-content-center align-items-center">
+						<h3>Inputs</h3>{" "}
+					</div>
+					<div className="d-flex">
+						<span className="to-enter p-2 mx-1 d-flex justify-content-center align-items-center">
+							{22 - nullChecker(data)}
+						</span>
+						{"  "}
+						<span className="entered p-2 mx-1 d-flex justify-content-center align-items-center">
+							{nullChecker(data)}
+						</span>
+					</div>
+				</Form.Label>
 				<Pricing
 					price={price}
 					setPrice={setPrice}
@@ -351,92 +546,8 @@ const Admin = () => {
 						variant="success"
 						onClick={(e) => {
 							e.preventDefault();
-							insertThis({
-								price: price,
-								currencyCode: currencyCode,
-								address: {
-									housenumber: houseNumber,
-									street: street,
-									city: city,
-									state: state,
-									postalCode: postalCode,
-									neighborhood: neighborhood,
-									countryCode: countryCode,
-								},
-								type: type,
-								kind: kind,
-								description: description,
-								deposit: deposit,
-								estimatedBills: estimatedBills,
-								minimumStayMonths: minimumStayMonths,
-								maxBookableDays: maxBookableDays,
-								moveInWindow: moveInWindow,
-								currentOccupancy: currentOccupancy,
-								rules: {
-									pets: pets,
-									cleaningCommonRoomsIncluded: cleaningCommonRoomsIncluded,
-									cleaningPrivateRoomIncluded: cleaningPrivateRoomIncluded,
-									playMusic: playMusic,
-									smoking: smoking,
-									couple: couple,
-								},
-								minAge: minAge,
-								maxAge: maxAge,
-								preferredGender: preferredGender,
-								alias: alias,
-								externalReference: externalReference,
-								extraData: extraData,
-								facilities: {
-									allergyFriendly: allergyFriendly,
-									housematesGender: housematesGender,
-									registrationPossible: registrationPossible,
-									tenantStatus: tenantStatus,
-									freePlaces: freePlaces,
-									bedrooms: bedrooms,
-									bedroomFurnished: bedroomFurnished,
-									bedroomSize: bedroomSize,
-									bedroomLock: bedroomLock,
-									balconyTerrace: balconyTerrace,
-									basement: basement,
-									bathroom: bathroom,
-									garden: garden,
-									kitchen: kitchen,
-									livingRoom: livingRoom,
-									parking: parking,
-									toilet: toilet,
-									totalSize: totalSize,
-									wheelchairAccessible: wheelchairAccessible,
-									airConditioning: airConditioning,
-									bed: bed,
-									closet: closet,
-									desk: desk,
-									dishwasher: dishwasher,
-									dryer: dryer,
-									internet: internet,
-									roomFurniture: roomFurniture,
-									tv: tv,
-									washingMachine: washingMachine,
-									wifi: wifi,
-									flooring: flooring,
-									heating: heating,
-									kitchenware: kitchenware,
-									additionalCosts: {
-										water: water,
-										gas: gas,
-										electricity: electricity,
-										internet: internet,
-									},
-								},
-								calendarOperations: [
-									{
-										type: typeCalendar,
-										dateFrom: dateFrom,
-										dateTo: dateTo,
-									},
-								],
-								images: files,
-								costs: costs,
-							});
+							setSending(data);
+							insertData(data);
 						}}
 					>
 						Submit

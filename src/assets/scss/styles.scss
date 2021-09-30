@@ -1,4 +1,7 @@
 $primary: #fa7009;
+.btn-primary {
+	color: white !important;
+}
 
 @import ".~bootstrap/scss/bootstrap";
 
@@ -39,13 +42,7 @@ code {
 			max-width: 100px;
 		}
 		nav {
-			width: 70vw;
-			@include media-breakpoint-down(sm) {
-				width: 28vw;
-			}
-			@include media-breakpoint-down(md) {
-				width: 28vw;
-			}
+			position: sticky;
 			.nav-link {
 				width: 10vw;
 			}
@@ -95,6 +92,31 @@ code {
 			width: 100%;
 			height: auto;
 		}
+		#admin-side {
+			.to-enter {
+				background-color: $danger;
+				color: white;
+				border-radius: 50%;
+				width: 3vw;
+				@include media-breakpoint-down(sm) {
+					width: 11vw;
+				}
+				@include media-breakpoint-down(md) {
+					width: 11vw;
+				}
+			}
+			.entered {
+				background-color: $success;
+				color: white;
+				border-radius: 50%;
+				@include media-breakpoint-down(sm) {
+					width: 11vw;
+				}
+				@include media-breakpoint-down(md) {
+					width: 11vw;
+				}
+			}
+		}
 	}
 
 	#admin-side,
@@ -113,9 +135,21 @@ code {
 	}
 	#result-panel {
 		width: 35vw;
+		@include media-breakpoint-down(sm) {
+			width: 100%;
+		}
+		@include media-breakpoint-down(md) {
+			width: 100%;
+		}
 	}
 	#pg-code {
 		width: 20vw;
+		@include media-breakpoint-down(sm) {
+			width: 100%;
+		}
+		@include media-breakpoint-down(md) {
+			width: 100%;
+		}
 	}
 }
 .pricing-text {

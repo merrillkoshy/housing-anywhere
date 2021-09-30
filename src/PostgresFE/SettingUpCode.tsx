@@ -1,9 +1,20 @@
 import React from "react";
+import SendingCommand from "./SendingCommand";
 
-const SettingUpCode = () => {
+const SettingUpCode = ({
+	sending,
+}: {
+	sending: { [key: string]: string | boolean | number | object };
+}) => {
 	return (
 		<section id="pg-code">
-			<div className="d-flex flex-column px-3 col-3 pg-code align-items-left justify-content-center w-100">
+			<div className="d-flex flex-column px-3 col-3 pg-code align-items-left justify-content-center w-100 mt-3">
+				<img
+					src="https://www.postgresql.org/media/img/about/press/elephant.png"
+					width="50"
+					height="50"
+					alt={"pg-logo"}
+				/>
 				<header>The Postgres Side of it</header>
 				<details>
 					<summary>Creation Commands</summary>
@@ -125,6 +136,9 @@ const SettingUpCode = () => {
 						returning id;
 					</code>
 				</details>
+			</div>
+			<div className="d-flex align-items-left px-3 mt-5 flex-column">
+				<SendingCommand sending={sending} />
 			</div>
 		</section>
 	);
