@@ -26,7 +26,7 @@ const Result = () => {
 	}, []);
 
 	const getter = () => {
-		axios.get("http://localhost:3001/listing").then((response) => {
+		axios.get("https://ha-server.herokuapp.com/listing").then((response) => {
 			const sanitized = sanitizeListings(response.data);
 			console.log(sanitized);
 			setListing(sanitized);

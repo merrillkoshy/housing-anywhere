@@ -8,6 +8,6 @@ const insertData = (data:HAData) => {
 console.log(obs,i)
     })
 
-    axios.post( "http://localhost:3001/listing", data ).then( res => { console.log(res)})
+    axios.post( "https://ha-server.herokuapp.com/listing", data ).then( res => { console.log(res)})
 }
 export default insertData;
