@@ -3,13 +3,18 @@
 ## A Full Stack Developer
 
 The project is to show(case) the deliverables of Merrill's Full Stack development capabilities for HA. The tech stack will be:
-FE: React TypeScript
-BE: NodeJS
-DB: Postgres
-CI/CD: TBD (Probably GCP)
 
-- The reviewer can understand the DDD, BDD & TDD in the project.
-- Should be able to show the backend operations done to achieve a result on the frontend succesfully to the reviewer.
+- FE: React TypeScript
+- BE: NodeJS
+- DB: Postgres
+  (from Sep 30)
+- CI/CD: Google Cloud Build, Github, Heroku
+- FE Deployed on : Google Cloud Platform (App Engine)
+- BE Deployed on : Heroku
+- DB Deployed as Heroku-Postgres service
+
+* The reviewer can understand the DDD, BDD & TDD in the project.
+* Should be able to show the backend operations done to achieve a result on the frontend succesfully to the reviewer.
 
 ### Story Time
 
