@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Accordion, Form, Card, Button } from "react-bootstrap";
+import { v4 as uuidv4 } from "uuid";
 import insertData from "../../components/apiCalls";
 import { Costs } from "../../components/dataInterfaces";
 import nullChecker from "../../components/nullChecker";
@@ -115,6 +116,7 @@ const Admin = ({
 	const [internetCost, setInternetCost] = useState(false);
 	//data packet
 	const data = {
+		id: uuidv4(),
 		price: price,
 		currencyCode: currencyCode,
 		address: {

@@ -109,6 +109,7 @@ code {
 				background-color: $success;
 				color: white;
 				border-radius: 50%;
+				width: 3vw;
 				@include media-breakpoint-down(sm) {
 					width: 11vw;
 				}

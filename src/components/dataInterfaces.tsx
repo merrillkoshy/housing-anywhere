@@ -79,6 +79,7 @@ export interface CalendarOperations {
 	dateTo: string;
 }
 export interface HAData {
+	id?: string | number;
 	price: number;
 	currencyCode: string;
 	address: Address;

@@ -32,7 +32,7 @@ app.get("/listing", (req, res) => {
 });
 
 app.post("/listing", async (req, res) => {
-	createListing(req.body)
+	createListing(req, res)
 		.then((response) => {
 			res.status(200).json(response);
 		})
