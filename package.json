@@ -34,16 +34,14 @@
 		"web-vitals": "^1.0.1"
 	},
 	"scripts": {
-		"fe": "react-scripts start",
-		"be": "node src/server.js",
-		"start": "yarn run fe & yarn run be",
+		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"test:coverage": "react-scripts test --coverage --runInBand --watchAll=false",
 		"eject": "react-scripts eject",
 		"postinstall": "node fix.js"
 	},
-	"proxy": "http://localhost:3001",
+	"proxy": "https://ha-server.herokuapp.com/",
 	"jest": {
 		"collectCoverageFrom": [
 			"src/**/*.{js,jsx,ts,tsx}",
