@@ -81,7 +81,7 @@ const SettingUpCode = ({
 							</p>
 						</details>
 						<br></br>
-						CREATE TYPE Images AS( url VARCHAR(30) );
+						CREATE TYPE Images AS( url VARCHAR(70) );
 						<br></br>
 						<details>
 							<summary>CREATE TYPE CalendarOperations AS</summary>
@@ -96,14 +96,14 @@ const SettingUpCode = ({
 							<p>
 								CREATE TABLE hadata( id serial PRIMARY KEY, price NUMERIC,
 								currencyCode VARCHAR(20), address Address, type NUMERIC, kind
-								NUMERIC, description VARCHAR(20), deposit NUMERIC,
+								NUMERIC, description VARCHAR(200), deposit NUMERIC,
 								estimatedBills NUMERIC, minimumStayMonths VARCHAR(20),
 								maxBookableDays NUMERIC, moveInWindow NUMERIC, currentOccupancy
 								NUMERIC, rules Rules, minAge NUMERIC, maxAge NUMERIC,
 								preferredGender VARCHAR(20), alias VARCHAR(20),
-								externalReference VARCHAR(20), extraData VARCHAR(20), facilities
-								Facilities, calendarOperations CalendarOperations[], images
-								Images[], costs Costs[] );
+								externalReference VARCHAR(100), extraData VARCHAR(100),
+								facilities Facilities, calendarOperations CalendarOperations[],
+								images Images[], costs Costs[] );
 							</p>
 						</details>
 					</code>
@@ -119,12 +119,9 @@ const SettingUpCode = ({
 						'56700'::numeric, 'EUR'::character varying,
 						'("81A","Oostplein","Rotterdam", "South-Holland","3071VN","Oostplein
 						Metro Station", "NL")','1'::numeric, '1'::numeric, 'Centrally
-						located apartment, very close to public transport and supermarkets.
-						It comes with a fully equipped kitchen with all cooking, cleaning
-						appliances. Registration is possible. There is a parking spot
-						directly in front of the building.'::text, '24000'::numeric,
-						'15000'::numeric, '26'::character varying, '30'::numeric,
-						'30'::numeric, '2'::numeric,
+						located apartment, very close to public transport and
+						supermarkets.'::text, '24000'::numeric, '15000'::numeric,
+						'26'::character varying, '30'::numeric, '30'::numeric, '2'::numeric,
 						'("no",true,true,"no","no","yes")'::rules,'23'::numeric,
 						'male'::character varying, 'the-left-room'::character varying,
 						'any-identifier'::character
@@ -132,7 +129,7 @@ const SettingUpCode = ({
 						varying,
 						'(false,"boys",false,"working",3,3,false,60,true,"no","no","no","no","no","no","no","no",80,true,true,true,true,true,true,true,true,true,true,true,true,"laminate","na","no","(t,t,t,t)")'::facilities,
 						ARRAY['(1,"2019-05-29","2020-07-29")']::calendaroperations[],
-						ARRAY['("https://via.placeholder.com/300")']::images[],ARRAY['("security-deposit","8000","move-in","tenant",true,false,true)']::costs[])
+						ARRAY['("https://picsum.photos/300/300")']::images[],ARRAY['("security-deposit","8000","move-in","tenant",true,false,true)']::costs[])
 						returning id;
 					</code>
 				</details>
