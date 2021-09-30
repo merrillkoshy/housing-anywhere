@@ -2,20 +2,33 @@ import React, { useState } from "react";
 import { Form, Col, Row } from "react-bootstrap";
 import Switch from "react-switch";
 
-const Rules = () => {
-	const [pets, setPets] = useState("");
-	const [
-		cleaningCommonRoomsIncluded,
-		setCleaningCommonRoomsIncluded,
-	] = useState(false);
-	const [
-		cleaningPrivateRoomIncluded,
-		setCleaningPrivateRoomIncluded,
-	] = useState(false);
-	const [playMusic, setPlayMusic] = useState("");
-	const [smoking, setSmoking] = useState("");
-	const [couple, setCouple] = useState(false);
-
+const Rules = ({
+	pets,
+	setPets,
+	cleaningCommonRoomsIncluded,
+	setCleaningCommonRoomsIncluded,
+	cleaningPrivateRoomIncluded,
+	setCleaningPrivateRoomIncluded,
+	playMusic,
+	setPlayMusic,
+	smoking,
+	setSmoking,
+	couple,
+	setCouple,
+}: {
+	pets: string;
+	setPets: React.Dispatch<React.SetStateAction<string>>;
+	cleaningCommonRoomsIncluded: boolean;
+	setCleaningCommonRoomsIncluded: React.Dispatch<React.SetStateAction<boolean>>;
+	cleaningPrivateRoomIncluded: boolean;
+	setCleaningPrivateRoomIncluded: React.Dispatch<React.SetStateAction<boolean>>;
+	playMusic: string;
+	setPlayMusic: React.Dispatch<React.SetStateAction<string>>;
+	smoking: string;
+	setSmoking: React.Dispatch<React.SetStateAction<string>>;
+	couple: boolean;
+	setCouple: React.Dispatch<React.SetStateAction<boolean>>;
+}) => {
 	return (
 		<>
 			<Form.Group className="mb-3">

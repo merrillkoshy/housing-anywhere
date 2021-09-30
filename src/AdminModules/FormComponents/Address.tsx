@@ -1,14 +1,37 @@
-import React, { useState } from "react";
+import React, { SetStateAction, useState } from "react";
 import { Form } from "react-bootstrap";
 
-const Address = () => {
-	const [houseNumber, setHouseNumber] = useState<string>("");
-	const [street, setStreet] = useState<string>("");
-	const [city, setCity] = useState<string>("");
-	const [state, setState] = useState<string>("");
-	const [postalCode, setPostalCode] = useState<string>("");
-	const [neighborhood, setNeighborhood] = useState<string>("");
-	const [countryCode, setCountryCode] = useState("");
+const Address = ({
+	houseNumber,
+	setHouseNumber,
+	street,
+	setStreet,
+	city,
+	setCity,
+	state,
+	setState,
+	postalCode,
+	setPostalCode,
+	neighborhood,
+	setNeighborhood,
+	countryCode,
+	setCountryCode,
+}: {
+	houseNumber: string;
+	setHouseNumber: React.Dispatch<SetStateAction<string>>;
+	street: string;
+	setStreet: React.Dispatch<SetStateAction<string>>;
+	city: string;
+	setCity: React.Dispatch<SetStateAction<string>>;
+	state: string;
+	setState: React.Dispatch<SetStateAction<string>>;
+	postalCode: string;
+	setPostalCode: React.Dispatch<SetStateAction<string>>;
+	neighborhood: string;
+	setNeighborhood: React.Dispatch<SetStateAction<string>>;
+	countryCode: string;
+	setCountryCode: React.Dispatch<SetStateAction<string>>;
+}) => {
 	return (
 		<>
 			<Form.Group className="mb-3">

@@ -1,11 +1,23 @@
 import React, { useState } from "react";
 import { Form, Dropdown } from "react-bootstrap";
 
-const CalendarOperations = () => {
-	const [type, setType] = useState(0);
+const CalendarOperations = ({
+	type,
+	setType,
+	dateFrom,
+	setDateFrom,
+	dateTo,
+	setDateTo,
+}: {
+	type: number;
+	setType: React.Dispatch<React.SetStateAction<number>>;
+	dateFrom: string;
+	setDateFrom: React.Dispatch<React.SetStateAction<string>>;
+	dateTo: string;
+	setDateTo: React.Dispatch<React.SetStateAction<string>>;
+}) => {
 	const [asType, selectType] = useState("");
-	const [dateFrom, setDateFrom] = useState("");
-	const [dateTo, setDateTo] = useState("");
+
 	return (
 		<>
 			<Form.Group className="mb-3">

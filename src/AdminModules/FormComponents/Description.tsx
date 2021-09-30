@@ -1,18 +1,48 @@
 import React, { useState } from "react";
 import { Dropdown, Form } from "react-bootstrap";
 
-const Description = () => {
-	const [type, setType] = useState(0);
+const Description = ({
+	type,
+	setType,
+	kind,
+	setKind,
+	description,
+	setDescription,
+	deposit,
+	setDeposit,
+	estimatedBills,
+	setEstimatedBills,
+	minimumStayMonths,
+	setMinimumStayMonths,
+	maxBookableDays,
+	setMaxBookableDays,
+	moveInWindow,
+	setMoveInWindow,
+	currentOccupancy,
+	setCurrentOccupancy,
+}: {
+	type: number;
+	setType: React.Dispatch<React.SetStateAction<number>>;
+	kind: number;
+	setKind: React.Dispatch<React.SetStateAction<number>>;
+	description: string;
+	setDescription: React.Dispatch<React.SetStateAction<string>>;
+	deposit: number;
+	setDeposit: React.Dispatch<React.SetStateAction<number>>;
+	estimatedBills: number;
+	setEstimatedBills: React.Dispatch<React.SetStateAction<number>>;
+	minimumStayMonths: string;
+	setMinimumStayMonths: React.Dispatch<React.SetStateAction<string>>;
+	maxBookableDays: number;
+	setMaxBookableDays: React.Dispatch<React.SetStateAction<number>>;
+	moveInWindow: number;
+	setMoveInWindow: React.Dispatch<React.SetStateAction<number>>;
+	currentOccupancy: number;
+	setCurrentOccupancy: React.Dispatch<React.SetStateAction<number>>;
+}) => {
 	const [asType, selectedType] = useState("--");
-	const [kind, setKind] = useState(0);
 	const [asKind, selectKind] = useState("--");
-	const [description, setDescription] = useState("");
-	const [deposit, setDeposit] = useState(0);
-	const [estimatedBills, setEstimatedBills] = useState(0);
-	const [minimumStayMonths, setMinimumStayMonths] = useState("");
-	const [maxBookableDays, setMaxBookableDays] = useState(0);
-	const [moveInWindow, setMoveInWindow] = useState(0);
-	const [currentOccupancy, setCurrentOccupancy] = useState(0);
+
 	return (
 		<>
 			<Form.Group className="mb-3">

@@ -2,12 +2,25 @@ import React, { useState } from "react";
 import { Form, Col, Row } from "react-bootstrap";
 import Switch from "react-switch";
 
-const AdditionalCosts = () => {
-	const [water, setWater] = useState(false);
-	const [gas, setGas] = useState(false);
-	const [electricity, setElectricity] = useState(false);
-	const [internet, setInternet] = useState(false);
-
+const AdditionalCosts = ({
+	water,
+	setWater,
+	gas,
+	setGas,
+	electricity,
+	setElectricity,
+	internet,
+	setInternet,
+}: {
+	water: boolean;
+	setWater: React.Dispatch<React.SetStateAction<boolean>>;
+	gas: boolean;
+	setGas: React.Dispatch<React.SetStateAction<boolean>>;
+	electricity: boolean;
+	setElectricity: React.Dispatch<React.SetStateAction<boolean>>;
+	internet: boolean;
+	setInternet: React.Dispatch<React.SetStateAction<boolean>>;
+}) => {
 	return (
 		<>
 			<Form.Group as={Row} className="mb-3">

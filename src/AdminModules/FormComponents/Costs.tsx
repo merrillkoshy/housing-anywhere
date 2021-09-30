@@ -1,16 +1,43 @@
 import React, { useState } from "react";
 import { Form, Col, Row, Dropdown, Button } from "react-bootstrap";
 import Switch from "react-switch";
+import { Costs } from "../../components/dataInterfaces";
 
-const Costs = () => {
-	const [type, setType] = useState("");
-	const [value, setValue] = useState(0);
-	const [payableAt, setPayableAt] = useState("");
-	const [payableBy, setPayableBy] = useState("");
-	const [refundable, setRefundable] = useState(false);
-	const [estimated, setEstimated] = useState(false);
-	const [mandatory, setMandatory] = useState(false);
-	const [costs, setCosts] = useState<object[]>([]);
+const CostsComponent = ({
+	type,
+	setType,
+	value,
+	setValue,
+	payableAt,
+	setPayableAt,
+	payableBy,
+	setPayableBy,
+	refundable,
+	setRefundable,
+	estimated,
+	setEstimated,
+	mandatory,
+	setMandatory,
+	costs,
+	setCosts,
+}: {
+	type: string;
+	setType: React.Dispatch<React.SetStateAction<string>>;
+	value: number;
+	setValue: React.Dispatch<React.SetStateAction<number>>;
+	payableAt: string;
+	setPayableAt: React.Dispatch<React.SetStateAction<string>>;
+	payableBy: string;
+	setPayableBy: React.Dispatch<React.SetStateAction<string>>;
+	refundable: boolean;
+	setRefundable: React.Dispatch<React.SetStateAction<boolean>>;
+	estimated: boolean;
+	setEstimated: React.Dispatch<React.SetStateAction<boolean>>;
+	mandatory: boolean;
+	setMandatory: React.Dispatch<React.SetStateAction<boolean>>;
+	costs: object[];
+	setCosts: React.Dispatch<React.SetStateAction<Costs[]>>;
+}) => {
 	return (
 		<>
 			<Form.Group className="mb-3">
@@ -353,4 +380,4 @@ const Costs = () => {
 		</>
 	);
 };
-export default Costs;
+export default CostsComponent;

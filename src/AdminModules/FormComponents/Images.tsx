@@ -3,8 +3,13 @@ import { useDropzone } from "react-dropzone";
 import { Form, Button } from "react-bootstrap";
 import { styles } from "./image-dropzone-styles";
 
-const Images = () => {
-	const [files, setFiles] = useState([]);
+const Images = ({
+	files,
+	setFiles,
+}: {
+	files: any;
+	setFiles: React.Dispatch<React.SetStateAction<any>>;
+}) => {
 	const onDrop = useCallback((acceptedFiles) => {
 		setFiles(
 			acceptedFiles.map((file: any) =>

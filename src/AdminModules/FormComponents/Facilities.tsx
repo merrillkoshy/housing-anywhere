@@ -3,41 +3,159 @@ import { Form, Col, Row, Dropdown } from "react-bootstrap";
 import Switch from "react-switch";
 import AdditionalCosts from "./AdditionalCosts";
 
-const Facilities = () => {
-	const [allergyFriendly, setAllergyFriendly] = useState(false);
-	const [housematesGender, setHousematesGender] = useState("");
-	const [registrationPossible, setRegistrationPossible] = useState(false);
-	const [tenantStatus, setTenantStatus] = useState("Any");
-	const [freePlaces, setFreePlaces] = useState(0);
-	const [bedrooms, setBedrooms] = useState(0);
-	const [bedroomFurnished, setBedroomFurnished] = useState(false);
-	const [bedroomSize, setBedroomSize] = useState(0);
-	const [bedroomLock, setBedroomLock] = useState(false);
-	const [balconyTerrace, setBalconyTerrace] = useState("");
-	const [basement, setBasement] = useState("");
-	const [bathroom, setBathroom] = useState("");
-	const [garden, setGarden] = useState("");
-	const [kitchen, setKitchen] = useState("");
-	const [livingRoom, setLivingRoom] = useState("");
-	const [parking, setParking] = useState("");
-	const [toilet, setToilet] = useState("");
-	const [totalSize, setTotalSize] = useState(0);
-	const [wheelchairAccessible, setWheelchairAccessible] = useState(false);
-	const [airConditioning, setAirConditioning] = useState(false);
-	const [bed, setBed] = useState(false);
-	const [closet, setCloset] = useState(false);
-	const [desk, setDesk] = useState(false);
-	const [dishwasher, setDishwasher] = useState(false);
-	const [dryer, setDryer] = useState(false);
-	const [internet, setInternet] = useState(false);
-	const [roomFurniture, setRoomFurniture] = useState(false);
-	const [tv, setTv] = useState(false);
-	const [washingMachine, setWashingMachine] = useState(false);
-	const [wifi, setWifi] = useState(false);
-	const [flooring, setFlooring] = useState("");
-	const [heating, setHeating] = useState("");
-	const [kitchenware, setKitchenware] = useState("");
-
+const Facilities = ({
+	allergyFriendly,
+	setAllergyFriendly,
+	housematesGender,
+	setHousematesGender,
+	registrationPossible,
+	setRegistrationPossible,
+	tenantStatus,
+	setTenantStatus,
+	freePlaces,
+	setFreePlaces,
+	bedrooms,
+	setBedrooms,
+	bedroomFurnished,
+	setBedroomFurnished,
+	bedroomSize,
+	setBedroomSize,
+	bedroomLock,
+	setBedroomLock,
+	balconyTerrace,
+	setBalconyTerrace,
+	basement,
+	setBasement,
+	bathroom,
+	setBathroom,
+	garden,
+	setGarden,
+	kitchen,
+	setKitchen,
+	livingRoom,
+	setLivingRoom,
+	parking,
+	setParking,
+	toilet,
+	setToilet,
+	totalSize,
+	setTotalSize,
+	wheelchairAccessible,
+	setWheelchairAccessible,
+	airConditioning,
+	setAirConditioning,
+	bed,
+	setBed,
+	closet,
+	setCloset,
+	desk,
+	setDesk,
+	dishwasher,
+	setDishwasher,
+	dryer,
+	setDryer,
+	internet,
+	setInternet,
+	roomFurniture,
+	setRoomFurniture,
+	tv,
+	setTv,
+	washingMachine,
+	setWashingMachine,
+	wifi,
+	setWifi,
+	flooring,
+	setFlooring,
+	heating,
+	setHeating,
+	kitchenware,
+	setKitchenware,
+	//addl
+	water,
+	setWater,
+	gas,
+	setGas,
+	electricity,
+	setElectricity,
+	internetCost,
+	setInternetCost,
+}: {
+	allergyFriendly: boolean;
+	setAllergyFriendly: React.Dispatch<React.SetStateAction<boolean>>;
+	housematesGender: string;
+	setHousematesGender: React.Dispatch<React.SetStateAction<string>>;
+	registrationPossible: boolean;
+	setRegistrationPossible: React.Dispatch<React.SetStateAction<boolean>>;
+	tenantStatus: string;
+	setTenantStatus: React.Dispatch<React.SetStateAction<string>>;
+	freePlaces: number;
+	setFreePlaces: React.Dispatch<React.SetStateAction<number>>;
+	bedrooms: number;
+	setBedrooms: React.Dispatch<React.SetStateAction<number>>;
+	bedroomFurnished: boolean;
+	setBedroomFurnished: React.Dispatch<React.SetStateAction<boolean>>;
+	bedroomSize: number;
+	setBedroomSize: React.Dispatch<React.SetStateAction<number>>;
+	bedroomLock: boolean;
+	setBedroomLock: React.Dispatch<React.SetStateAction<boolean>>;
+	balconyTerrace: string;
+	setBalconyTerrace: React.Dispatch<React.SetStateAction<string>>;
+	basement: string;
+	setBasement: React.Dispatch<React.SetStateAction<string>>;
+	bathroom: string;
+	setBathroom: React.Dispatch<React.SetStateAction<string>>;
+	garden: string;
+	setGarden: React.Dispatch<React.SetStateAction<string>>;
+	kitchen: string;
+	setKitchen: React.Dispatch<React.SetStateAction<string>>;
+	livingRoom: string;
+	setLivingRoom: React.Dispatch<React.SetStateAction<string>>;
+	parking: string;
+	setParking: React.Dispatch<React.SetStateAction<string>>;
+	toilet: string;
+	setToilet: React.Dispatch<React.SetStateAction<string>>;
+	totalSize: number;
+	setTotalSize: React.Dispatch<React.SetStateAction<number>>;
+	wheelchairAccessible: boolean;
+	setWheelchairAccessible: React.Dispatch<React.SetStateAction<boolean>>;
+	airConditioning: boolean;
+	setAirConditioning: React.Dispatch<React.SetStateAction<boolean>>;
+	bed: boolean;
+	setBed: React.Dispatch<React.SetStateAction<boolean>>;
+	closet: boolean;
+	setCloset: React.Dispatch<React.SetStateAction<boolean>>;
+	desk: boolean;
+	setDesk: React.Dispatch<React.SetStateAction<boolean>>;
+	dishwasher: boolean;
+	setDishwasher: React.Dispatch<React.SetStateAction<boolean>>;
+	dryer: boolean;
+	setDryer: React.Dispatch<React.SetStateAction<boolean>>;
+	internet: boolean;
+	setInternet: React.Dispatch<React.SetStateAction<boolean>>;
+	roomFurniture: boolean;
+	setRoomFurniture: React.Dispatch<React.SetStateAction<boolean>>;
+	tv: boolean;
+	setTv: React.Dispatch<React.SetStateAction<boolean>>;
+	washingMachine: boolean;
+	setWashingMachine: React.Dispatch<React.SetStateAction<boolean>>;
+	wifi: boolean;
+	setWifi: React.Dispatch<React.SetStateAction<boolean>>;
+	flooring: string;
+	setFlooring: React.Dispatch<React.SetStateAction<string>>;
+	heating: string;
+	setHeating: React.Dispatch<React.SetStateAction<string>>;
+	kitchenware: string;
+	setKitchenware: React.Dispatch<React.SetStateAction<string>>;
+	//addl
+	water: boolean;
+	setWater: React.Dispatch<React.SetStateAction<boolean>>;
+	gas: boolean;
+	setGas: React.Dispatch<React.SetStateAction<boolean>>;
+	electricity: boolean;
+	setElectricity: React.Dispatch<React.SetStateAction<boolean>>;
+	internetCost: boolean;
+	setInternetCost: React.Dispatch<React.SetStateAction<boolean>>;
+}) => {
 	return (
 		<>
 			<Form.Group as={Row} className="mb-3">
@@ -823,7 +941,16 @@ const Facilities = () => {
 					</Dropdown.Menu>
 				</Dropdown>
 			</Form.Group>
-			<AdditionalCosts />
+			<AdditionalCosts
+				water={water}
+				setWater={setWater}
+				gas={gas}
+				setGas={setGas}
+				electricity={electricity}
+				setElectricity={setElectricity}
+				internet={internetCost}
+				setInternet={setInternetCost}
+			/>
 		</>
 	);
 };

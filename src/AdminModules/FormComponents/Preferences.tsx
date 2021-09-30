@@ -1,15 +1,33 @@
 import React, { useState } from "react";
 import { Form, Dropdown } from "react-bootstrap";
 
-const Preferences = () => {
-	const [minAge, setMinAge] = useState(0);
-	const [maxAge, setMaxAge] = useState(0);
-	const [preferredGender, setPreferredGender] = useState("No Preference");
-
-	const [alias, setAlias] = useState("");
-	const [externalReference, setExternalReference] = useState("");
-	const [extraData, setExtraData] = useState("");
-
+const Preferences = ({
+	minAge,
+	setMinAge,
+	maxAge,
+	setMaxAge,
+	preferredGender,
+	setPreferredGender,
+	alias,
+	setAlias,
+	externalReference,
+	setExternalReference,
+	extraData,
+	setExtraData,
+}: {
+	minAge: number;
+	setMinAge: React.Dispatch<React.SetStateAction<number>>;
+	maxAge: number;
+	setMaxAge: React.Dispatch<React.SetStateAction<number>>;
+	preferredGender: string;
+	setPreferredGender: React.Dispatch<React.SetStateAction<string>>;
+	alias: string;
+	setAlias: React.Dispatch<React.SetStateAction<string>>;
+	externalReference: string;
+	setExternalReference: React.Dispatch<React.SetStateAction<string>>;
+	extraData: string;
+	setExtraData: React.Dispatch<React.SetStateAction<string>>;
+}) => {
 	return (
 		<>
 			<Form.Group className="mb-3">
