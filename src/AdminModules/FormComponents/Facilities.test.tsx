@@ -1,9 +1,160 @@
-import React from "react";
+import React, { SetStateAction } from "react";
 import { shallow } from "enzyme";
 import Facilities from "./Facilities";
 
 describe("FacilitiesModule module", () => {
-	const FacilitiesModule = shallow(<Facilities />);
+	const FacilitiesModule = shallow(
+		<Facilities
+			allergyFriendly={false}
+			setAllergyFriendly={function(value: SetStateAction<boolean>): void {
+				throw new Error("Function not implemented.");
+			}}
+			housematesGender={""}
+			setHousematesGender={function(value: SetStateAction<string>): void {
+				throw new Error("Function not implemented.");
+			}}
+			registrationPossible={false}
+			setRegistrationPossible={function(value: SetStateAction<boolean>): void {
+				throw new Error("Function not implemented.");
+			}}
+			tenantStatus={""}
+			setTenantStatus={function(value: SetStateAction<string>): void {
+				throw new Error("Function not implemented.");
+			}}
+			freePlaces={0}
+			setFreePlaces={function(value: SetStateAction<number>): void {
+				throw new Error("Function not implemented.");
+			}}
+			bedrooms={0}
+			setBedrooms={function(value: SetStateAction<number>): void {
+				throw new Error("Function not implemented.");
+			}}
+			bedroomFurnished={false}
+			setBedroomFurnished={function(value: SetStateAction<boolean>): void {
+				throw new Error("Function not implemented.");
+			}}
+			bedroomSize={0}
+			setBedroomSize={function(value: SetStateAction<number>): void {
+				throw new Error("Function not implemented.");
+			}}
+			bedroomLock={false}
+			setBedroomLock={function(value: SetStateAction<boolean>): void {
+				throw new Error("Function not implemented.");
+			}}
+			balconyTerrace={""}
+			setBalconyTerrace={function(value: SetStateAction<string>): void {
+				throw new Error("Function not implemented.");
+			}}
+			basement={""}
+			setBasement={function(value: SetStateAction<string>): void {
+				throw new Error("Function not implemented.");
+			}}
+			bathroom={""}
+			setBathroom={function(value: SetStateAction<string>): void {
+				throw new Error("Function not implemented.");
+			}}
+			garden={""}
+			setGarden={function(value: SetStateAction<string>): void {
+				throw new Error("Function not implemented.");
+			}}
+			kitchen={""}
+			setKitchen={function(value: SetStateAction<string>): void {
+				throw new Error("Function not implemented.");
+			}}
+			livingRoom={""}
+			setLivingRoom={function(value: SetStateAction<string>): void {
+				throw new Error("Function not implemented.");
+			}}
+			parking={""}
+			setParking={function(value: SetStateAction<string>): void {
+				throw new Error("Function not implemented.");
+			}}
+			toilet={""}
+			setToilet={function(value: SetStateAction<string>): void {
+				throw new Error("Function not implemented.");
+			}}
+			totalSize={0}
+			setTotalSize={function(value: SetStateAction<number>): void {
+				throw new Error("Function not implemented.");
+			}}
+			wheelchairAccessible={false}
+			setWheelchairAccessible={function(value: SetStateAction<boolean>): void {
+				throw new Error("Function not implemented.");
+			}}
+			airConditioning={false}
+			setAirConditioning={function(value: SetStateAction<boolean>): void {
+				throw new Error("Function not implemented.");
+			}}
+			bed={false}
+			setBed={function(value: SetStateAction<boolean>): void {
+				throw new Error("Function not implemented.");
+			}}
+			closet={false}
+			setCloset={function(value: SetStateAction<boolean>): void {
+				throw new Error("Function not implemented.");
+			}}
+			desk={false}
+			setDesk={function(value: SetStateAction<boolean>): void {
+				throw new Error("Function not implemented.");
+			}}
+			dishwasher={false}
+			setDishwasher={function(value: SetStateAction<boolean>): void {
+				throw new Error("Function not implemented.");
+			}}
+			dryer={false}
+			setDryer={function(value: SetStateAction<boolean>): void {
+				throw new Error("Function not implemented.");
+			}}
+			internet={false}
+			setInternet={function(value: SetStateAction<boolean>): void {
+				throw new Error("Function not implemented.");
+			}}
+			roomFurniture={false}
+			setRoomFurniture={function(value: SetStateAction<boolean>): void {
+				throw new Error("Function not implemented.");
+			}}
+			tv={false}
+			setTv={function(value: SetStateAction<boolean>): void {
+				throw new Error("Function not implemented.");
+			}}
+			washingMachine={false}
+			setWashingMachine={function(value: SetStateAction<boolean>): void {
+				throw new Error("Function not implemented.");
+			}}
+			wifi={false}
+			setWifi={function(value: SetStateAction<boolean>): void {
+				throw new Error("Function not implemented.");
+			}}
+			flooring={""}
+			setFlooring={function(value: SetStateAction<string>): void {
+				throw new Error("Function not implemented.");
+			}}
+			heating={""}
+			setHeating={function(value: SetStateAction<string>): void {
+				throw new Error("Function not implemented.");
+			}}
+			kitchenware={""}
+			setKitchenware={function(value: SetStateAction<string>): void {
+				throw new Error("Function not implemented.");
+			}}
+			water={false}
+			setWater={function(value: SetStateAction<boolean>): void {
+				throw new Error("Function not implemented.");
+			}}
+			gas={false}
+			setGas={function(value: SetStateAction<boolean>): void {
+				throw new Error("Function not implemented.");
+			}}
+			electricity={false}
+			setElectricity={function(value: SetStateAction<boolean>): void {
+				throw new Error("Function not implemented.");
+			}}
+			internetCost={false}
+			setInternetCost={function(value: SetStateAction<boolean>): void {
+				throw new Error("Function not implemented.");
+			}}
+		/>
+	);
 	it("renders", () => {
 		expect(FacilitiesModule).toMatchSnapshot();
 	});

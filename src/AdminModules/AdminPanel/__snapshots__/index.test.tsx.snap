@@ -1,154 +1,367 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Admin panel renders 1`] = `
-<Form
-  className="w-100 input-form px-5"
-  inline={false}
+<section
+  id="admin-side"
 >
-  <Pricing />
-  <Accordion
-    defaultActiveKey="0"
+  <Form
+    className="w-100 input-form p-5"
+    inline={false}
   >
-    <Card
-      body={false}
+    <FormLabel
+      className="my-2 w-100 d-flex justify-content-between"
+      column={false}
+      srOnly={false}
     >
-      <ForwardRef
-        as={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "defaultProps": undefined,
-            "render": [Function],
-          }
-        }
-        eventKey="0"
+      <div
+        className="d-flex justify-content-center align-items-center"
       >
-        Address
-      </ForwardRef>
-      <AccordionCollapse
-        eventKey="0"
+        <h3>
+          Inputs
+        </h3>
+         
+      </div>
+      <div
+        className="d-flex"
       >
-        <CardBody>
-          <Address />
-        </CardBody>
-      </AccordionCollapse>
-    </Card>
-    <Description />
-    <Card
-      body={false}
+        <span
+          className="to-enter p-2 mx-1 d-flex justify-content-center align-items-center"
+        >
+          19
+        </span>
+          
+        <span
+          className="entered p-2 mx-1 d-flex justify-content-center align-items-center"
+        >
+          3
+        </span>
+      </div>
+    </FormLabel>
+    <Pricing
+      currencyCode=""
+      price={0}
+      setCurrencyCode={[Function]}
+      setPrice={[Function]}
+    />
+    <Accordion
+      defaultActiveKey="0"
     >
-      <ForwardRef
-        as={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "defaultProps": undefined,
-            "render": [Function],
+      <Card
+        body={false}
+      >
+        <ForwardRef
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": undefined,
+              "render": [Function],
+            }
           }
-        }
-        eventKey="1"
+          eventKey="0"
+        >
+          Address
+        </ForwardRef>
+        <AccordionCollapse
+          eventKey="0"
+        >
+          <CardBody>
+            <Address
+              city=""
+              countryCode=""
+              houseNumber=""
+              neighborhood=""
+              postalCode=""
+              setCity={[Function]}
+              setCountryCode={[Function]}
+              setHouseNumber={[Function]}
+              setNeighborhood={[Function]}
+              setPostalCode={[Function]}
+              setState={[Function]}
+              setStreet={[Function]}
+              state=""
+              street=""
+            />
+          </CardBody>
+        </AccordionCollapse>
+      </Card>
+      <Description
+        currentOccupancy={0}
+        deposit={0}
+        description=""
+        estimatedBills={0}
+        kind={0}
+        maxBookableDays={0}
+        minimumStayMonths=""
+        moveInWindow={0}
+        setCurrentOccupancy={[Function]}
+        setDeposit={[Function]}
+        setDescription={[Function]}
+        setEstimatedBills={[Function]}
+        setKind={[Function]}
+        setMaxBookableDays={[Function]}
+        setMinimumStayMonths={[Function]}
+        setMoveInWindow={[Function]}
+        setType={[Function]}
+        type={0}
+      />
+      <Card
+        body={false}
       >
-        Rules
-      </ForwardRef>
-      <AccordionCollapse
-        eventKey="1"
+        <ForwardRef
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": undefined,
+              "render": [Function],
+            }
+          }
+          eventKey="1"
+        >
+          Rules
+        </ForwardRef>
+        <AccordionCollapse
+          eventKey="1"
+        >
+          <CardBody>
+            <Rules
+              cleaningCommonRoomsIncluded={false}
+              cleaningPrivateRoomIncluded={false}
+              couple={false}
+              pets=""
+              playMusic=""
+              setCleaningCommonRoomsIncluded={[Function]}
+              setCleaningPrivateRoomIncluded={[Function]}
+              setCouple={[Function]}
+              setPets={[Function]}
+              setPlayMusic={[Function]}
+              setSmoking={[Function]}
+              smoking=""
+            />
+          </CardBody>
+        </AccordionCollapse>
+      </Card>
+      <Preferences
+        alias=""
+        externalReference=""
+        extraData=""
+        maxAge={0}
+        minAge={0}
+        preferredGender="No Preference"
+        setAlias={[Function]}
+        setExternalReference={[Function]}
+        setExtraData={[Function]}
+        setMaxAge={[Function]}
+        setMinAge={[Function]}
+        setPreferredGender={[Function]}
+      />
+      <Card
+        body={false}
       >
-        <CardBody>
-          <Rules />
-        </CardBody>
-      </AccordionCollapse>
-    </Card>
-    <Preferences />
-    <Card
-      body={false}
+        <ForwardRef
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": undefined,
+              "render": [Function],
+            }
+          }
+          eventKey="2"
+        >
+          Facilities
+        </ForwardRef>
+        <AccordionCollapse
+          eventKey="2"
+        >
+          <CardBody>
+            <Facilities
+              airConditioning={false}
+              allergyFriendly={false}
+              balconyTerrace=""
+              basement=""
+              bathroom=""
+              bed={false}
+              bedroomFurnished={false}
+              bedroomLock={false}
+              bedroomSize={0}
+              bedrooms={0}
+              closet={false}
+              desk={false}
+              dishwasher={false}
+              dryer={false}
+              electricity={false}
+              flooring=""
+              freePlaces={0}
+              garden=""
+              gas={false}
+              heating=""
+              housematesGender=""
+              internet={false}
+              internetCost={false}
+              kitchen=""
+              kitchenware=""
+              livingRoom=""
+              parking=""
+              registrationPossible={false}
+              roomFurniture={false}
+              setAirConditioning={[Function]}
+              setAllergyFriendly={[Function]}
+              setBalconyTerrace={[Function]}
+              setBasement={[Function]}
+              setBathroom={[Function]}
+              setBed={[Function]}
+              setBedroomFurnished={[Function]}
+              setBedroomLock={[Function]}
+              setBedroomSize={[Function]}
+              setBedrooms={[Function]}
+              setCloset={[Function]}
+              setDesk={[Function]}
+              setDishwasher={[Function]}
+              setDryer={[Function]}
+              setElectricity={[Function]}
+              setFlooring={[Function]}
+              setFreePlaces={[Function]}
+              setGarden={[Function]}
+              setGas={[Function]}
+              setHeating={[Function]}
+              setHousematesGender={[Function]}
+              setInternet={[Function]}
+              setInternetCost={[Function]}
+              setKitchen={[Function]}
+              setKitchenware={[Function]}
+              setLivingRoom={[Function]}
+              setParking={[Function]}
+              setRegistrationPossible={[Function]}
+              setRoomFurniture={[Function]}
+              setTenantStatus={[Function]}
+              setToilet={[Function]}
+              setTotalSize={[Function]}
+              setTv={[Function]}
+              setWashingMachine={[Function]}
+              setWater={[Function]}
+              setWheelchairAccessible={[Function]}
+              setWifi={[Function]}
+              tenantStatus="Any"
+              toilet=""
+              totalSize={0}
+              tv={false}
+              washingMachine={false}
+              water={false}
+              wheelchairAccessible={false}
+              wifi={false}
+            />
+          </CardBody>
+        </AccordionCollapse>
+      </Card>
+      <Card
+        body={false}
+      >
+        <ForwardRef
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": undefined,
+              "render": [Function],
+            }
+          }
+          eventKey="3"
+        >
+          Calendar Operations
+        </ForwardRef>
+        <AccordionCollapse
+          eventKey="3"
+        >
+          <CardBody>
+            <CalendarOperations
+              dateFrom=""
+              dateTo=""
+              setDateFrom={[Function]}
+              setDateTo={[Function]}
+              setType={[Function]}
+              type={0}
+            />
+          </CardBody>
+        </AccordionCollapse>
+      </Card>
+      <Card
+        body={false}
+      >
+        <ForwardRef
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": undefined,
+              "render": [Function],
+            }
+          }
+          eventKey="4"
+        >
+          Images
+        </ForwardRef>
+        <AccordionCollapse
+          eventKey="4"
+        >
+          <CardBody>
+            <Images
+              files={Array []}
+              setFiles={[Function]}
+            />
+          </CardBody>
+        </AccordionCollapse>
+      </Card>
+      <Card
+        body={false}
+      >
+        <ForwardRef
+          as={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": undefined,
+              "render": [Function],
+            }
+          }
+          eventKey="5"
+        >
+          Costs
+        </ForwardRef>
+        <AccordionCollapse
+          eventKey="5"
+        >
+          <CardBody>
+            <CostsComponent
+              costs={Array []}
+              estimated={false}
+              mandatory={false}
+              payableAt=""
+              payableBy=""
+              refundable={false}
+              setCosts={[Function]}
+              setEstimated={[Function]}
+              setMandatory={[Function]}
+              setPayableAt={[Function]}
+              setPayableBy={[Function]}
+              setRefundable={[Function]}
+              setType={[Function]}
+              setValue={[Function]}
+              type=""
+              value={0}
+            />
+          </CardBody>
+        </AccordionCollapse>
+      </Card>
+    </Accordion>
+    <div
+      className="mt-2 d-flex justify-content-center"
     >
-      <ForwardRef
-        as={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "defaultProps": undefined,
-            "render": [Function],
-          }
-        }
-        eventKey="2"
+      <Button
+        active={false}
+        className=" my-2 mb-5"
+        disabled={false}
+        onClick={[Function]}
+        variant="success"
       >
-        Facilities
-      </ForwardRef>
-      <AccordionCollapse
-        eventKey="2"
-      >
-        <CardBody>
-          <Facilities />
-        </CardBody>
-      </AccordionCollapse>
-    </Card>
-    <Card
-      body={false}
-    >
-      <ForwardRef
-        as={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "defaultProps": undefined,
-            "render": [Function],
-          }
-        }
-        eventKey="3"
-      >
-        Calendar Operations
-      </ForwardRef>
-      <AccordionCollapse
-        eventKey="3"
-      >
-        <CardBody>
-          <CalendarOperations />
-        </CardBody>
-      </AccordionCollapse>
-    </Card>
-    <Card
-      body={false}
-    >
-      <ForwardRef
-        as={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "defaultProps": undefined,
-            "render": [Function],
-          }
-        }
-        eventKey="4"
-      >
-        Images
-      </ForwardRef>
-      <AccordionCollapse
-        eventKey="4"
-      >
-        <CardBody>
-          <Images />
-        </CardBody>
-      </AccordionCollapse>
-    </Card>
-    <Card
-      body={false}
-    >
-      <ForwardRef
-        as={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "defaultProps": undefined,
-            "render": [Function],
-          }
-        }
-        eventKey="5"
-      >
-        Costs
-      </ForwardRef>
-      <AccordionCollapse
-        eventKey="5"
-      >
-        <CardBody>
-          <Costs />
-        </CardBody>
-      </AccordionCollapse>
-    </Card>
-  </Accordion>
-</Form>
+        Submit
+      </Button>
+    </div>
+  </Form>
+</section>
 `;

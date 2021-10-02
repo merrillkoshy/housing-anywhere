@@ -1,9 +1,20 @@
-import React from "react";
+import React, { SetStateAction } from "react";
 import { shallow } from "enzyme";
 import Pricing from "./Pricing";
 
 describe("Pricing module", () => {
-	const PricingModule = shallow(<Pricing />);
+	const PricingModule = shallow(
+		<Pricing
+			price={0}
+			setPrice={function(value: SetStateAction<number>): void {
+				throw new Error("Function not implemented.");
+			}}
+			currencyCode={""}
+			setCurrencyCode={function(value: SetStateAction<string>): void {
+				throw new Error("Function not implemented.");
+			}}
+		/>
+	);
 	it("renders", () => {
 		expect(PricingModule).toMatchSnapshot();
 	});

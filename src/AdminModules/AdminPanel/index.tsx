@@ -118,7 +118,7 @@ const Admin = ({
 	const data = {
 		id: uuidv4(),
 		price: price,
-		currencyCode: currencyCode,
+		currencycode: currencyCode,
 		address: {
 			housenumber: houseNumber,
 			street: street,
@@ -132,11 +132,11 @@ const Admin = ({
 		kind: kind,
 		description: description,
 		deposit: deposit,
-		estimatedBills: estimatedBills,
-		minimumStayMonths: minimumStayMonths,
-		maxBookableDays: maxBookableDays,
-		moveInWindow: moveInWindow,
-		currentOccupancy: currentOccupancy,
+		estimatedbills: estimatedBills,
+		minimumstaymonths: minimumStayMonths,
+		maxbookabledays: maxBookableDays,
+		moveinwindow: moveInWindow,
+		currentoccupancy: currentOccupancy,
 		rules: {
 			pets: pets,
 			cleaningCommonRoomsIncluded: cleaningCommonRoomsIncluded,
@@ -145,12 +145,12 @@ const Admin = ({
 			smoking: smoking,
 			couple: couple,
 		},
-		minAge: minAge,
-		maxAge: maxAge,
-		preferredGender: preferredGender,
+		minage: minAge,
+		maxage: maxAge,
+		preferredgender: preferredGender,
 		alias: alias,
-		externalReference: externalReference,
-		extraData: extraData,
+		externalreference: externalReference,
+		extradata: extraData,
 		facilities: {
 			allergyFriendly: allergyFriendly,
 			housematesGender: housematesGender,
@@ -192,7 +192,7 @@ const Admin = ({
 				internet: internet,
 			},
 		},
-		calendarOperations: [
+		calendaroperations: [
 			{
 				type: typeCalendar,
 				dateFrom: dateFrom,
@@ -293,7 +293,7 @@ const Admin = ({
 	}, []);
 	return (
 		<section id="admin-side">
-			<Form className="w-100 input-form px-5">
+			<Form className="w-100 input-form p-5">
 				<Form.Label className="my-2 w-100 d-flex justify-content-between">
 					<div className="d-flex justify-content-center align-items-center">
 						<h3>Inputs</h3>{" "}

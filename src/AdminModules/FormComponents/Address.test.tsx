@@ -1,9 +1,40 @@
-import React from "react";
+import React, { SetStateAction } from "react";
 import { shallow } from "enzyme";
 import Address from "./Address";
 
 describe("Address module", () => {
-	const AddressModule = shallow(<Address />);
+	const AddressModule = shallow(
+		<Address
+			houseNumber={""}
+			setHouseNumber={function(value: SetStateAction<string>): void {
+				throw new Error("Function not implemented.");
+			}}
+			street={""}
+			setStreet={function(value: SetStateAction<string>): void {
+				throw new Error("Function not implemented.");
+			}}
+			city={""}
+			setCity={function(value: SetStateAction<string>): void {
+				throw new Error("Function not implemented.");
+			}}
+			state={""}
+			setState={function(value: SetStateAction<string>): void {
+				throw new Error("Function not implemented.");
+			}}
+			postalCode={""}
+			setPostalCode={function(value: SetStateAction<string>): void {
+				throw new Error("Function not implemented.");
+			}}
+			neighborhood={""}
+			setNeighborhood={function(value: SetStateAction<string>): void {
+				throw new Error("Function not implemented.");
+			}}
+			countryCode={""}
+			setCountryCode={function(value: SetStateAction<string>): void {
+				throw new Error("Function not implemented.");
+			}}
+		/>
+	);
 	it("renders", () => {
 		expect(AddressModule).toMatchSnapshot();
 	});

@@ -13,6 +13,7 @@ const ImageSpace = ({ images }: { images: Images[] }) => {
 							className="asset-image"
 							src={image.url}
 							alt={"the-huis"}
+							id="listing-image"
 						/>
 					);
 				})}

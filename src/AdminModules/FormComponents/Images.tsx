@@ -1,6 +1,5 @@
-import React, { useState, useCallback } from "react";
+import React, { useCallback } from "react";
 import { useDropzone } from "react-dropzone";
-import { Form, Button } from "react-bootstrap";
 import { styles } from "./image-dropzone-styles";
 
 const Images = ({

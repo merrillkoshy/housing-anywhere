@@ -1,0 +1,1917 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Details Modal renders 1`] = `
+<DetailsModal
+  details={
+    Object {
+      "address": Object {
+        "city": "",
+        "countryCode": "",
+        "housenumber": "",
+        "neighborhood": "",
+        "postalCode": "",
+        "state": "",
+        "street": "",
+      },
+      "alias": "",
+      "calendaroperations": Array [],
+      "costs": Array [],
+      "currencycode": "",
+      "currentoccupancy": 0,
+      "description": "",
+      "externalreference": "",
+      "extradata": "",
+      "facilities": Object {
+        "additionalCosts": Object {
+          "electricity": false,
+          "gas": false,
+          "internet": false,
+          "water": false,
+        },
+        "airConditioning": false,
+        "allergyFriendly": false,
+        "balconyTerrace": "",
+        "basement": "",
+        "bathroom": "",
+        "bed": false,
+        "bedroomFurnished": false,
+        "bedroomLock": false,
+        "bedroomSize": 0,
+        "bedrooms": 0,
+        "closet": false,
+        "desk": false,
+        "dishwasher": false,
+        "dryer": false,
+        "flooring": "",
+        "freePlaces": 0,
+        "garden": "",
+        "heating": "",
+        "housematesGender": "",
+        "internet": false,
+        "kitchen": "",
+        "kitchenware": "",
+        "livingRoom": "",
+        "parking": "",
+        "registrationPossible": "",
+        "roomFurniture": "",
+        "tenantStatus": "",
+        "toilet": "",
+        "totalSize": 0,
+        "tv": false,
+        "washingMachine": false,
+        "wheelchairAccessible": false,
+        "wifi": false,
+      },
+      "images": Array [],
+      "kind": 0,
+      "maxage": 0,
+      "minage": 0,
+      "minimumstaymonths": "",
+      "moveinwindow": 0,
+      "preferredgender": "",
+      "price": 0,
+      "rules": Object {
+        "cleaningCommonRoomsIncluded": false,
+        "cleaningPrivateRoomIncluded": false,
+        "couple": false,
+        "pets": "",
+        "playMusic": "",
+        "smoking": "",
+      },
+      "type": 0,
+    }
+  }
+  handleClose={[Function]}
+  show={false}
+>
+  <Modal
+    animation={true}
+    autoFocus={true}
+    backdrop={true}
+    dialogAs={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      }
+    }
+    enforceFocus={true}
+    id="details-modal"
+    keyboard={true}
+    restoreFocus={true}
+    show={false}
+    size="lg"
+  >
+    <Modal
+      autoFocus={true}
+      backdrop={true}
+      backdropTransition={[Function]}
+      containerClassName="modal-open"
+      enforceFocus={true}
+      keyboard={true}
+      manager={
+        BootstrapModalManager {
+          "containers": Array [
+            <body
+              class="modal-open"
+              style="padding-right: 0px;"
+            >
+              <div
+                class="fade modal-backdrop show"
+              />
+              <div
+                aria-modal="true"
+                class="fade modal show"
+                role="dialog"
+                style="display: block;"
+                tabindex="-1"
+              >
+                <div
+                  class="modal-dialog modal-lg"
+                  id="details-modal"
+                >
+                  <div
+                    class="modal-content"
+                  >
+                    <div
+                      class="modal-header"
+                    >
+                      <div
+                        class="w-75 modal-title h4"
+                      >
+                        <div
+                          class="d-flex flex-column"
+                        >
+                          <h1 />
+                          <ul
+                            class="d-flex flex-row justify-content-evenly m-0 p-0 w-100 flex-wrap"
+                          >
+                            <li
+                              class="address"
+                            />
+                            <li
+                              class="address"
+                            />
+                            <li
+                              class="address"
+                            />
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="modal-body"
+                    >
+                      <div
+                        class="container d-flex  flex-column justify-content-center"
+                      >
+                        <div
+                          class="d-flex  flex-lg-row flex-xl-row flex-xxl-row flex-column justify-content-center"
+                        >
+                          <div
+                            class="d-flex px-3"
+                          />
+                          <div
+                            class="d-flex flex-column px-3"
+                          >
+                            <section
+                              id="description"
+                            >
+                              <h3>
+                                Description
+                              </h3>
+                              <p
+                                id="description"
+                              />
+                            </section>
+                            <section
+                              class="d-flex"
+                              id="cost"
+                            >
+                              <div
+                                class="col-1 pricing-text"
+                              >
+                                <strong
+                                  id="currencycode"
+                                />
+                              </div>
+                              <div
+                                class="col mx-2 pricing-text"
+                              >
+                                <strong
+                                  id="price"
+                                >
+                                  0
+                                </strong>
+                              </div>
+                              <div
+                                class="col-8 mx-2 "
+                              >
+                                <details>
+                                  <summary>
+                                    <strong>
+                                      Costs
+                                    </strong>
+                                  </summary>
+                                </details>
+                              </div>
+                            </section>
+                            <section
+                              class="d-flex"
+                              id="rules"
+                            >
+                              <details>
+                                <summary>
+                                  <strong>
+                                    Rules
+                                  </strong>
+                                </summary>
+                                <ul>
+                                  <li
+                                    id="pets"
+                                  >
+                                    Pets:
+                                    ❌
+                                  </li>
+                                  <li
+                                    id="cleaningCommonRoomsIncluded"
+                                  >
+                                    Cleaning Common Rooms Included:
+                                    ❌
+                                  </li>
+                                  <li
+                                    id="cleaningPrivateRoomIncluded"
+                                  >
+                                    Cleaning Private Rooms Included:
+                                    ❌
+                                  </li>
+                                  <li
+                                    id="playMusic"
+                                  >
+                                    Play Music:
+                                    ❌
+                                  </li>
+                                  <li
+                                    id="smoking"
+                                  >
+                                    Smoking:
+                                    ❌
+                                  </li>
+                                  <li
+                                    id="couple"
+                                  >
+                                    Couple:
+                                    ❌
+                                  </li>
+                                </ul>
+                              </details>
+                            </section>
+                            <div
+                              class="d-flex flex-column my-2"
+                            />
+                            <details>
+                              <summary>
+                                <strong>
+                                  Facilities
+                                </strong>
+                              </summary>
+                              <ul>
+                                <li
+                                  id="airConditioning"
+                                >
+                                  Air conditioning:
+                                  ❌
+                                </li>
+                                <li
+                                  id="allergyFriendly"
+                                >
+                                  Allergy Friendly:
+                                  ❌
+                                </li>
+                                <li
+                                  id="balconyTerrace"
+                                >
+                                  Balcony Terrace:
+                                  ❌
+                                </li>
+                                <li
+                                  id="basement"
+                                >
+                                  Basement:
+                                  ❌
+                                </li>
+                                <li
+                                  id="bathroom"
+                                >
+                                  Bathroom:
+                                  ❌
+                                </li>
+                                <li
+                                  id="bed"
+                                >
+                                  Bed:
+                                  ❌
+                                </li>
+                                <li
+                                  id="bedroomFurnished"
+                                >
+                                  Bedroom Furnished:
+                                  ❌
+                                </li>
+                                <li
+                                  id="bedroomLock"
+                                >
+                                  Bedroom Lockable:
+                                  ❌
+                                </li>
+                                <li
+                                  id="bedroomSize"
+                                >
+                                  Bedroom Size: 
+                                  0
+                                </li>
+                                <li
+                                  id="bedrooms"
+                                >
+                                  Bedrooms: 
+                                  0
+                                </li>
+                                <li
+                                  id="closet"
+                                >
+                                  Closet: 
+                                  ❌
+                                </li>
+                                <li
+                                  id="desk"
+                                >
+                                  Desk: 
+                                  ❌
+                                </li>
+                                <li
+                                  id="dishwasher"
+                                >
+                                  Dishwasher: 
+                                  ❌
+                                </li>
+                                <li
+                                  id="dryer"
+                                >
+                                  Dryer:
+                                  ❌
+                                </li>
+                                <li
+                                  id="flooring"
+                                >
+                                  Flooring: 
+                                  
+                                </li>
+                                <li
+                                  id="freePlaces"
+                                >
+                                  Free Places: 
+                                  0
+                                </li>
+                                <li
+                                  id="garden"
+                                >
+                                  Garden:
+                                  ❌
+                                </li>
+                                <li
+                                  id="heating"
+                                >
+                                  Bedrooms: 
+                                  
+                                </li>
+                                <li
+                                  id="housematesGender"
+                                >
+                                  Housemates Gender:
+                                  ⚥
+                                </li>
+                                <li
+                                  id="internet"
+                                >
+                                  Internet:
+                                  ❌
+                                </li>
+                                <li
+                                  id="kitchen"
+                                >
+                                  Kitchen:
+                                  ❌
+                                </li>
+                                <li
+                                  id="kitchenware"
+                                >
+                                  Kitchenware:
+                                  ❌
+                                </li>
+                                <li
+                                  id="livingRoom"
+                                >
+                                  Living Room:
+                                  ❌
+                                </li>
+                                <li
+                                  id="parking"
+                                >
+                                  Parking:
+                                  ❌
+                                </li>
+                                <li
+                                  id="registrationPossible"
+                                >
+                                  Registration Possible:
+                                   
+                                  ❌
+                                </li>
+                                <li
+                                  id="roomFurniture"
+                                >
+                                  Room Furniture: 
+                                  ❌
+                                </li>
+                                <li
+                                  id="tenantStatus"
+                                >
+                                  Tent Status: 
+                                  
+                                </li>
+                                <li
+                                  id="toilet"
+                                >
+                                  Toilet: 
+                                  ❌
+                                </li>
+                                <li
+                                  id="totalSize"
+                                >
+                                  Total Size: 
+                                  0
+                                </li>
+                                <li
+                                  id="toilet"
+                                >
+                                  Toilet: 
+                                  
+                                </li>
+                                <li
+                                  id="tv"
+                                >
+                                  Tv:
+                                  ❌
+                                </li>
+                                <li
+                                  id="washingMachine"
+                                >
+                                  Washing Machine: 
+                                  ❌
+                                </li>
+                                <li
+                                  id="wheelchairAccessible"
+                                >
+                                  WheelChair Accessible: 
+                                  ❌
+                                </li>
+                                <li
+                                  id="wifi"
+                                >
+                                  Wifi: 
+                                  ❌
+                                </li>
+                                <details>
+                                  <summary>
+                                    <strong
+                                      id="additionalCosts"
+                                    >
+                                      Additional Costs
+                                    </strong>
+                                  </summary>
+                                  <ul>
+                                    <li
+                                      id="water"
+                                    >
+                                      Water:
+                                      ❌
+                                    </li>
+                                    <li
+                                      id="gas"
+                                    >
+                                      Gas:
+                                      ❌
+                                    </li>
+                                    <li
+                                      id="electricity"
+                                    >
+                                      Electicity:
+                                      ❌
+                                    </li>
+                                    <li
+                                      id="internet"
+                                    >
+                                      Internet:
+                                      ❌
+                                    </li>
+                                  </ul>
+                                </details>
+                              </ul>
+                            </details>
+                          </div>
+                        </div>
+                        <div
+                          class="divider"
+                        />
+                        <div
+                          class="d-flex px-3 w-100 align-items-stretch"
+                        >
+                          <div
+                            class="mt-5 d-flex flex-wrap w-100 justify-content-stretch"
+                          >
+                            <div
+                              class="col mx-2"
+                            >
+                              <strong
+                                id="type"
+                              >
+                                Type:
+                              </strong>
+                               
+                              
+                            </div>
+                            <div
+                              class="col mx-2"
+                            >
+                              <strong
+                                id="kind"
+                              >
+                                Kind:
+                              </strong>
+                               
+                              
+                            </div>
+                            <div
+                              class="col mx-2"
+                            >
+                              <strong
+                                id="deposit"
+                              >
+                                Deposit:
+                              </strong>
+                               
+                            </div>
+                            <div
+                              class="col mx-2"
+                            >
+                              <strong
+                                id="estimatedbills"
+                              >
+                                Estimated Bills:
+                              </strong>
+                               
+                            </div>
+                            <div
+                              class="col mx-2"
+                            >
+                              <strong
+                                id="minimumstaymonths"
+                              >
+                                Minimum Stay:
+                              </strong>
+                               
+                              
+                               Months
+                            </div>
+                            <div
+                              class="col mx-2"
+                            >
+                              <strong
+                                id="maxbookabledays"
+                              >
+                                Maximum Bookbale Days:
+                              </strong>
+                               
+                               days
+                            </div>
+                            <div
+                              class="col mx-2"
+                            >
+                              <strong
+                                id="moveinwindow"
+                              >
+                                Move-In Window:
+                              </strong>
+                               
+                              0
+                               days
+                            </div>
+                            <div
+                              class="col mx-2"
+                            >
+                              <strong
+                                id="currentoccupancy"
+                              >
+                                Current Occupants:
+                              </strong>
+                               
+                              0
+                            </div>
+                            <div
+                              class="col mx-2"
+                            >
+                              <strong
+                                id="minage"
+                              >
+                                Min Age:
+                              </strong>
+                               
+                              0
+                            </div>
+                            <div
+                              class="col mx-2"
+                            >
+                              <strong
+                                id="maxage"
+                              >
+                                Max Age:
+                              </strong>
+                               
+                              0
+                            </div>
+                            <div
+                              class="col mx-2"
+                            >
+                              <strong
+                                id="preferredgender"
+                              >
+                                Preferred Gender:
+                              </strong>
+                               
+                              
+                            </div>
+                            <div
+                              class="col mx-2"
+                            >
+                              <strong
+                                id="alias"
+                              >
+                                Alias:
+                              </strong>
+                               
+                              
+                            </div>
+                            <div
+                              class="col mx-2"
+                            >
+                              <strong
+                                id="externalreference"
+                              >
+                                External Reference:
+                              </strong>
+                               
+                              
+                            </div>
+                            <div
+                              class="col mx-2"
+                            >
+                              <strong
+                                id="extradata"
+                              >
+                                Extra Data:
+                              </strong>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="modal-footer"
+                    >
+                      <button
+                        class="btn btn-danger"
+                        type="button"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </body>,
+          ],
+          "data": Array [
+            Object {
+              "classes": Array [
+                "modal-open",
+              ],
+              "modals": Array [
+                Object {
+                  "add": [Function],
+                  "backdrop": <div
+                    class="fade modal-backdrop show"
+                  />,
+                  "dialog": <div
+                    aria-modal="true"
+                    class="fade modal show"
+                    role="dialog"
+                    style="display: block;"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="modal-dialog modal-lg"
+                      id="details-modal"
+                    >
+                      <div
+                        class="modal-content"
+                      >
+                        <div
+                          class="modal-header"
+                        >
+                          <div
+                            class="w-75 modal-title h4"
+                          >
+                            <div
+                              class="d-flex flex-column"
+                            >
+                              <h1 />
+                              <ul
+                                class="d-flex flex-row justify-content-evenly m-0 p-0 w-100 flex-wrap"
+                              >
+                                <li
+                                  class="address"
+                                />
+                                <li
+                                  class="address"
+                                />
+                                <li
+                                  class="address"
+                                />
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="modal-body"
+                        >
+                          <div
+                            class="container d-flex  flex-column justify-content-center"
+                          >
+                            <div
+                              class="d-flex  flex-lg-row flex-xl-row flex-xxl-row flex-column justify-content-center"
+                            >
+                              <div
+                                class="d-flex px-3"
+                              />
+                              <div
+                                class="d-flex flex-column px-3"
+                              >
+                                <section
+                                  id="description"
+                                >
+                                  <h3>
+                                    Description
+                                  </h3>
+                                  <p
+                                    id="description"
+                                  />
+                                </section>
+                                <section
+                                  class="d-flex"
+                                  id="cost"
+                                >
+                                  <div
+                                    class="col-1 pricing-text"
+                                  >
+                                    <strong
+                                      id="currencycode"
+                                    />
+                                  </div>
+                                  <div
+                                    class="col mx-2 pricing-text"
+                                  >
+                                    <strong
+                                      id="price"
+                                    >
+                                      0
+                                    </strong>
+                                  </div>
+                                  <div
+                                    class="col-8 mx-2 "
+                                  >
+                                    <details>
+                                      <summary>
+                                        <strong>
+                                          Costs
+                                        </strong>
+                                      </summary>
+                                    </details>
+                                  </div>
+                                </section>
+                                <section
+                                  class="d-flex"
+                                  id="rules"
+                                >
+                                  <details>
+                                    <summary>
+                                      <strong>
+                                        Rules
+                                      </strong>
+                                    </summary>
+                                    <ul>
+                                      <li
+                                        id="pets"
+                                      >
+                                        Pets:
+                                        ❌
+                                      </li>
+                                      <li
+                                        id="cleaningCommonRoomsIncluded"
+                                      >
+                                        Cleaning Common Rooms Included:
+                                        ❌
+                                      </li>
+                                      <li
+                                        id="cleaningPrivateRoomIncluded"
+                                      >
+                                        Cleaning Private Rooms Included:
+                                        ❌
+                                      </li>
+                                      <li
+                                        id="playMusic"
+                                      >
+                                        Play Music:
+                                        ❌
+                                      </li>
+                                      <li
+                                        id="smoking"
+                                      >
+                                        Smoking:
+                                        ❌
+                                      </li>
+                                      <li
+                                        id="couple"
+                                      >
+                                        Couple:
+                                        ❌
+                                      </li>
+                                    </ul>
+                                  </details>
+                                </section>
+                                <div
+                                  class="d-flex flex-column my-2"
+                                />
+                                <details>
+                                  <summary>
+                                    <strong>
+                                      Facilities
+                                    </strong>
+                                  </summary>
+                                  <ul>
+                                    <li
+                                      id="airConditioning"
+                                    >
+                                      Air conditioning:
+                                      ❌
+                                    </li>
+                                    <li
+                                      id="allergyFriendly"
+                                    >
+                                      Allergy Friendly:
+                                      ❌
+                                    </li>
+                                    <li
+                                      id="balconyTerrace"
+                                    >
+                                      Balcony Terrace:
+                                      ❌
+                                    </li>
+                                    <li
+                                      id="basement"
+                                    >
+                                      Basement:
+                                      ❌
+                                    </li>
+                                    <li
+                                      id="bathroom"
+                                    >
+                                      Bathroom:
+                                      ❌
+                                    </li>
+                                    <li
+                                      id="bed"
+                                    >
+                                      Bed:
+                                      ❌
+                                    </li>
+                                    <li
+                                      id="bedroomFurnished"
+                                    >
+                                      Bedroom Furnished:
+                                      ❌
+                                    </li>
+                                    <li
+                                      id="bedroomLock"
+                                    >
+                                      Bedroom Lockable:
+                                      ❌
+                                    </li>
+                                    <li
+                                      id="bedroomSize"
+                                    >
+                                      Bedroom Size: 
+                                      0
+                                    </li>
+                                    <li
+                                      id="bedrooms"
+                                    >
+                                      Bedrooms: 
+                                      0
+                                    </li>
+                                    <li
+                                      id="closet"
+                                    >
+                                      Closet: 
+                                      ❌
+                                    </li>
+                                    <li
+                                      id="desk"
+                                    >
+                                      Desk: 
+                                      ❌
+                                    </li>
+                                    <li
+                                      id="dishwasher"
+                                    >
+                                      Dishwasher: 
+                                      ❌
+                                    </li>
+                                    <li
+                                      id="dryer"
+                                    >
+                                      Dryer:
+                                      ❌
+                                    </li>
+                                    <li
+                                      id="flooring"
+                                    >
+                                      Flooring: 
+                                      
+                                    </li>
+                                    <li
+                                      id="freePlaces"
+                                    >
+                                      Free Places: 
+                                      0
+                                    </li>
+                                    <li
+                                      id="garden"
+                                    >
+                                      Garden:
+                                      ❌
+                                    </li>
+                                    <li
+                                      id="heating"
+                                    >
+                                      Bedrooms: 
+                                      
+                                    </li>
+                                    <li
+                                      id="housematesGender"
+                                    >
+                                      Housemates Gender:
+                                      ⚥
+                                    </li>
+                                    <li
+                                      id="internet"
+                                    >
+                                      Internet:
+                                      ❌
+                                    </li>
+                                    <li
+                                      id="kitchen"
+                                    >
+                                      Kitchen:
+                                      ❌
+                                    </li>
+                                    <li
+                                      id="kitchenware"
+                                    >
+                                      Kitchenware:
+                                      ❌
+                                    </li>
+                                    <li
+                                      id="livingRoom"
+                                    >
+                                      Living Room:
+                                      ❌
+                                    </li>
+                                    <li
+                                      id="parking"
+                                    >
+                                      Parking:
+                                      ❌
+                                    </li>
+                                    <li
+                                      id="registrationPossible"
+                                    >
+                                      Registration Possible:
+                                       
+                                      ❌
+                                    </li>
+                                    <li
+                                      id="roomFurniture"
+                                    >
+                                      Room Furniture: 
+                                      ❌
+                                    </li>
+                                    <li
+                                      id="tenantStatus"
+                                    >
+                                      Tent Status: 
+                                      
+                                    </li>
+                                    <li
+                                      id="toilet"
+                                    >
+                                      Toilet: 
+                                      ❌
+                                    </li>
+                                    <li
+                                      id="totalSize"
+                                    >
+                                      Total Size: 
+                                      0
+                                    </li>
+                                    <li
+                                      id="toilet"
+                                    >
+                                      Toilet: 
+                                      
+                                    </li>
+                                    <li
+                                      id="tv"
+                                    >
+                                      Tv:
+                                      ❌
+                                    </li>
+                                    <li
+                                      id="washingMachine"
+                                    >
+                                      Washing Machine: 
+                                      ❌
+                                    </li>
+                                    <li
+                                      id="wheelchairAccessible"
+                                    >
+                                      WheelChair Accessible: 
+                                      ❌
+                                    </li>
+                                    <li
+                                      id="wifi"
+                                    >
+                                      Wifi: 
+                                      ❌
+                                    </li>
+                                    <details>
+                                      <summary>
+                                        <strong
+                                          id="additionalCosts"
+                                        >
+                                          Additional Costs
+                                        </strong>
+                                      </summary>
+                                      <ul>
+                                        <li
+                                          id="water"
+                                        >
+                                          Water:
+                                          ❌
+                                        </li>
+                                        <li
+                                          id="gas"
+                                        >
+                                          Gas:
+                                          ❌
+                                        </li>
+                                        <li
+                                          id="electricity"
+                                        >
+                                          Electicity:
+                                          ❌
+                                        </li>
+                                        <li
+                                          id="internet"
+                                        >
+                                          Internet:
+                                          ❌
+                                        </li>
+                                      </ul>
+                                    </details>
+                                  </ul>
+                                </details>
+                              </div>
+                            </div>
+                            <div
+                              class="divider"
+                            />
+                            <div
+                              class="d-flex px-3 w-100 align-items-stretch"
+                            >
+                              <div
+                                class="mt-5 d-flex flex-wrap w-100 justify-content-stretch"
+                              >
+                                <div
+                                  class="col mx-2"
+                                >
+                                  <strong
+                                    id="type"
+                                  >
+                                    Type:
+                                  </strong>
+                                   
+                                  
+                                </div>
+                                <div
+                                  class="col mx-2"
+                                >
+                                  <strong
+                                    id="kind"
+                                  >
+                                    Kind:
+                                  </strong>
+                                   
+                                  
+                                </div>
+                                <div
+                                  class="col mx-2"
+                                >
+                                  <strong
+                                    id="deposit"
+                                  >
+                                    Deposit:
+                                  </strong>
+                                   
+                                </div>
+                                <div
+                                  class="col mx-2"
+                                >
+                                  <strong
+                                    id="estimatedbills"
+                                  >
+                                    Estimated Bills:
+                                  </strong>
+                                   
+                                </div>
+                                <div
+                                  class="col mx-2"
+                                >
+                                  <strong
+                                    id="minimumstaymonths"
+                                  >
+                                    Minimum Stay:
+                                  </strong>
+                                   
+                                  
+                                   Months
+                                </div>
+                                <div
+                                  class="col mx-2"
+                                >
+                                  <strong
+                                    id="maxbookabledays"
+                                  >
+                                    Maximum Bookbale Days:
+                                  </strong>
+                                   
+                                   days
+                                </div>
+                                <div
+                                  class="col mx-2"
+                                >
+                                  <strong
+                                    id="moveinwindow"
+                                  >
+                                    Move-In Window:
+                                  </strong>
+                                   
+                                  0
+                                   days
+                                </div>
+                                <div
+                                  class="col mx-2"
+                                >
+                                  <strong
+                                    id="currentoccupancy"
+                                  >
+                                    Current Occupants:
+                                  </strong>
+                                   
+                                  0
+                                </div>
+                                <div
+                                  class="col mx-2"
+                                >
+                                  <strong
+                                    id="minage"
+                                  >
+                                    Min Age:
+                                  </strong>
+                                   
+                                  0
+                                </div>
+                                <div
+                                  class="col mx-2"
+                                >
+                                  <strong
+                                    id="maxage"
+                                  >
+                                    Max Age:
+                                  </strong>
+                                   
+                                  0
+                                </div>
+                                <div
+                                  class="col mx-2"
+                                >
+                                  <strong
+                                    id="preferredgender"
+                                  >
+                                    Preferred Gender:
+                                  </strong>
+                                   
+                                  
+                                </div>
+                                <div
+                                  class="col mx-2"
+                                >
+                                  <strong
+                                    id="alias"
+                                  >
+                                    Alias:
+                                  </strong>
+                                   
+                                  
+                                </div>
+                                <div
+                                  class="col mx-2"
+                                >
+                                  <strong
+                                    id="externalreference"
+                                  >
+                                    External Reference:
+                                  </strong>
+                                   
+                                  
+                                </div>
+                                <div
+                                  class="col mx-2"
+                                >
+                                  <strong
+                                    id="extradata"
+                                  >
+                                    Extra Data:
+                                  </strong>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="modal-footer"
+                        >
+                          <button
+                            class="btn btn-danger"
+                            type="button"
+                          >
+                            Close
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>,
+                  "isTopModal": [Function],
+                  "remove": [Function],
+                  "setBackdropRef": [Function],
+                  "setDialogRef": [Function],
+                },
+              ],
+              "overflowing": true,
+              "style": Object {
+                "overflow": "",
+                "paddingRight": "",
+              },
+            },
+          ],
+          "handleContainerOverflow": true,
+          "hideSiblingNodes": true,
+          "modals": Array [
+            Object {
+              "add": [Function],
+              "backdrop": <div
+                class="fade modal-backdrop show"
+              />,
+              "dialog": <div
+                aria-modal="true"
+                class="fade modal show"
+                role="dialog"
+                style="display: block;"
+                tabindex="-1"
+              >
+                <div
+                  class="modal-dialog modal-lg"
+                  id="details-modal"
+                >
+                  <div
+                    class="modal-content"
+                  >
+                    <div
+                      class="modal-header"
+                    >
+                      <div
+                        class="w-75 modal-title h4"
+                      >
+                        <div
+                          class="d-flex flex-column"
+                        >
+                          <h1 />
+                          <ul
+                            class="d-flex flex-row justify-content-evenly m-0 p-0 w-100 flex-wrap"
+                          >
+                            <li
+                              class="address"
+                            />
+                            <li
+                              class="address"
+                            />
+                            <li
+                              class="address"
+                            />
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="modal-body"
+                    >
+                      <div
+                        class="container d-flex  flex-column justify-content-center"
+                      >
+                        <div
+                          class="d-flex  flex-lg-row flex-xl-row flex-xxl-row flex-column justify-content-center"
+                        >
+                          <div
+                            class="d-flex px-3"
+                          />
+                          <div
+                            class="d-flex flex-column px-3"
+                          >
+                            <section
+                              id="description"
+                            >
+                              <h3>
+                                Description
+                              </h3>
+                              <p
+                                id="description"
+                              />
+                            </section>
+                            <section
+                              class="d-flex"
+                              id="cost"
+                            >
+                              <div
+                                class="col-1 pricing-text"
+                              >
+                                <strong
+                                  id="currencycode"
+                                />
+                              </div>
+                              <div
+                                class="col mx-2 pricing-text"
+                              >
+                                <strong
+                                  id="price"
+                                >
+                                  0
+                                </strong>
+                              </div>
+                              <div
+                                class="col-8 mx-2 "
+                              >
+                                <details>
+                                  <summary>
+                                    <strong>
+                                      Costs
+                                    </strong>
+                                  </summary>
+                                </details>
+                              </div>
+                            </section>
+                            <section
+                              class="d-flex"
+                              id="rules"
+                            >
+                              <details>
+                                <summary>
+                                  <strong>
+                                    Rules
+                                  </strong>
+                                </summary>
+                                <ul>
+                                  <li
+                                    id="pets"
+                                  >
+                                    Pets:
+                                    ❌
+                                  </li>
+                                  <li
+                                    id="cleaningCommonRoomsIncluded"
+                                  >
+                                    Cleaning Common Rooms Included:
+                                    ❌
+                                  </li>
+                                  <li
+                                    id="cleaningPrivateRoomIncluded"
+                                  >
+                                    Cleaning Private Rooms Included:
+                                    ❌
+                                  </li>
+                                  <li
+                                    id="playMusic"
+                                  >
+                                    Play Music:
+                                    ❌
+                                  </li>
+                                  <li
+                                    id="smoking"
+                                  >
+                                    Smoking:
+                                    ❌
+                                  </li>
+                                  <li
+                                    id="couple"
+                                  >
+                                    Couple:
+                                    ❌
+                                  </li>
+                                </ul>
+                              </details>
+                            </section>
+                            <div
+                              class="d-flex flex-column my-2"
+                            />
+                            <details>
+                              <summary>
+                                <strong>
+                                  Facilities
+                                </strong>
+                              </summary>
+                              <ul>
+                                <li
+                                  id="airConditioning"
+                                >
+                                  Air conditioning:
+                                  ❌
+                                </li>
+                                <li
+                                  id="allergyFriendly"
+                                >
+                                  Allergy Friendly:
+                                  ❌
+                                </li>
+                                <li
+                                  id="balconyTerrace"
+                                >
+                                  Balcony Terrace:
+                                  ❌
+                                </li>
+                                <li
+                                  id="basement"
+                                >
+                                  Basement:
+                                  ❌
+                                </li>
+                                <li
+                                  id="bathroom"
+                                >
+                                  Bathroom:
+                                  ❌
+                                </li>
+                                <li
+                                  id="bed"
+                                >
+                                  Bed:
+                                  ❌
+                                </li>
+                                <li
+                                  id="bedroomFurnished"
+                                >
+                                  Bedroom Furnished:
+                                  ❌
+                                </li>
+                                <li
+                                  id="bedroomLock"
+                                >
+                                  Bedroom Lockable:
+                                  ❌
+                                </li>
+                                <li
+                                  id="bedroomSize"
+                                >
+                                  Bedroom Size: 
+                                  0
+                                </li>
+                                <li
+                                  id="bedrooms"
+                                >
+                                  Bedrooms: 
+                                  0
+                                </li>
+                                <li
+                                  id="closet"
+                                >
+                                  Closet: 
+                                  ❌
+                                </li>
+                                <li
+                                  id="desk"
+                                >
+                                  Desk: 
+                                  ❌
+                                </li>
+                                <li
+                                  id="dishwasher"
+                                >
+                                  Dishwasher: 
+                                  ❌
+                                </li>
+                                <li
+                                  id="dryer"
+                                >
+                                  Dryer:
+                                  ❌
+                                </li>
+                                <li
+                                  id="flooring"
+                                >
+                                  Flooring: 
+                                  
+                                </li>
+                                <li
+                                  id="freePlaces"
+                                >
+                                  Free Places: 
+                                  0
+                                </li>
+                                <li
+                                  id="garden"
+                                >
+                                  Garden:
+                                  ❌
+                                </li>
+                                <li
+                                  id="heating"
+                                >
+                                  Bedrooms: 
+                                  
+                                </li>
+                                <li
+                                  id="housematesGender"
+                                >
+                                  Housemates Gender:
+                                  ⚥
+                                </li>
+                                <li
+                                  id="internet"
+                                >
+                                  Internet:
+                                  ❌
+                                </li>
+                                <li
+                                  id="kitchen"
+                                >
+                                  Kitchen:
+                                  ❌
+                                </li>
+                                <li
+                                  id="kitchenware"
+                                >
+                                  Kitchenware:
+                                  ❌
+                                </li>
+                                <li
+                                  id="livingRoom"
+                                >
+                                  Living Room:
+                                  ❌
+                                </li>
+                                <li
+                                  id="parking"
+                                >
+                                  Parking:
+                                  ❌
+                                </li>
+                                <li
+                                  id="registrationPossible"
+                                >
+                                  Registration Possible:
+                                   
+                                  ❌
+                                </li>
+                                <li
+                                  id="roomFurniture"
+                                >
+                                  Room Furniture: 
+                                  ❌
+                                </li>
+                                <li
+                                  id="tenantStatus"
+                                >
+                                  Tent Status: 
+                                  
+                                </li>
+                                <li
+                                  id="toilet"
+                                >
+                                  Toilet: 
+                                  ❌
+                                </li>
+                                <li
+                                  id="totalSize"
+                                >
+                                  Total Size: 
+                                  0
+                                </li>
+                                <li
+                                  id="toilet"
+                                >
+                                  Toilet: 
+                                  
+                                </li>
+                                <li
+                                  id="tv"
+                                >
+                                  Tv:
+                                  ❌
+                                </li>
+                                <li
+                                  id="washingMachine"
+                                >
+                                  Washing Machine: 
+                                  ❌
+                                </li>
+                                <li
+                                  id="wheelchairAccessible"
+                                >
+                                  WheelChair Accessible: 
+                                  ❌
+                                </li>
+                                <li
+                                  id="wifi"
+                                >
+                                  Wifi: 
+                                  ❌
+                                </li>
+                                <details>
+                                  <summary>
+                                    <strong
+                                      id="additionalCosts"
+                                    >
+                                      Additional Costs
+                                    </strong>
+                                  </summary>
+                                  <ul>
+                                    <li
+                                      id="water"
+                                    >
+                                      Water:
+                                      ❌
+                                    </li>
+                                    <li
+                                      id="gas"
+                                    >
+                                      Gas:
+                                      ❌
+                                    </li>
+                                    <li
+                                      id="electricity"
+                                    >
+                                      Electicity:
+                                      ❌
+                                    </li>
+                                    <li
+                                      id="internet"
+                                    >
+                                      Internet:
+                                      ❌
+                                    </li>
+                                  </ul>
+                                </details>
+                              </ul>
+                            </details>
+                          </div>
+                        </div>
+                        <div
+                          class="divider"
+                        />
+                        <div
+                          class="d-flex px-3 w-100 align-items-stretch"
+                        >
+                          <div
+                            class="mt-5 d-flex flex-wrap w-100 justify-content-stretch"
+                          >
+                            <div
+                              class="col mx-2"
+                            >
+                              <strong
+                                id="type"
+                              >
+                                Type:
+                              </strong>
+                               
+                              
+                            </div>
+                            <div
+                              class="col mx-2"
+                            >
+                              <strong
+                                id="kind"
+                              >
+                                Kind:
+                              </strong>
+                               
+                              
+                            </div>
+                            <div
+                              class="col mx-2"
+                            >
+                              <strong
+                                id="deposit"
+                              >
+                                Deposit:
+                              </strong>
+                               
+                            </div>
+                            <div
+                              class="col mx-2"
+                            >
+                              <strong
+                                id="estimatedbills"
+                              >
+                                Estimated Bills:
+                              </strong>
+                               
+                            </div>
+                            <div
+                              class="col mx-2"
+                            >
+                              <strong
+                                id="minimumstaymonths"
+                              >
+                                Minimum Stay:
+                              </strong>
+                               
+                              
+                               Months
+                            </div>
+                            <div
+                              class="col mx-2"
+                            >
+                              <strong
+                                id="maxbookabledays"
+                              >
+                                Maximum Bookbale Days:
+                              </strong>
+                               
+                               days
+                            </div>
+                            <div
+                              class="col mx-2"
+                            >
+                              <strong
+                                id="moveinwindow"
+                              >
+                                Move-In Window:
+                              </strong>
+                               
+                              0
+                               days
+                            </div>
+                            <div
+                              class="col mx-2"
+                            >
+                              <strong
+                                id="currentoccupancy"
+                              >
+                                Current Occupants:
+                              </strong>
+                               
+                              0
+                            </div>
+                            <div
+                              class="col mx-2"
+                            >
+                              <strong
+                                id="minage"
+                              >
+                                Min Age:
+                              </strong>
+                               
+                              0
+                            </div>
+                            <div
+                              class="col mx-2"
+                            >
+                              <strong
+                                id="maxage"
+                              >
+                                Max Age:
+                              </strong>
+                               
+                              0
+                            </div>
+                            <div
+                              class="col mx-2"
+                            >
+                              <strong
+                                id="preferredgender"
+                              >
+                                Preferred Gender:
+                              </strong>
+                               
+                              
+                            </div>
+                            <div
+                              class="col mx-2"
+                            >
+                              <strong
+                                id="alias"
+                              >
+                                Alias:
+                              </strong>
+                               
+                              
+                            </div>
+                            <div
+                              class="col mx-2"
+                            >
+                              <strong
+                                id="externalreference"
+                              >
+                                External Reference:
+                              </strong>
+                               
+                              
+                            </div>
+                            <div
+                              class="col mx-2"
+                            >
+                              <strong
+                                id="extradata"
+                              >
+                                Extra Data:
+                              </strong>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="modal-footer"
+                    >
+                      <button
+                        class="btn btn-danger"
+                        type="button"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>,
+              "isTopModal": [Function],
+              "remove": [Function],
+              "setBackdropRef": [Function],
+              "setDialogRef": [Function],
+            },
+          ],
+          "scrollbarSize": 0,
+        }
+      }
+      onEnter={[Function]}
+      onEntering={[Function]}
+      onEscapeKeyDown={[Function]}
+      onExit={[Function]}
+      onExited={[Function]}
+      renderBackdrop={[Function]}
+      renderDialog={[Function]}
+      restoreFocus={true}
+      show={false}
+      transition={[Function]}
+    />
+  </Modal>
+</DetailsModal>
+`;

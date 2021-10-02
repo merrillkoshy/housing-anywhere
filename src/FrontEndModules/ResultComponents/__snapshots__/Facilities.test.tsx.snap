@@ -1,0 +1,224 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FacilitiesModule module renders 1`] = `
+<details>
+  <summary>
+    <strong>
+      Facilities
+    </strong>
+  </summary>
+  <ul>
+    <li
+      id="airConditioning"
+    >
+      Air conditioning:
+      ❌
+    </li>
+    <li
+      id="allergyFriendly"
+    >
+      Allergy Friendly:
+      ❌
+    </li>
+    <li
+      id="balconyTerrace"
+    >
+      Balcony Terrace:
+      ❌
+    </li>
+    <li
+      id="basement"
+    >
+      Basement:
+      ❌
+    </li>
+    <li
+      id="bathroom"
+    >
+      Bathroom:
+      ❌
+    </li>
+    <li
+      id="bed"
+    >
+      Bed:
+      ❌
+    </li>
+    <li
+      id="bedroomFurnished"
+    >
+      Bedroom Furnished:
+      ❌
+    </li>
+    <li
+      id="bedroomLock"
+    >
+      Bedroom Lockable:
+      ❌
+    </li>
+    <li
+      id="bedroomSize"
+    >
+      Bedroom Size: 
+      0
+    </li>
+    <li
+      id="bedrooms"
+    >
+      Bedrooms: 
+      0
+    </li>
+    <li
+      id="closet"
+    >
+      Closet: 
+      ❌
+    </li>
+    <li
+      id="desk"
+    >
+      Desk: 
+      ❌
+    </li>
+    <li
+      id="dishwasher"
+    >
+      Dishwasher: 
+      ❌
+    </li>
+    <li
+      id="dryer"
+    >
+      Dryer:
+      ❌
+    </li>
+    <li
+      id="flooring"
+    >
+      Flooring: 
+    </li>
+    <li
+      id="freePlaces"
+    >
+      Free Places: 
+      0
+    </li>
+    <li
+      id="garden"
+    >
+      Garden:
+      ❌
+    </li>
+    <li
+      id="heating"
+    >
+      Bedrooms: 
+    </li>
+    <li
+      id="housematesGender"
+    >
+      Housemates Gender:
+      ⚥
+    </li>
+    <li
+      id="internet"
+    >
+      Internet:
+      ❌
+    </li>
+    <li
+      id="kitchen"
+    >
+      Kitchen:
+      ❌
+    </li>
+    <li
+      id="kitchenware"
+    >
+      Kitchenware:
+      ❌
+    </li>
+    <li
+      id="livingRoom"
+    >
+      Living Room:
+      ❌
+    </li>
+    <li
+      id="parking"
+    >
+      Parking:
+      ❌
+    </li>
+    <li
+      id="registrationPossible"
+    >
+      Registration Possible:
+       
+      ❌
+    </li>
+    <li
+      id="roomFurniture"
+    >
+      Room Furniture: 
+      ❌
+    </li>
+    <li
+      id="tenantStatus"
+    >
+      Tent Status: 
+    </li>
+    <li
+      id="toilet"
+    >
+      Toilet: 
+      ❌
+    </li>
+    <li
+      id="totalSize"
+    >
+      Total Size: 
+      0
+    </li>
+    <li
+      id="toilet"
+    >
+      Toilet: 
+    </li>
+    <li
+      id="tv"
+    >
+      Tv:
+      ❌
+    </li>
+    <li
+      id="washingMachine"
+    >
+      Washing Machine: 
+      ❌
+    </li>
+    <li
+      id="wheelchairAccessible"
+    >
+      WheelChair Accessible: 
+      ❌
+    </li>
+    <li
+      id="wifi"
+    >
+      Wifi: 
+      ❌
+    </li>
+    <AdditionalCosts
+      costs={
+        Object {
+          "electricity": false,
+          "gas": false,
+          "internet": false,
+          "water": false,
+        }
+      }
+    />
+  </ul>
+</details>
+`;

@@ -1,8 +1,22 @@
 $primary: #fa7009;
+.btn {
+	box-shadow: inset 0 0 5px 4px #00000024;
+}
 .btn-primary {
 	color: white !important;
 }
-
+.card-header {
+	background-color: $primary !important;
+	color: white;
+	box-shadow: inset 0 0 5px 4px #ca590530;
+}
+li[class="address"] {
+	:nth-child(1) {
+		list-style-type: "";
+	}
+	list-style-type: "›";
+	padding-inline-start: 1ch;
+}
 @import ".~bootstrap/scss/bootstrap";
 
 body {
@@ -13,6 +27,20 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+main {
+	height: 80vh;
+	overflow: scroll;
+	@include media-breakpoint-down(sm) {
+		width: 46vh;
+	}
+	@include media-breakpoint-down(md) {
+		width: 46vh;
+	}
+}
+footer {
+	box-shadow: 0 -4px 14px #0000001f;
+	position: sticky;
+}
 
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -22,6 +50,8 @@ code {
 .App {
 	text-align: center;
 	header {
+		box-shadow: 0 4px 14px #0000001f;
+		border-radius: 6px;
 		.logobar {
 			width: 30vw;
 			@include media-breakpoint-down(sm) {
@@ -88,10 +118,6 @@ code {
 			height: auto;
 		}
 
-		.asset-image {
-			width: 100%;
-			height: auto;
-		}
 		#admin-side {
 			.to-enter {
 				background-color: $danger;
@@ -118,6 +144,12 @@ code {
 				}
 			}
 		}
+		.result-panel {
+			.card {
+				box-shadow: 10px 10px 20px #d9d9d9, -10px -10px 20px #ffffff;
+				border-radius: 15px;
+			}
+		}
 	}
 
 	#admin-side,
@@ -127,6 +159,9 @@ code {
 		height: 80vh;
 		width: 25vw;
 		text-align: left;
+		border-radius: 16px;
+		background: #ffffff;
+		box-shadow: 10px 10px 20px #d9d9d9, -10px -10px 20px #ffffff;
 		@include media-breakpoint-down(sm) {
 			width: 100%;
 		}
@@ -153,9 +188,24 @@ code {
 		}
 	}
 }
-.pricing-text {
-	color: $primary;
+
+.asset-image {
+	width: 100%;
+	height: auto;
+
+	border-radius: 10px;
+	box-shadow: 10px 10px 20px #d9d9d9, -10px -10px 20px #ffffff;
 }
+#details-modal {
+	.asset-image {
+		max-height: 24vw;
+	}
+	#price,
+	#currencycode {
+		color: #00af9e;
+	}
+}
+
 .autocomplete-items {
 	height: 40vh !important;
 	width: 100%;

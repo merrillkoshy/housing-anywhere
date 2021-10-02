@@ -1,8 +1,5 @@
-import { JsxElement, parseJsonText } from "typescript";
+import React from "react";
 
-interface Searchable {
-	[key: string]: string;
-}
 const MainDetails = ({
 	alias,
 	currentoccupancy,
@@ -35,32 +32,24 @@ const MainDetails = ({
 	extradata: string;
 }) => {
 	const dataExtracter = (stringData: string) => {
-		const result = stringData.replaceAll("'", "").replaceAll("\\", "");
+		const result = stringData?.replaceAll("'", "")?.replaceAll("\\", "");
 		return result;
 	};
 	const ExtraData = () => {
 		const toObject = dataExtracter(extradata);
-		const object = JSON.parse(toObject);
-		for (const key in object) {
-			if (Object.prototype.hasOwnProperty.call(object, key)) {
-				const element = key;
-				const value = object[key];
-				return (
-					<div className="col mx-2">
-						<strong>{element}:</strong> {value}
-					</div>
-				);
-			} else {
-				<></>;
-			}
-		}
-		return <></>;
+
+		return (
+			<div className="col mx-2">
+				<strong id="extradata">Extra Data:</strong>
+				{toObject}
+			</div>
+		);
 	};
 
 	return (
-		<div className="d-flex flex-wrap w-100 justify-content-stretch">
+		<div className="mt-5 d-flex flex-wrap w-100 justify-content-stretch">
 			<div className="col mx-2">
-				<strong>Type:</strong>{" "}
+				<strong id="type">Type:</strong>{" "}
 				{type === "1"
 					? "House"
 					: type === "2"
@@ -70,7 +59,7 @@ const MainDetails = ({
 					: ""}
 			</div>
 			<div className="col mx-2">
-				<strong>Kind:</strong>{" "}
+				<strong id="kind">Kind:</strong>{" "}
 				{kind === "1"
 					? "Entire Place"
 					: kind === "2"
@@ -81,37 +70,42 @@ const MainDetails = ({
 			</div>
 
 			<div className="col mx-2">
-				<strong>Deposit:</strong> {deposit}
+				<strong id="deposit">Deposit:</strong> {deposit}
 			</div>
 			<div className="col mx-2">
-				<strong>Estimated Bills:</strong> {estimatedbills}
+				<strong id="estimatedbills">Estimated Bills:</strong> {estimatedbills}
 			</div>
 			<div className="col mx-2">
-				<strong>Minimum Stay:</strong> {minimumstaymonths} Months
+				<strong id="minimumstaymonths">Minimum Stay:</strong>{" "}
+				{minimumstaymonths} Months
 			</div>
 			<div className="col mx-2">
-				<strong>Maximum Bookbale Days:</strong> {maxbookabledays} days
+				<strong id="maxbookabledays">Maximum Bookbale Days:</strong>{" "}
+				{maxbookabledays} days
 			</div>
 			<div className="col mx-2">
-				<strong>Move-In Window:</strong> {moveinwindow} days
+				<strong id="moveinwindow">Move-In Window:</strong> {moveinwindow} days
 			</div>
 			<div className="col mx-2">
-				<strong>Current Occupants:</strong> {currentoccupancy}
+				<strong id="currentoccupancy">Current Occupants:</strong>{" "}
+				{currentoccupancy}
 			</div>
 			<div className="col mx-2">
-				<strong>Min Age:</strong> {minage}
+				<strong id="minage">Min Age:</strong> {minage}
 			</div>
 			<div className="col mx-2">
-				<strong>Max Age:</strong> {maxage}
+				<strong id="maxage">Max Age:</strong> {maxage}
 			</div>
 			<div className="col mx-2">
-				<strong>Preferred Gender:</strong> {preferredgender}
+				<strong id="preferredgender">Preferred Gender:</strong>{" "}
+				{preferredgender}
 			</div>
 			<div className="col mx-2">
-				<strong>Alias:</strong> {alias}
+				<strong id="alias">Alias:</strong> {alias}
 			</div>
 			<div className="col mx-2">
-				<strong>External Reference:</strong> {externalreference}
+				<strong id="externalreference">External Reference:</strong>{" "}
+				{externalreference}
 			</div>
 			<ExtraData />
 		</div>

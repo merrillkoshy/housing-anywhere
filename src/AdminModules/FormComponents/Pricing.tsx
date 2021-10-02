@@ -28,6 +28,7 @@ const Pricing = ({
 				if (dt.code?.toLowerCase().includes(currencyCode)) {
 					return dt;
 				}
+				return "";
 			})
 		);
 	};

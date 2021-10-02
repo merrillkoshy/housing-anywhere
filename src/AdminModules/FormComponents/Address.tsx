@@ -47,6 +47,7 @@ const Address = ({
 				if (dt.name?.toLowerCase().includes(countryCode)) {
 					return dt;
 				}
+				return "";
 			})
 		);
 	};

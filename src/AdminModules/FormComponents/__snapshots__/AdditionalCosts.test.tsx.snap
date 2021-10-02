@@ -2,6 +2,9 @@
 
 exports[`Addl Costs module renders 1`] = `
 <Fragment>
+  <header>
+    Additional Costs
+  </header>
   <FormGroup
     as={
       Object {

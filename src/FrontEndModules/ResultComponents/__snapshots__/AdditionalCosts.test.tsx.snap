@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Addl Costs module renders 1`] = `
+<details>
+  <summary>
+    <strong
+      id="additionalCosts"
+    >
+      Additional Costs
+    </strong>
+  </summary>
+  <ul>
+    <li
+      id="water"
+    >
+      Water:
+      ❌
+    </li>
+    <li
+      id="gas"
+    >
+      Gas:
+      ❌
+    </li>
+    <li
+      id="electricity"
+    >
+      Electicity:
+      ❌
+    </li>
+    <li
+      id="internet"
+    >
+      Internet:
+      ❌
+    </li>
+  </ul>
+</details>
+`;

@@ -8,18 +8,20 @@ const RulesComponent = ({ rules }: { rules: Rules }) => {
 				<strong>Rules</strong>
 			</summary>
 			<ul>
-				<li>Pets:{rules?.pets === "yes" ? "✅" : "❌"}</li>
-				<li>
+				<li id="pets">Pets:{rules?.pets === "yes" ? "✅" : "❌"}</li>
+				<li id="cleaningCommonRoomsIncluded">
 					Cleaning Common Rooms Included:
 					{rules?.cleaningCommonRoomsIncluded ? "✅" : "❌"}
 				</li>
-				<li>
+				<li id="cleaningPrivateRoomIncluded">
 					Cleaning Private Rooms Included:
 					{rules?.cleaningPrivateRoomIncluded ? "✅" : "❌"}
 				</li>
-				<li>Play Music:{rules?.playMusic === "yes" ? "✅" : "❌"}</li>
-				<li>Smoking:{rules?.smoking === "yes" ? "✅" : "❌"}</li>
-				<li>Couple:{rules?.couple ? "✅" : "❌"}</li>
+				<li id="playMusic">
+					Play Music:{rules?.playMusic === "yes" ? "✅" : "❌"}
+				</li>
+				<li id="smoking">Smoking:{rules?.smoking === "yes" ? "✅" : "❌"}</li>
+				<li id="couple">Couple:{rules?.couple ? "✅" : "❌"}</li>
 			</ul>
 		</details>
 	);

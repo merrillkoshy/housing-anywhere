@@ -81,26 +81,26 @@ export interface CalendarOperations {
 export interface HAData {
 	id?: string | number;
 	price: number;
-	currencyCode: string;
+	currencycode: string;
 	address: Address;
 	type: number;
 	kind: number;
 	description: string;
 	deposit?: number;
-	estimatedBills?: number;
-	minimumStayMonths: string;
-	maxBookableDays?: number;
-	moveInWindow: number;
-	currentOccupancy: number;
+	estimatedbills?: number;
+	minimumstaymonths: string;
+	maxbookabledays?: number;
+	moveinwindow: number;
+	currentoccupancy: number;
 	rules: Rules;
-	minAge: number;
-	maxAge: number;
-	preferredGender: string;
+	minage: number;
+	maxage: number;
+	preferredgender: string;
 	alias: string;
-	externalReference: string;
-	extraData: string;
+	externalreference: string;
+	extradata: string;
 	facilities: Facilities;
-	calendarOperations: CalendarOperations[];
+	calendaroperations: CalendarOperations[];
 	images: Images[];
 	costs: Costs[];
 }

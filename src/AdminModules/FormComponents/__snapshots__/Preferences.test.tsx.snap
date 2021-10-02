@@ -17,7 +17,6 @@ exports[`Preferences module renders 1`] = `
       onChange={[Function]}
       placeholder="Enter minAge"
       type="number"
-      value={0}
     />
   </FormGroup>
   <FormGroup
@@ -35,7 +34,6 @@ exports[`Preferences module renders 1`] = `
       onChange={[Function]}
       placeholder="Enter maxAge"
       type="number"
-      value={0}
     />
   </FormGroup>
   <FormGroup
@@ -47,9 +45,7 @@ exports[`Preferences module renders 1`] = `
       <DropdownToggle
         id="preferredGender"
         variant="primary"
-      >
-        No Preference
-      </DropdownToggle>
+      />
       <DropdownMenu
         align="left"
         alignRight={false}
@@ -108,7 +104,6 @@ exports[`Preferences module renders 1`] = `
       onChange={[Function]}
       placeholder="Enter Alias"
       type="text"
-      value=""
     />
   </FormGroup>
   <FormGroup
@@ -125,7 +120,6 @@ exports[`Preferences module renders 1`] = `
       onChange={[Function]}
       placeholder="Enter External Reference"
       type="text"
-      value=""
     />
   </FormGroup>
   <FormGroup
@@ -142,7 +136,6 @@ exports[`Preferences module renders 1`] = `
       onChange={[Function]}
       placeholder="A JSON field with extra information important for the listing which doesn't fit in other fields. Make sure to escape the quotes!"
       type="text"
-      value=""
     />
   </FormGroup>
 </Fragment>

@@ -1,9 +1,45 @@
-import React from "react";
+import React, { SetStateAction } from "react";
 import { mount, shallow } from "enzyme";
-import Costs from "./Costs";
+import CostsComponent from "./Costs";
+import { Costs } from "../../components/dataInterfaces";
 
 describe("CostsModule module", () => {
-	const CostsModule = shallow(<Costs />);
+	const CostsModule = shallow(
+		<CostsComponent
+			type={""}
+			setType={function(value: SetStateAction<string>): void {
+				throw new Error("Function not implemented.");
+			}}
+			value={0}
+			setValue={function(value: SetStateAction<number>): void {
+				throw new Error("Function not implemented.");
+			}}
+			payableAt={""}
+			setPayableAt={function(value: SetStateAction<string>): void {
+				throw new Error("Function not implemented.");
+			}}
+			payableBy={""}
+			setPayableBy={function(value: SetStateAction<string>): void {
+				throw new Error("Function not implemented.");
+			}}
+			refundable={false}
+			setRefundable={function(value: SetStateAction<boolean>): void {
+				throw new Error("Function not implemented.");
+			}}
+			estimated={false}
+			setEstimated={function(value: SetStateAction<boolean>): void {
+				throw new Error("Function not implemented.");
+			}}
+			mandatory={false}
+			setMandatory={function(value: SetStateAction<boolean>): void {
+				throw new Error("Function not implemented.");
+			}}
+			costs={[]}
+			setCosts={function(value: SetStateAction<Costs[]>): void {
+				throw new Error("Function not implemented.");
+			}}
+		/>
+	);
 	it("renders", () => {
 		expect(CostsModule).toMatchSnapshot();
 	});

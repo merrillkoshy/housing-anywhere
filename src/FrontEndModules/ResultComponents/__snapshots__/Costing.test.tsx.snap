@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CostsModule module renders 1`] = `
+<details>
+  <summary>
+    <strong>
+      Costs
+    </strong>
+  </summary>
+  <ul
+    key="47fc0472-57b2-4f44-a1be-97388af94a09"
+  >
+    <li
+      id="costtype"
+    >
+      Type:
+    </li>
+    <li
+      id="value"
+    >
+      Value:
+      0
+    </li>
+    <li
+      id="payableAt"
+    >
+      Payable At:
+    </li>
+    <li
+      id="payableBy"
+    >
+      Payable By:
+    </li>
+    <li
+      id="refundable"
+    >
+      Refundable:
+      ❌
+    </li>
+    <li
+      id="estimated"
+    >
+      Estimated:
+      ❌
+    </li>
+    <li
+      id="mandatory"
+    >
+      Mandatory:
+      ❌
+    </li>
+  </ul>
+</details>
+`;

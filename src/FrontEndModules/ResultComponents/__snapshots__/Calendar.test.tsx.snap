@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CostsModule module renders 1`] = `
+<div
+  className="d-flex flex-column my-2"
+>
+  <div
+    key="28d72150-5bf8-4ef3-a57f-e0da625c9ebc"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col"
+      >
+        <p
+          className="text-success"
+          id="typeCal"
+        >
+          Available
+        </p>
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="col"
+      >
+        <strong
+          id="dateFrom"
+        >
+          From:
+        </strong>
+      </div>
+      <div
+        className="col"
+      >
+        <strong
+          id="dateTo"
+        >
+          To:
+        </strong>
+      </div>
+    </div>
+  </div>
+</div>
+`;

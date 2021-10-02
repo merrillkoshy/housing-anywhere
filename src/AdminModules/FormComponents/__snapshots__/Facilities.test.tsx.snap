@@ -79,6 +79,12 @@ exports[`FacilitiesModule module renders 1`] = `
   <FormGroup
     className="mb-3"
   >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Housemates Gender
+    </FormLabel>
     <Dropdown
       navbar={false}
     >
@@ -219,9 +225,7 @@ exports[`FacilitiesModule module renders 1`] = `
       <DropdownToggle
         id="tenantStatus"
         variant="primary"
-      >
-        Any
-      </DropdownToggle>
+      />
       <DropdownMenu
         align="left"
         alignRight={false}
@@ -2023,13 +2027,6 @@ exports[`FacilitiesModule module renders 1`] = `
         </DropdownItem>
       </DropdownMenu>
     </Dropdown>
-    <FormControl
-      id="heating"
-      onChange={[Function]}
-      placeholder="Is there heating?"
-      type="text"
-      value=""
-    />
   </FormGroup>
   <FormGroup
     className="mb-3"
@@ -2091,6 +2088,15 @@ exports[`FacilitiesModule module renders 1`] = `
       </DropdownMenu>
     </Dropdown>
   </FormGroup>
-  <AdditionalCosts />
+  <AdditionalCosts
+    electricity={false}
+    gas={false}
+    internet={false}
+    setElectricity={[Function]}
+    setGas={[Function]}
+    setInternet={[Function]}
+    setWater={[Function]}
+    water={false}
+  />
 </Fragment>
 `;

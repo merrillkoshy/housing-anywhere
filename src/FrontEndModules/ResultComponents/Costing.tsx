@@ -1,22 +1,31 @@
 import React from "react";
 import { Costs } from "../../components/dataInterfaces";
+import { v4 as uuidv4 } from "uuid";
 
-const costs = ({ costs }: { costs: Costs }) => {
+const Costing = ({ costsArray }: { costsArray: Array<Costs> }) => {
+	console.log(costsArray);
 	return (
 		<details>
 			<summary>
 				<strong>Costs</strong>
 			</summary>
-			<ul>
-				<li>Type:{costs?.type}</li>
-				<li>Value:{costs?.value}</li>
-				<li>Payable At:{costs?.payableAt}</li>
-				<li>Payable By:{costs?.payableBy}</li>
-				<li>Refundable:{costs?.refundable ? "✅" : "❌"}</li>
-				<li>Estimated:{costs?.estimated ? "✅" : "❌"}</li>
-				<li>Mandatory:{costs?.mandatory ? "✅" : "❌"}</li>
-			</ul>
+			{costsArray &&
+				costsArray?.map((costs) => {
+					return (
+						<ul key={uuidv4()}>
+							<li id="costtype">Type:{costs?.type}</li>
+							<li id="value">Value:{costs?.value}</li>
+							<li id="payableAt">Payable At:{costs?.payableAt}</li>
+							<li id="payableBy">Payable By:{costs?.payableBy}</li>
+							<li id="refundable">
+								Refundable:{costs?.refundable ? "✅" : "❌"}
+							</li>
+							<li id="estimated">Estimated:{costs?.estimated ? "✅" : "❌"}</li>
+							<li id="mandatory">Mandatory:{costs?.mandatory ? "✅" : "❌"}</li>
+						</ul>
+					);
+				})}
 		</details>
 	);
 };
-export default costs;
+export default Costing;

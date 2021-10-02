@@ -13,25 +13,27 @@ const TLDR = ({
 	description: string;
 	currencycode: string;
 	price: number;
-	costs: Costs;
+	costs: Costs[];
 	rules: Rules;
 }) => {
 	return (
 		<>
 			<section id="description">
 				<h3>Description</h3>
-				<p>{description}</p>
+				<p id="description">{description}</p>
 			</section>
 			<section className="d-flex" id="cost">
 				<>
 					<div className="col-1 pricing-text">
-						<strong>{currencycode}</strong>
+						<strong id="currencycode">{currencycode}</strong>
 					</div>
 					<div className="col mx-2 pricing-text">
-						<strong>{price}</strong>
+						<strong id="price">
+							{price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}
+						</strong>
 					</div>
 					<div className="col-8 mx-2 ">
-						<Costing costs={costs} />
+						<Costing costsArray={costs} />
 					</div>
 				</>
 			</section>

@@ -120,10 +120,14 @@ exports[`Address module renders 1`] = `
     <FormControl
       id="countryCode"
       onChange={[Function]}
-      placeholder="Enter Country Code"
+      onKeyPress={[Function]}
+      placeholder="Just type your Country name, we'll fetch your code"
       required={true}
       type="text"
       value=""
+    />
+    <div
+      className="d-none autocomplete-items"
     />
   </FormGroup>
 </Fragment>

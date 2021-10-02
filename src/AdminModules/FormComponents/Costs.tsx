@@ -35,7 +35,7 @@ const CostsComponent = ({
 	setEstimated: React.Dispatch<React.SetStateAction<boolean>>;
 	mandatory: boolean;
 	setMandatory: React.Dispatch<React.SetStateAction<boolean>>;
-	costs: object[];
+	costs: Costs[];
 	setCosts: React.Dispatch<React.SetStateAction<Costs[]>>;
 }) => {
 	const [enableAdd, setEnableAdd] = useState(false);

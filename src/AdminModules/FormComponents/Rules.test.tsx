@@ -1,9 +1,40 @@
-import React from "react";
+import React, { SetStateAction } from "react";
 import { shallow } from "enzyme";
 import Rules from "./Rules";
 
 describe("Address module", () => {
-	const RulesModule = shallow(<Rules />);
+	const RulesModule = shallow(
+		<Rules
+			pets={""}
+			setPets={function(value: SetStateAction<string>): void {
+				throw new Error("Function not implemented.");
+			}}
+			cleaningCommonRoomsIncluded={false}
+			setCleaningCommonRoomsIncluded={function(
+				value: SetStateAction<boolean>
+			): void {
+				throw new Error("Function not implemented.");
+			}}
+			cleaningPrivateRoomIncluded={false}
+			setCleaningPrivateRoomIncluded={function(
+				value: SetStateAction<boolean>
+			): void {
+				throw new Error("Function not implemented.");
+			}}
+			playMusic={""}
+			setPlayMusic={function(value: SetStateAction<string>): void {
+				throw new Error("Function not implemented.");
+			}}
+			smoking={""}
+			setSmoking={function(value: SetStateAction<string>): void {
+				throw new Error("Function not implemented.");
+			}}
+			couple={false}
+			setCouple={function(value: SetStateAction<boolean>): void {
+				throw new Error("Function not implemented.");
+			}}
+		/>
+	);
 	it("renders", () => {
 		expect(RulesModule).toMatchSnapshot();
 	});

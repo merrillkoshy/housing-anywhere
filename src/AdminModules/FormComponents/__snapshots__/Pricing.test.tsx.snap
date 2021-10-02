@@ -32,10 +32,14 @@ exports[`Pricing module renders 1`] = `
     <FormControl
       id="currency"
       onChange={[Function]}
+      onKeyPress={[Function]}
       placeholder="EUR"
       required={true}
       type="text"
       value=""
+    />
+    <div
+      className="d-none autocomplete-items"
     />
   </FormGroup>
 </Fragment>

@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Description module renders 1`] = `
+<Fragment>
+  <section
+    id="description"
+  >
+    <h3>
+      Description
+    </h3>
+    <p
+      id="description"
+    />
+  </section>
+  <section
+    className="d-flex"
+    id="cost"
+  >
+    <div
+      className="col-1 pricing-text"
+    >
+      <strong
+        id="currencycode"
+      />
+    </div>
+    <div
+      className="col mx-2 pricing-text"
+    >
+      <strong
+        id="price"
+      >
+        0
+      </strong>
+    </div>
+    <div
+      className="col-8 mx-2 "
+    >
+      <Costing
+        costsArray={Array []}
+      />
+    </div>
+  </section>
+  <section
+    className="d-flex"
+    id="rules"
+  >
+    <RulesComponent
+      rules={
+        Object {
+          "cleaningCommonRoomsIncluded": false,
+          "cleaningPrivateRoomIncluded": false,
+          "couple": false,
+          "pets": "",
+          "playMusic": "",
+          "smoking": "",
+        }
+      }
+    />
+  </section>
+</Fragment>
+`;

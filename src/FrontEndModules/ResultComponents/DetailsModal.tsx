@@ -1,4 +1,4 @@
-import { Button, Col, Modal } from "react-bootstrap";
+import { Button, Modal } from "react-bootstrap";
 
 import ImageSpace from "./ImageSpace";
 import FacilitiesComponent from "./Facilities";
@@ -6,6 +6,7 @@ import Title from "./Title";
 import TLDR from "./TLDR";
 import Calendar from "./Calendar";
 import MainDetails from "./MainDetails";
+import { HAData } from "../../components/dataInterfaces";
 
 const DetailsModal = ({
 	show,
@@ -13,11 +14,11 @@ const DetailsModal = ({
 	handleClose,
 }: {
 	show: boolean;
-	details: any;
+	details: HAData;
 	handleClose: () => void;
 }) => {
 	return (
-		<Modal show={show} size={"lg"}>
+		<Modal id="details-modal" show={show} size={"lg"}>
 			<Modal.Header>
 				<Modal.Title className="w-75">
 					<Title address={details.address} />
@@ -57,14 +58,14 @@ const DetailsModal = ({
 							estimatedbills={details.estimatedbills}
 							externalreference={details.externalreference}
 							extradata={details.extradata}
-							kind={details.kind}
+							kind={details.kind.toString()}
 							maxage={details.maxage}
 							maxbookabledays={details.maxbookabledays}
 							minage={details.minage}
 							minimumstaymonths={details.minimumstaymonths}
 							moveinwindow={details.moveinwindow}
 							preferredgender={details.preferredgender}
-							type={details.type}
+							type={details.type.toString()}
 						/>
 					</div>
 				</div>

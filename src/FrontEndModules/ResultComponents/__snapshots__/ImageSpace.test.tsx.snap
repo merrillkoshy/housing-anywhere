@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImagesModule Costs module renders 1`] = `
+<Fragment>
+  <img
+    alt="the-huis"
+    className="asset-image"
+    id="listing-image"
+    key="2d63435b-8ce3-42c6-9a79-dac57dd3eaff"
+    src=""
+  />
+</Fragment>
+`;

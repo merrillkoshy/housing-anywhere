@@ -1,10 +1,49 @@
-import React from "react";
+import React, { SetStateAction } from "react";
 import { shallow } from "enzyme";
 import "@testing-library/jest-dom/extend-expect";
 import Description from "./Description";
 
 describe("Description module", () => {
-	const DescriptionModule = shallow(<Description />);
+	const DescriptionModule = shallow(
+		<Description
+			type={0}
+			setType={function(value: SetStateAction<number>): void {
+				throw new Error("Function not implemented.");
+			}}
+			kind={0}
+			setKind={function(value: SetStateAction<number>): void {
+				throw new Error("Function not implemented.");
+			}}
+			description={""}
+			setDescription={function(value: SetStateAction<string>): void {
+				throw new Error("Function not implemented.");
+			}}
+			deposit={0}
+			setDeposit={function(value: SetStateAction<number>): void {
+				throw new Error("Function not implemented.");
+			}}
+			estimatedBills={0}
+			setEstimatedBills={function(value: SetStateAction<number>): void {
+				throw new Error("Function not implemented.");
+			}}
+			minimumStayMonths={""}
+			setMinimumStayMonths={function(value: SetStateAction<string>): void {
+				throw new Error("Function not implemented.");
+			}}
+			maxBookableDays={0}
+			setMaxBookableDays={function(value: SetStateAction<number>): void {
+				throw new Error("Function not implemented.");
+			}}
+			moveInWindow={0}
+			setMoveInWindow={function(value: SetStateAction<number>): void {
+				throw new Error("Function not implemented.");
+			}}
+			currentOccupancy={0}
+			setCurrentOccupancy={function(value: SetStateAction<number>): void {
+				throw new Error("Function not implemented.");
+			}}
+		/>
+	);
 	it("renders", () => {
 		expect(DescriptionModule).toMatchSnapshot();
 	});

@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainDetails Costs module renders 1`] = `
+<div
+  className="mt-5 d-flex flex-wrap w-100 justify-content-stretch"
+>
+  <div
+    className="col mx-2"
+  >
+    <strong
+      id="type"
+    >
+      Type:
+    </strong>
+     
+  </div>
+  <div
+    className="col mx-2"
+  >
+    <strong
+      id="kind"
+    >
+      Kind:
+    </strong>
+     
+  </div>
+  <div
+    className="col mx-2"
+  >
+    <strong
+      id="deposit"
+    >
+      Deposit:
+    </strong>
+     
+  </div>
+  <div
+    className="col mx-2"
+  >
+    <strong
+      id="estimatedbills"
+    >
+      Estimated Bills:
+    </strong>
+     
+  </div>
+  <div
+    className="col mx-2"
+  >
+    <strong
+      id="minimumstaymonths"
+    >
+      Minimum Stay:
+    </strong>
+     
+     Months
+  </div>
+  <div
+    className="col mx-2"
+  >
+    <strong
+      id="maxbookabledays"
+    >
+      Maximum Bookbale Days:
+    </strong>
+     
+     days
+  </div>
+  <div
+    className="col mx-2"
+  >
+    <strong
+      id="moveinwindow"
+    >
+      Move-In Window:
+    </strong>
+     
+    0
+     days
+  </div>
+  <div
+    className="col mx-2"
+  >
+    <strong
+      id="currentoccupancy"
+    >
+      Current Occupants:
+    </strong>
+     
+    0
+  </div>
+  <div
+    className="col mx-2"
+  >
+    <strong
+      id="minage"
+    >
+      Min Age:
+    </strong>
+     
+    0
+  </div>
+  <div
+    className="col mx-2"
+  >
+    <strong
+      id="maxage"
+    >
+      Max Age:
+    </strong>
+     
+    0
+  </div>
+  <div
+    className="col mx-2"
+  >
+    <strong
+      id="preferredgender"
+    >
+      Preferred Gender:
+    </strong>
+     
+  </div>
+  <div
+    className="col mx-2"
+  >
+    <strong
+      id="alias"
+    >
+      Alias:
+    </strong>
+     
+  </div>
+  <div
+    className="col mx-2"
+  >
+    <strong
+      id="externalreference"
+    >
+      External Reference:
+    </strong>
+     
+  </div>
+  <ExtraData />
+</div>
+`;

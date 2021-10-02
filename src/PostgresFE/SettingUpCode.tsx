@@ -7,7 +7,7 @@ const SettingUpCode = ({
 	sending: { [key: string]: string | boolean | number | object };
 }) => {
 	return (
-		<section id="pg-code">
+		<section id="pg-code p-5">
 			<div className="d-flex flex-column px-3 col-3 pg-code align-items-left justify-content-center w-100 mt-3">
 				<img
 					src="https://www.postgresql.org/media/img/about/press/elephant.png"
@@ -15,7 +15,7 @@ const SettingUpCode = ({
 					height="50"
 					alt={"pg-logo"}
 				/>
-				<header>The Postgres Side of it</header>
+				<h5>The Postgres Side of it</h5>
 				<details>
 					<summary>Creation Commands</summary>
 					<code>

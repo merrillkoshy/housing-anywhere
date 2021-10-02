@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Result Panel renders 1`] = `
+<section
+  id="result-panel"
+>
+  <div
+    className="d-flex justify-content-center w-100 result-panel"
+  />
+</section>
+`;

@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Address module renders 1`] = `
+<details>
+  <summary>
+    <strong>
+      Rules
+    </strong>
+  </summary>
+  <ul>
+    <li
+      id="pets"
+    >
+      Pets:
+      ❌
+    </li>
+    <li
+      id="cleaningCommonRoomsIncluded"
+    >
+      Cleaning Common Rooms Included:
+      ❌
+    </li>
+    <li
+      id="cleaningPrivateRoomIncluded"
+    >
+      Cleaning Private Rooms Included:
+      ❌
+    </li>
+    <li
+      id="playMusic"
+    >
+      Play Music:
+      ❌
+    </li>
+    <li
+      id="smoking"
+    >
+      Smoking:
+      ❌
+    </li>
+    <li
+      id="couple"
+    >
+      Couple:
+      ❌
+    </li>
+  </ul>
+</details>
+`;

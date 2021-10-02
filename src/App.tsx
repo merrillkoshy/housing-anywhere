@@ -10,7 +10,7 @@ function App() {
 	return (
 		<div className="App">
 			<Layout>
-				<div className="container">
+				<div className="container my-5">
 					<div
 						className="showdown d-flex 
                 flex-lg-row flex-xl-row flex-xxl-row

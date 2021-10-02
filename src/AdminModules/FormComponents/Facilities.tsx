@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Form, Col, Row, Dropdown } from "react-bootstrap";
 import Switch from "react-switch";
 import AdditionalCosts from "./AdditionalCosts";

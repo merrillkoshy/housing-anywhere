@@ -10,7 +10,9 @@ The project is to show(case) the deliverables of Merrill's Full Stack developmen
   (from Sep 30)
 - CI/CD: Google Cloud Build, Github, Heroku
 - FE Deployed on : Google Cloud Platform (App Engine)
+  [GAE Front End](https://lithe-climber-327311.uc.r.appspot.com/)
 - BE Deployed on : Heroku
+  [Heroku NodeJS Back End](https://ha-server.herokuapp.com/)
 - DB Deployed as Heroku-Postgres service
 
 * The reviewer can understand the DDD, BDD & TDD in the project.

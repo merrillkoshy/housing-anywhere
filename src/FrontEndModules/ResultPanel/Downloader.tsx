@@ -1,6 +1,4 @@
 import { CSVLink } from "react-csv";
-import { Data } from "react-csv/components/CommonPropTypes";
-import prepareForExport from "../../components/prepareForExport";
 
 const Downloader = ({ data }: { data: any }) => {
 	var forExport: any[] = [];
