@@ -30,7 +30,7 @@ const Result = () => {
 			.get(`https://ha-server.herokuapp.com/listing`, {
 				headers: {
 					"Access-Control-Allow-Headers": "Content-Type, jwtSecret",
-					jwtSecret: process.env.REACT_APP_JWT,
+					jwtSecret: "merrillkoshy",
 					"Access-Control-Allow-Origin": "*",
 					"Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
 					"Content-Type": "application/json",
