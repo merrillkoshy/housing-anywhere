@@ -7,9 +7,8 @@ const insertData = (data: HAData) => {
 	Object.keys(data).map((obs, i) => {
 		console.log(obs, i);
 	});
-	console.log(process.env.REACT_APP_DB_URL);
 	axios
-		.post(`${process.env.REACT_APP_DB_URL}/listing`, data, {
+		.post(`https://ha-server.herokuapp.com/listing`, data, {
 			headers: {
 				jwtSecret: "merrillkoshy",
 			},

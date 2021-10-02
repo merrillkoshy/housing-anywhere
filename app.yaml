@@ -10,4 +10,4 @@ handlers:
     upload: build/index.html
 
   - env_variables:
-    REACT_APP_DB_URL: "https://ha-server.herokuapp.com"
+    REACT_APP_JWT: "merrillkoshy"

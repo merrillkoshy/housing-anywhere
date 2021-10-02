@@ -26,11 +26,17 @@ const Result = () => {
 	}, []);
 
 	const getter = () => {
-		axios.get(`${process.env.REACT_APP_DB_URL}/listing`).then((response) => {
-			const sanitized = sanitizeListings(response.data);
-			console.log(sanitized);
-			setListing(sanitized);
-		});
+		axios
+			.get(`https://ha-server.herokuapp.com/listing`, {
+				headers: {
+					jwtSecret: process.env.REACT_APP_JWT,
+				},
+			})
+			.then((response) => {
+				const sanitized = sanitizeListings(response.data);
+				console.log(sanitized);
+				setListing(sanitized);
+			});
 	};
 	return (
 		<section id="result-panel">
