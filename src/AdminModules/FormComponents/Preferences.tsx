@@ -59,6 +59,7 @@ const Preferences = ({
 				/>
 			</Form.Group>
 			<Form.Group className="mb-3">
+				<Form.Label>Preferred Gender :</Form.Label>
 				<Dropdown>
 					<Dropdown.Toggle variant="primary" id="preferredGender">
 						{preferredGender}
