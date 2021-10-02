@@ -9,5 +9,5 @@ handlers:
     static_files: build/index.html
     upload: build/index.html
 
-  - env_variables:
-    REACT_APP_JWT: "merrillkoshy"
+env_variables:
+  REACT_APP_JWT: "merrillkoshy"
