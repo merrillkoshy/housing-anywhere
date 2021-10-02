@@ -29,7 +29,10 @@ const Result = () => {
 		axios
 			.get(`https://ha-server.herokuapp.com/listing`, {
 				headers: {
+					"Access-Control-Allow-Headers": "Content-Type, Authorization",
 					jwtSecret: process.env.REACT_APP_JWT,
+					"Access-Control-Allow-Origin": "*",
+					"Content-Type": "application/json",
 				},
 			})
 			.then((response) => {

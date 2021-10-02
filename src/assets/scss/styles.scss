@@ -171,6 +171,7 @@ code {
 	}
 	#result-panel {
 		width: 35vw;
+		height: auto;
 		@include media-breakpoint-down(sm) {
 			width: 100%;
 		}

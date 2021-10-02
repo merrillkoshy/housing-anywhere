@@ -4,13 +4,14 @@ import { HAData } from "./dataInterfaces";
 
 const insertData = (data: HAData) => {
 	console.log(data);
-	Object.keys(data).map((obs, i) => {
-		console.log(obs, i);
-	});
+
 	axios
 		.post(`https://ha-server.herokuapp.com/listing`, data, {
 			headers: {
-				jwtSecret: "merrillkoshy",
+				"Access-Control-Allow-Headers": "Content-Type, Authorization",
+				jwtSecret: process.env.REACT_APP_JWT,
+				"Access-Control-Allow-Origin": "*",
+				"Content-Type": "application/json",
 			},
 		})
 		.then((res) => {
