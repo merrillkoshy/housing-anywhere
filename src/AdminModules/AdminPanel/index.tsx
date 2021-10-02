@@ -234,8 +234,8 @@ const Admin = ({
 			setPlayMusic("");
 			setSmoking("");
 			setCouple(false);
-			setMinAge(0);
-			setMaxAge(0);
+			setMinAge(18);
+			setMaxAge(35);
 			setPreferredGender("No Preference");
 			setAlias("");
 			setExternalReference("");
@@ -292,7 +292,7 @@ const Admin = ({
 		};
 	}, []);
 	return (
-		<section id="admin-side">
+		<section id="admin-side" className="mx-2">
 			<Form className="w-100 input-form p-5">
 				<Form.Label className="my-2 w-100 d-flex justify-content-between">
 					<div className="d-flex justify-content-center align-items-center">

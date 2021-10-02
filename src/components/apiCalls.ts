@@ -8,7 +8,7 @@ const insertData = (data: HAData) => {
 	axios
 		.post(`https://ha-server.herokuapp.com/listing`, data, {
 			headers: {
-				"Access-Control-Allow-Headers": "Content-Type, Authorization",
+				"Access-Control-Allow-Headers": "Content-Type, jwtSecret",
 				jwtSecret: process.env.REACT_APP_JWT,
 				"Access-Control-Allow-Origin": "*",
 				"Content-Type": "application/json",

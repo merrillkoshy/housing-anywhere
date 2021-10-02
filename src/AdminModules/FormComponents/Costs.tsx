@@ -194,6 +194,7 @@ const CostsComponent = ({
 						<Form.Label>Value</Form.Label>
 						<Form.Control
 							type="number"
+							min={0}
 							id="value"
 							value={value}
 							disabled={payableBy === "tenant"}

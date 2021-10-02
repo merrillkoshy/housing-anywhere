@@ -268,6 +268,7 @@ const Facilities = ({
 				<Form.Label>Free Places</Form.Label>
 				<Form.Control
 					type="number"
+					min={0}
 					placeholder="Number of places available for the listing. This Number is just informative and does not have any impact on the booking."
 					value={freePlaces}
 					id="freePlaces"
@@ -281,6 +282,7 @@ const Facilities = ({
 				<Form.Label>Bedrooms</Form.Label>
 				<Form.Control
 					type="number"
+					min={0}
 					placeholder="Number of bedrooms in the listing."
 					value={bedrooms}
 					id="bedrooms"
@@ -308,6 +310,7 @@ const Facilities = ({
 				<Form.Label>Bedroom Size</Form.Label>
 				<Form.Control
 					type="number"
+					min={0}
 					placeholder="Enter Bedroom Size"
 					value={bedroomSize}
 					id="bedroomSize"
@@ -596,6 +599,7 @@ const Facilities = ({
 				<Form.Label>Total Size</Form.Label>
 				<Form.Control
 					type="number"
+					min={0}
 					placeholder="This is the total area of the listing (apartment or house) in square meters, including all private and shared spaces."
 					value={totalSize}
 					id="totalSize"

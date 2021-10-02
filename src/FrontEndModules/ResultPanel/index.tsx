@@ -29,9 +29,10 @@ const Result = () => {
 		axios
 			.get(`https://ha-server.herokuapp.com/listing`, {
 				headers: {
-					"Access-Control-Allow-Headers": "Content-Type, Authorization",
+					"Access-Control-Allow-Headers": "Content-Type, jwtSecret",
 					jwtSecret: process.env.REACT_APP_JWT,
 					"Access-Control-Allow-Origin": "*",
+					"Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
 					"Content-Type": "application/json",
 				},
 			})
@@ -42,7 +43,7 @@ const Result = () => {
 			});
 	};
 	return (
-		<section id="result-panel">
+		<section id="result-panel" className="mx-2">
 			<div className="d-flex justify-content-center w-100 result-panel">
 				{listing ? (
 					listing?.map((listed: HAData) => {

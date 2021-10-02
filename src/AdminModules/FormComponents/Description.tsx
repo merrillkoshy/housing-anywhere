@@ -142,6 +142,7 @@ const Description = ({
 				<Form.Label>Deposit</Form.Label>
 				<Form.Control
 					type="number"
+					min={0}
 					placeholder="Enter deposit"
 					value={deposit}
 					id="deposit"
@@ -155,6 +156,7 @@ const Description = ({
 				<Form.Label>Estimated Bills</Form.Label>
 				<Form.Control
 					type="number"
+					min={0}
 					placeholder="Enter estimatedBills"
 					value={estimatedBills}
 					id="estimatedBills"
@@ -183,6 +185,7 @@ const Description = ({
 				<Form.Label>Max Bookable Days</Form.Label>
 				<Form.Control
 					type="number"
+					min={0}
 					placeholder="Enter Max Bookable Days"
 					value={maxBookableDays}
 					id="maxBookableDays"
@@ -198,6 +201,7 @@ const Description = ({
 				<Form.Label>Move In Window</Form.Label>
 				<Form.Control
 					type="number"
+					min={0}
 					placeholder="Enter Move In Window"
 					value={moveInWindow}
 					id="moveInWindow"
@@ -213,6 +217,7 @@ const Description = ({
 				<Form.Label>Current Occupancy</Form.Label>
 				<Form.Control
 					type="number"
+					min={0}
 					placeholder="Enter Current Occupancy"
 					value={currentOccupancy}
 					id="currentOccupancy"
