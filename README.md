@@ -13,14 +13,16 @@ The project is to show(case) the deliverables of Merrill's Full Stack developmen
   [GAE Front End](https://lithe-climber-327311.uc.r.appspot.com/)
 - BE Deployed on : Heroku
   [Heroku NodeJS Back End](https://ha-server.herokuapp.com/)
-- DB Deployed as Heroku-Postgres service
+- DB Deployed as Heroku-Postgres service.
 
-* The reviewer can understand the DDD, BDD & TDD in the project.
-* Should be able to show the backend operations done to achieve a result on the frontend succesfully to the reviewer.
+This stack has been particularly chosen after researching the tech stacks used by HA by going through HA's job postings.
+
+- The reviewer can understand the DDD & TDD in the project.
+- Should be able to show the backend operations done to achieve a result on the frontend succesfully to the reviewer.
 
 ### Story Time
 
-#### 1. Showcase DDD, BDD & TDD
+#### 1. Showcase DDD & TDD
 
 The testing library will be **Jest & Enzyme**
 
@@ -35,7 +37,7 @@ The testing library will be **Jest & Enzyme**
   - Postgres connects.
   - Postgres receives data as requested.
 
-#### 2. Succesful visual interpretation of FrontEnd & BackEnd operations.
+#### 2. Successful visual interpretation of FrontEnd & BackEnd operations.
 
 - Show status of operations done and the code used to achieve it.
 - Should be visually appealing with styling : bootstrap & sass.

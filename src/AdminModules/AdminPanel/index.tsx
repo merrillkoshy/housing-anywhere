@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Accordion, Form, Card, Button } from "react-bootstrap";
-import { v4 as uuidv4 } from "uuid";
-import insertData from "../../components/apiCalls";
+import apicalls from "../../components/apiCalls";
 import { Costs } from "../../components/dataInterfaces";
 import nullChecker from "../../components/nullChecker";
 import Address from "../FormComponents/Address";
@@ -13,6 +12,10 @@ import Images from "../FormComponents/Images";
 import Preferences from "../FormComponents/Preferences";
 import Pricing from "../FormComponents/Pricing";
 import Rules from "../FormComponents/Rules";
+
+import { toast } from "react-toastify";
+
+const UUID = require("uuid-int");
 
 const Admin = ({
 	setSending,
@@ -41,7 +44,7 @@ const Admin = ({
 	const [moveInWindow, setMoveInWindow] = useState(0);
 	const [currentOccupancy, setCurrentOccupancy] = useState(0);
 	//Rules usestates
-	const [pets, setPets] = useState("");
+	const [pets, setPets] = useState("no");
 	const [
 		cleaningCommonRoomsIncluded,
 		setCleaningCommonRoomsIncluded,
@@ -50,12 +53,12 @@ const Admin = ({
 		cleaningPrivateRoomIncluded,
 		setCleaningPrivateRoomIncluded,
 	] = useState(false);
-	const [playMusic, setPlayMusic] = useState("");
-	const [smoking, setSmoking] = useState("");
-	const [couple, setCouple] = useState(false);
+	const [playMusic, setPlayMusic] = useState("no");
+	const [smoking, setSmoking] = useState("no");
+	const [couple, setCouple] = useState("no");
 	//Preferences usestate
-	const [minAge, setMinAge] = useState(0);
-	const [maxAge, setMaxAge] = useState(0);
+	const [minAge, setMinAge] = useState(18);
+	const [maxAge, setMaxAge] = useState(35);
 	const [preferredGender, setPreferredGender] = useState("No Preference");
 	const [alias, setAlias] = useState("");
 	const [externalReference, setExternalReference] = useState("");
@@ -74,10 +77,10 @@ const Admin = ({
 	const [basement, setBasement] = useState("");
 	const [bathroom, setBathroom] = useState("");
 	const [garden, setGarden] = useState("");
-	const [kitchen, setKitchen] = useState("");
+	const [kitchen, setKitchen] = useState("no");
 	const [livingRoom, setLivingRoom] = useState("");
 	const [parking, setParking] = useState("");
-	const [toilet, setToilet] = useState("");
+	const [toilet, setToilet] = useState("no");
 	const [totalSize, setTotalSize] = useState(0);
 	const [wheelchairAccessible, setWheelchairAccessible] = useState(false);
 	const [airConditioning, setAirConditioning] = useState(false);
@@ -114,9 +117,18 @@ const Admin = ({
 	const [gas, setGas] = useState(false);
 	const [electricity, setElectricity] = useState(false);
 	const [internetCost, setInternetCost] = useState(false);
+
+	//Form validation
+	const [validated, setValidated] = useState(false);
+
+	const id = 0;
+
+	const generator = UUID(id);
+
+	const uuid = generator.uuid();
 	//data packet
 	const data = {
-		id: uuidv4(),
+		id: Math.trunc(uuid / 10000000),
 		price: price,
 		currencycode: currencyCode,
 		address: {
@@ -206,6 +218,23 @@ const Admin = ({
 			}),
 		costs: costs,
 	};
+	const handleSubmit = (event: {
+		currentTarget: any;
+		preventDefault: () => void;
+		stopPropagation: () => void;
+	}) => {
+		const form = event.currentTarget;
+		if (form.checkValidity() === false) {
+			event.preventDefault();
+			event.stopPropagation();
+			if (typeCost === "" && payableAt === "" && payableBy === "") {
+				event.preventDefault();
+				event.stopPropagation();
+			}
+		}
+
+		setValidated(true);
+	};
 	useEffect(() => {
 		return () => {
 			//should cleanup on load
@@ -228,12 +257,12 @@ const Admin = ({
 			setMaxBookableDays(0);
 			setMoveInWindow(0);
 			setCurrentOccupancy(0);
-			setPets("");
+			setPets("no");
 			setCleaningCommonRoomsIncluded(false);
 			setCleaningPrivateRoomIncluded(false);
-			setPlayMusic("");
-			setSmoking("");
-			setCouple(false);
+			setPlayMusic("no");
+			setSmoking("no");
+			setCouple("no");
 			setMinAge(18);
 			setMaxAge(35);
 			setPreferredGender("No Preference");
@@ -293,19 +322,28 @@ const Admin = ({
 	}, []);
 	return (
 		<section id="admin-side" className="mx-2">
-			<Form className="w-100 input-form p-5">
+			<Form
+				className="w-100 input-form p-5"
+				noValidate
+				validated={validated}
+				onSubmit={handleSubmit}
+			>
 				<Form.Label className="my-2 w-100 d-flex justify-content-between">
 					<div className="d-flex justify-content-center align-items-center">
 						<h3>Inputs</h3>{" "}
 					</div>
-					<div className="d-flex">
-						<span className="to-enter p-2 mx-1 d-flex justify-content-center align-items-center">
-							{22 - nullChecker(data)}
-						</span>
+					<div className="d-flex counters">
+						<div className="mx-1 col-5 d-flex justify-content-center align-items-center">
+							<span className="to-enter d-flex justify-content-center align-items-center px-1">
+								{22 - nullChecker(data)}
+							</span>
+						</div>
 						{"  "}
-						<span className="entered p-2 mx-1 d-flex justify-content-center align-items-center">
-							{nullChecker(data)}
-						</span>
+						<div className="mx-1 col-5 d-flex justify-content-center align-items-center">
+							<span className="entered d-flex justify-content-center align-items-center px-1">
+								{nullChecker(data)}
+							</span>
+						</div>
 					</div>
 				</Form.Label>
 				<Pricing
@@ -546,10 +584,19 @@ const Admin = ({
 					<Button
 						className=" my-2 mb-5"
 						variant="success"
+						type="submit"
 						onClick={(e) => {
-							e.preventDefault();
-							setSending(data);
-							insertData(data);
+							if (!validated) {
+								toast(`Slow down Cowboy, form aint validated`, {
+									position: "top-center",
+									type: "error",
+								});
+								e.preventDefault();
+								e.stopPropagation();
+							} else {
+								setSending(data);
+								apicalls.insertData(data);
+							}
 						}}
 					>
 						Submit

@@ -1,4 +1,6 @@
 $primary: #fa7009;
+$secondary: #00af9e;
+
 .btn {
 	box-shadow: inset 0 0 5px 4px #00000024;
 }
@@ -17,7 +19,15 @@ li[class="address"] {
 	list-style-type: "›";
 	padding-inline-start: 1ch;
 }
-@import ".~bootstrap/scss/bootstrap";
+input:invalid {
+	border: 2px solid red;
+}
+
+input:valid {
+	border: 0.5px solid green;
+}
+@import "~bootstrap/scss/bootstrap";
+@import "~react-toastify/dist/ReactToastify.css";
 
 body {
 	margin: 0;
@@ -26,6 +36,7 @@ body {
 		sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	transition: 1s;
 }
 main {
 	height: 80vh;
@@ -40,6 +51,13 @@ main {
 footer {
 	box-shadow: 0 -4px 14px #0000001f;
 	position: sticky;
+	a {
+		text-decoration: none;
+	}
+	.tech {
+		color: $secondary;
+		font-weight: bolder;
+	}
 }
 
 code {
@@ -119,28 +137,27 @@ code {
 		}
 
 		#admin-side {
-			.to-enter {
-				background-color: $danger;
-				color: white;
-				border-radius: 50%;
-				width: 3vw;
+			.counters {
+				width: 4vw;
 				@include media-breakpoint-down(sm) {
-					width: 11vw;
+					width: 23vw;
 				}
 				@include media-breakpoint-down(md) {
-					width: 11vw;
+					width: 23vw;
 				}
-			}
-			.entered {
-				background-color: $success;
-				color: white;
-				border-radius: 50%;
-				width: 3vw;
-				@include media-breakpoint-down(sm) {
-					width: 11vw;
+				.to-enter {
+					border: 1px solid $danger;
+					color: $danger;
+					border-radius: 50%;
+					font-size: 23px;
+					width: 40px;
 				}
-				@include media-breakpoint-down(md) {
-					width: 11vw;
+				.entered {
+					border: 1px solid $success;
+					color: $success;
+					border-radius: 50%;
+					font-size: 23px;
+					width: 40px;
 				}
 			}
 		}
@@ -156,7 +173,7 @@ code {
 	#result-panel,
 	#pg-code {
 		overflow: scroll;
-		height: 80vh;
+		height: 74vh;
 		width: 25vw;
 		text-align: left;
 		border-radius: 16px;
@@ -171,16 +188,43 @@ code {
 	}
 	#result-panel {
 		width: 35vw;
-		height: auto;
+		height: 74vh;
+
 		@include media-breakpoint-down(sm) {
 			width: 100%;
 		}
 		@include media-breakpoint-down(md) {
 			width: 100%;
 		}
+		.slidable-cards {
+			overflow: scroll;
+			.card-image-container {
+				max-height: 50vh;
+			}
+		}
+		.pagination {
+			li {
+				position: relative;
+				display: block;
+				text-decoration: none;
+				background-color: white;
+				color: black;
+				border-color: $secondary;
+				border: 1px solid #dee2e6;
+				padding: 0.375rem 0.75rem;
+				transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+					border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+				&.active {
+					background-color: $secondary;
+					color: white;
+				}
+			}
+		}
 	}
 	#pg-code {
 		width: 20vw;
+		height: auto;
+		max-height: 74vh;
 		@include media-breakpoint-down(sm) {
 			width: 100%;
 		}
@@ -200,13 +244,46 @@ code {
 #details-modal {
 	.asset-image {
 		max-height: 24vw;
+		@include media-breakpoint-down(sm) {
+			max-height: 100vw;
+		}
+		@include media-breakpoint-down(md) {
+			max-height: 100vw;
+		}
+		.main-details {
+			max-width: 100%;
+		}
 	}
 	#price,
 	#currencycode {
 		color: #00af9e;
 	}
 }
-
+#updater-modal {
+	.editor-menu {
+		ul {
+			li {
+				list-style-type: "";
+				border: 1px solid #0000001a;
+				border-radius: 10px;
+				box-shadow: 0px 0px 5px 2px #0000001a;
+				cursor: pointer;
+				padding: 10px;
+				font-size: 30px;
+				margin: 10px 0;
+				transition: 0.5s ease-in-out;
+				&:hover {
+					background-color: $secondary;
+					color: white;
+				}
+			}
+		}
+	}
+	.menu-component {
+		height: 30vh;
+		overflow: scroll;
+	}
+}
 .autocomplete-items {
 	height: 40vh !important;
 	width: 100%;

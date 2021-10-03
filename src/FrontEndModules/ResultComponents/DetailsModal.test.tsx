@@ -26,7 +26,7 @@ describe("Details Modal", () => {
 		cleaningPrivateRoomIncluded: false,
 		playMusic: "",
 		smoking: "",
-		couple: false,
+		couple: "",
 	};
 	const additionalCosts: AdditionalCosts = {
 		water: false,
@@ -71,6 +71,7 @@ describe("Details Modal", () => {
 		additionalCosts: additionalCosts,
 	};
 	const details: HAData = {
+		id: 0,
 		price: 0,
 		currencycode: "",
 		address: address,
@@ -99,6 +100,9 @@ describe("Details Modal", () => {
 			handleClose={function(): void {
 				throw new Error("Function not implemented.");
 			}}
+			setSending={function(value: any): void {
+				throw new Error("Function not implemented.");
+			}}
 		/>
 	);
 
@@ -111,6 +115,9 @@ describe("Details Modal", () => {
 				show={showModal}
 				details={details}
 				handleClose={function(): void {
+					throw new Error("Function not implemented.");
+				}}
+				setSending={function(value: any): void {
 					throw new Error("Function not implemented.");
 				}}
 			/>

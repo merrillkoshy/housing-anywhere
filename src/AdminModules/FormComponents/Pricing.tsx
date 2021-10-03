@@ -38,7 +38,7 @@ const Pricing = ({
 				<Form.Label>Price</Form.Label>
 				<Form.Control
 					type="number"
-					min={0}
+					min={100}
 					placeholder="Enter Price"
 					value={price}
 					id="price"

@@ -4,11 +4,12 @@ import { Images } from "../../components/dataInterfaces";
 
 const ImageSpace = ({ images }: { images: Images[] }) => {
 	return (
-		<>
+		<div className="d-flex card-image-container">
 			{images &&
 				images?.map((image) => {
 					return (
 						<img
+							loading={"lazy"}
 							key={uuidv4()}
 							className="asset-image"
 							src={image.url}
@@ -17,7 +18,7 @@ const ImageSpace = ({ images }: { images: Images[] }) => {
 						/>
 					);
 				})}
-		</>
+		</div>
 	);
 };
 

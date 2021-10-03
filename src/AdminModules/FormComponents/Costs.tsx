@@ -198,6 +198,7 @@ const CostsComponent = ({
 							id="value"
 							value={value}
 							disabled={payableBy === "tenant"}
+							required
 							onChange={(e) => {
 								e.preventDefault();
 								setValue((e.currentTarget as HTMLInputElement).valueAsNumber);

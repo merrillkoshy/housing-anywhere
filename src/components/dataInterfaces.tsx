@@ -15,7 +15,7 @@ export interface Rules {
 	cleaningPrivateRoomIncluded: boolean;
 	playMusic: string;
 	smoking: string;
-	couple: boolean;
+	couple: string;
 }
 
 export interface AdditionalCosts {
@@ -79,7 +79,7 @@ export interface CalendarOperations {
 	dateTo: string;
 }
 export interface HAData {
-	id?: string | number;
+	id: number;
 	price: number;
 	currencycode: string;
 	address: Address;

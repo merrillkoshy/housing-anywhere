@@ -17,7 +17,7 @@ const SettingUpCode = ({
 				/>
 				<h5>The Postgres Side of it</h5>
 				<details>
-					<summary>Creation Commands</summary>
+					<summary>CREATE Commands</summary>
 					<code>
 						CREATE ROLE ha_admin WITH LOGIN PASSWORD 'root';
 						<br></br>
@@ -109,6 +109,10 @@ const SettingUpCode = ({
 					</code>
 				</details>
 				<details>
+					<summary>READ Command</summary>
+					<code>SELECT * FROM hadata</code>
+				</details>
+				<details>
 					<summary>INSERT Command</summary>
 					<code>
 						INSERT INTO hadata ( id, price, currencycode, address, type, kind,
@@ -132,6 +136,10 @@ const SettingUpCode = ({
 						ARRAY['("https://picsum.photos/300/300")']::images[],ARRAY['("security-deposit","8000","move-in","tenant",true,false,true)']::costs[])
 						returning id;
 					</code>
+				</details>
+				<details>
+					<summary>DELETE Command</summary>
+					<code>DELETE FROM hadata WHERE id = $1</code>
 				</details>
 			</div>
 			<div className="d-flex align-items-left px-3 mt-5 flex-column">

@@ -9,7 +9,7 @@ const SendingCommand = ({
 	if (nullChecker(sending) >= 2)
 		return (
 			<>
-				<span>You are gonna send this 👇</span>
+				<span>You sent this 👇</span>
 				<p>
 					{"{"}
 					<br></br>

@@ -4,18 +4,21 @@ const Downloader = ({ data }: { data: any }) => {
 	var forExport: any[] = [];
 	var headers: string[] = [];
 	var values: any[] = [];
-	Object.keys(data[0]).map((key) => {
-		return headers.push(key);
-	});
-	forExport.push(headers);
-	data.forEach((element: {}) => {
-		Object.values(element).map((val) => {
-			if (typeof val === "object")
-				return values.push(JSON.stringify(val).replaceAll(",", ";"));
-			return values.push(val);
+
+	if (data !== undefined && data !== null && data.length !== 0) {
+		Object.keys(data[0]).map((key) => {
+			return headers.push(key);
 		});
-		forExport.push(values);
-	});
+		forExport.push(headers);
+		data.forEach((element: {}) => {
+			Object.values(element).map((val) => {
+				if (typeof val === "object")
+					return values.push(JSON.stringify(val).replaceAll(",", ";"));
+				return values.push(val);
+			});
+			forExport.push(values);
+		});
+	}
 	return (
 		<>
 			<CSVLink

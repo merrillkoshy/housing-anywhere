@@ -3,7 +3,6 @@ import { Costs } from "../../components/dataInterfaces";
 import { v4 as uuidv4 } from "uuid";
 
 const Costing = ({ costsArray }: { costsArray: Array<Costs> }) => {
-	console.log(costsArray);
 	return (
 		<details>
 			<summary>

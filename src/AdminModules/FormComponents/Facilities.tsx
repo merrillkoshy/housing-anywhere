@@ -314,6 +314,7 @@ const Facilities = ({
 					placeholder="Enter Bedroom Size"
 					value={bedroomSize}
 					id="bedroomSize"
+					required
 					onChange={(e) => {
 						e.preventDefault();
 						setBedroomSize((e.currentTarget as HTMLInputElement).valueAsNumber);

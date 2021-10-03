@@ -39,7 +39,7 @@ const MainDetails = ({
 		const toObject = dataExtracter(extradata);
 
 		return (
-			<div className="col mx-2">
+			<div className="d-flex flex-wrap col m-2  main-details">
 				<strong id="extradata">Extra Data:</strong>
 				{toObject}
 			</div>
@@ -48,7 +48,7 @@ const MainDetails = ({
 
 	return (
 		<div className="mt-5 d-flex flex-wrap w-100 justify-content-stretch">
-			<div className="col mx-2">
+			<div className="d-flex flex-wrap col m-2  main-details">
 				<strong id="type">Type:</strong>{" "}
 				{type === "1"
 					? "House"
@@ -58,7 +58,7 @@ const MainDetails = ({
 					? "Apartment"
 					: ""}
 			</div>
-			<div className="col mx-2">
+			<div className="d-flex flex-wrap col m-2  main-details">
 				<strong id="kind">Kind:</strong>{" "}
 				{kind === "1"
 					? "Entire Place"
@@ -69,41 +69,41 @@ const MainDetails = ({
 					: ""}
 			</div>
 
-			<div className="col mx-2">
+			<div className="d-flex flex-wrap col m-2  main-details">
 				<strong id="deposit">Deposit:</strong> {deposit}
 			</div>
-			<div className="col mx-2">
+			<div className="d-flex flex-wrap col m-2  main-details">
 				<strong id="estimatedbills">Estimated Bills:</strong> {estimatedbills}
 			</div>
-			<div className="col mx-2">
+			<div className="d-flex flex-wrap col m-2  main-details">
 				<strong id="minimumstaymonths">Minimum Stay:</strong>{" "}
 				{minimumstaymonths} Months
 			</div>
-			<div className="col mx-2">
+			<div className="d-flex flex-wrap col m-2  main-details">
 				<strong id="maxbookabledays">Maximum Bookbale Days:</strong>{" "}
 				{maxbookabledays} days
 			</div>
-			<div className="col mx-2">
+			<div className="d-flex flex-wrap col m-2  main-details">
 				<strong id="moveinwindow">Move-In Window:</strong> {moveinwindow} days
 			</div>
-			<div className="col mx-2">
+			<div className="d-flex flex-wrap col m-2  main-details">
 				<strong id="currentoccupancy">Current Occupants:</strong>{" "}
 				{currentoccupancy}
 			</div>
-			<div className="col mx-2">
+			<div className="d-flex flex-wrap col m-2  main-details">
 				<strong id="minage">Min Age:</strong> {minage}
 			</div>
-			<div className="col mx-2">
+			<div className="d-flex flex-wrap col m-2  main-details">
 				<strong id="maxage">Max Age:</strong> {maxage}
 			</div>
-			<div className="col mx-2">
+			<div className="d-flex flex-wrap col m-2  main-details">
 				<strong id="preferredgender">Preferred Gender:</strong>{" "}
 				{preferredgender}
 			</div>
-			<div className="col mx-2">
+			<div className="d-flex flex-wrap col m-2  main-details">
 				<strong id="alias">Alias:</strong> {alias}
 			</div>
-			<div className="col mx-2">
+			<div className="d-flex flex-wrap col m-2  main-details">
 				<strong id="externalreference">External Reference:</strong>{" "}
 				{externalreference}
 			</div>

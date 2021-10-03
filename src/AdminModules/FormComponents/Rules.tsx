@@ -26,8 +26,8 @@ const Rules = ({
 	setPlayMusic: React.Dispatch<React.SetStateAction<string>>;
 	smoking: string;
 	setSmoking: React.Dispatch<React.SetStateAction<string>>;
-	couple: boolean;
-	setCouple: React.Dispatch<React.SetStateAction<boolean>>;
+	couple: string;
+	setCouple: React.Dispatch<React.SetStateAction<string>>;
 }) => {
 	return (
 		<>
@@ -103,15 +103,16 @@ const Rules = ({
 				<Form.Label as="legend" column>
 					Couples Allowed?
 				</Form.Label>
-				<Col>
-					<Switch
-						id="couple"
-						onChange={() => {
-							setCouple(!couple);
-						}}
-						checked={couple}
-					/>
-				</Col>
+				<Form.Control
+					type="text"
+					id="couple"
+					value={couple}
+					onChange={(e) => {
+						e.preventDefault();
+						setCouple(e.currentTarget.value);
+					}}
+					placeholder="Allowed?"
+				/>
 			</Form.Group>
 		</>
 	);
