@@ -106,7 +106,7 @@ const updateListing = async (id: number, field: any) => {
 	const { price, currencyCode } = field;
 	await axios
 		.put(
-			`https://ha-server.herokuapp.com/listing/${id}`,
+			`https://ha-server.herokuapp.com/listing`,
 			{
 				price,
 				currencyCode,
@@ -122,7 +122,7 @@ const updateListing = async (id: number, field: any) => {
 			}
 		)
 		.then((res) => {
-			toast("Succesfully Deleted ", {
+			toast("Succesfully Updated ", {
 				position: "bottom-center",
 				type: "success",
 			});

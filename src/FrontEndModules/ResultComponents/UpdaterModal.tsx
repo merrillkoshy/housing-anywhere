@@ -29,9 +29,9 @@ const UpdaterModal = ({
 			</Modal.Header>
 			<Modal.Body>
 				<Pricing
-					price={0}
+					price={price}
 					setPrice={setPrice}
-					currencyCode={""}
+					currencyCode={currencyCode}
 					setCurrencyCode={setCurrencyCode}
 				/>
 			</Modal.Body>
