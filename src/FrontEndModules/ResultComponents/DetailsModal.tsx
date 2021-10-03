@@ -1,6 +1,5 @@
 import { Button, Modal } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEdit } from "@fortawesome/free-regular-svg-icons";
+
 import ImageSpace from "./ImageSpace";
 import FacilitiesComponent from "./Facilities";
 import Title from "./Title";
@@ -46,7 +45,6 @@ const DetailsModal = ({
 							<div className="d-flex justify-content-center align-items-center">
 								<span>Edit entry</span>
 							</div>
-							<FontAwesomeIcon className="mx-1" icon={faEdit} />
 						</div>
 					</div>
 				</Modal.Title>
