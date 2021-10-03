@@ -13,8 +13,6 @@ import Preferences from "../FormComponents/Preferences";
 import Pricing from "../FormComponents/Pricing";
 import Rules from "../FormComponents/Rules";
 
-import { toast } from "react-toastify";
-
 const UUID = require("uuid-int");
 
 const Admin = ({
@@ -119,7 +117,6 @@ const Admin = ({
 	const [internetCost, setInternetCost] = useState(false);
 
 	//Form validation
-	const [validated, setValidated] = useState(false);
 
 	const id = 0;
 
@@ -218,23 +215,7 @@ const Admin = ({
 			}),
 		costs: costs,
 	};
-	const handleSubmit = (event: {
-		currentTarget: any;
-		preventDefault: () => void;
-		stopPropagation: () => void;
-	}) => {
-		const form = event.currentTarget;
-		if (form.checkValidity() === false) {
-			event.preventDefault();
-			event.stopPropagation();
-			if (typeCost === "" && payableAt === "" && payableBy === "") {
-				event.preventDefault();
-				event.stopPropagation();
-			}
-		}
 
-		setValidated(true);
-	};
 	useEffect(() => {
 		return () => {
 			//should cleanup on load
@@ -322,12 +303,7 @@ const Admin = ({
 	}, []);
 	return (
 		<section id="admin-side" className="mx-2">
-			<Form
-				className="w-100 input-form p-5"
-				noValidate
-				validated={validated}
-				onSubmit={handleSubmit}
-			>
+			<Form className="w-100 input-form p-5">
 				<Form.Label className="my-2 w-100 d-flex justify-content-between">
 					<div className="d-flex justify-content-center align-items-center">
 						<h3>Inputs</h3>{" "}
@@ -584,19 +560,10 @@ const Admin = ({
 					<Button
 						className=" my-2 mb-5"
 						variant="success"
-						type="submit"
 						onClick={(e) => {
-							if (!validated) {
-								toast(`Slow down Cowboy, form aint validated`, {
-									position: "top-center",
-									type: "error",
-								});
-								e.preventDefault();
-								e.stopPropagation();
-							} else {
-								setSending(data);
-								apicalls.insertData(data);
-							}
+							e.preventDefault();
+							setSending(data);
+							apicalls.insertData(data);
 						}}
 					>
 						Submit

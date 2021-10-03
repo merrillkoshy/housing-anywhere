@@ -113,6 +113,14 @@ const SettingUpCode = ({
 					<code>SELECT * FROM hadata</code>
 				</details>
 				<details>
+					<summary>UPDATE Command</summary>
+					<code>
+						UPDATE hadata SET rules = '("no",true,true,"no","no","yes")'::rules
+						where id='1';
+					</code>
+				</details>
+
+				<details>
 					<summary>INSERT Command</summary>
 					<code>
 						INSERT INTO hadata ( id, price, currencycode, address, type, kind,
