@@ -37,6 +37,7 @@ const Layout = ({ children }: LayoutProps) => {
 								alt={"linkedin-logo"}
 							/>
 							<a
+								rel="noreferrer"
 								href={"https://www.linkedin.com/in/merrill-koshy-thomas"}
 								target="_blank"
 							>
@@ -53,7 +54,11 @@ const Layout = ({ children }: LayoutProps) => {
 								width={26}
 								alt={"linkedin-logo"}
 							/>
-							<a href={"https://merrillkoshy.github.io"} target="_blank">
+							<a
+								rel="noreferrer"
+								href={"https://merrillkoshy.github.io"}
+								target="_blank"
+							>
 								Portfolio
 							</a>
 						</p>
@@ -69,6 +74,7 @@ const Layout = ({ children }: LayoutProps) => {
 							></path>
 						</svg>{" "}
 						<a
+							rel="noreferrer"
 							href={"https://github.com/merrillkoshy/housing-anywhere"}
 							target="_blank"
 							className="mx-2"
@@ -93,6 +99,7 @@ const Layout = ({ children }: LayoutProps) => {
 							></path>
 						</svg>{" "}
 						<a
+							rel="noreferrer"
 							href={"https://github.com/merrillkoshy/ha-server"}
 							target="_blank"
 							className="mx-2"

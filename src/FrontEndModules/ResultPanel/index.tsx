@@ -1,23 +1,27 @@
-import axios from "axios";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Alert, Button, Card } from "react-bootstrap";
 import { v4 as uuidv4 } from "uuid";
 import DetailsModal from "../ResultComponents/DetailsModal";
 import ImageSpace from "../ResultComponents/ImageSpace";
 import Title from "../ResultComponents/Title";
-import sanitizeListings from "../../components/sanitizeListings";
 import apicalls from "../../components/apiCalls";
 import { HAData } from "../../components/dataInterfaces";
 import Downloader from "./Downloader";
 import ReactPaginate from "react-paginate";
 
 const Result = ({
+	listing,
+	getter,
+	pageNumber,
+	navigatePage,
 	setSending,
 }: {
+	listing: HAData[];
+	getter: () => void;
+	pageNumber: number;
+	navigatePage: (e: any) => void;
 	setSending: React.Dispatch<React.SetStateAction<any>>;
 }) => {
-	const [listing, setListing] = useState<HAData[]>([]);
-	const [pageNumber, setPageNumber] = useState(0);
 	const [show, setShow] = useState<boolean>(false);
 	const [showDeletePrompt, setShowDeletePrompt] = useState(false);
 
@@ -27,35 +31,7 @@ const Result = ({
 	const handleClose = () => {
 		setShow(false);
 	};
-	useEffect(() => {
-		getter();
-	}, [listing.length]);
 
-	const pageSetter = (pg: number) => {
-		setPageNumber(pg);
-	};
-	const navigatePage = (e: any) => {
-		pageSetter(e.selected);
-	};
-	const getter = () => {
-		axios
-			.get(`https://ha-server.herokuapp.com/listing`, {
-				headers: {
-					"Access-Control-Allow-Headers": "Content-Type, jwtSecret",
-					jwtSecret: "merrillkoshy",
-					"Access-Control-Allow-Origin": "*",
-					"Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
-					"Content-Type": "application/json",
-				},
-			})
-			.then((response) => {
-				const sanitized = sanitizeListings(response.data);
-				setListing(sanitized);
-			})
-			.then(() => {
-				pageSetter(0);
-			});
-	};
 	return (
 		<section id="result-panel" className="mx-2">
 			<div className="d-flex flex-column justify-content-center w-100 result-panel">
@@ -85,11 +61,10 @@ const Result = ({
 												<div className="d-flex justify-content-end">
 													<Button
 														onClick={() => {
-															apicalls
-																.deleteListing(listing[pageNumber]?.id)
-																.then(() => {
-																	getter();
-																});
+															apicalls.deleteListing(
+																listing[pageNumber]?.id,
+																getter
+															);
 															setShowDeletePrompt(false);
 														}}
 														variant="danger"

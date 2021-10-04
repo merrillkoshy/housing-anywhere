@@ -11,7 +11,7 @@ const FacilitiesComponent = ({ facilites }: { facilites: Facilities }) => {
 			<summary>
 				<strong>Facilities</strong>
 			</summary>
-			<ul>
+			<ul className="facility-details">
 				<li id="airConditioning">
 					Air conditioning:{facility?.airConditioning ? "✅" : "❌"}
 				</li>

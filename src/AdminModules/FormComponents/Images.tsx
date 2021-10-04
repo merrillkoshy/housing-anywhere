@@ -9,15 +9,18 @@ const Images = ({
 	files: any;
 	setFiles: React.Dispatch<React.SetStateAction<any>>;
 }) => {
-	const onDrop = useCallback((acceptedFiles) => {
-		setFiles(
-			acceptedFiles.map((file: any) =>
-				Object.assign(file, {
-					preview: URL.createObjectURL(file),
-				})
-			)
-		);
-	}, []);
+	const onDrop = useCallback(
+		(acceptedFiles) => {
+			setFiles(
+				acceptedFiles.map((file: any) =>
+					Object.assign(file, {
+						preview: URL.createObjectURL(file),
+					})
+				)
+			);
+		},
+		[setFiles]
+	);
 	const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
 	const thumbs = files?.map((file: any) => (
 		<div style={styles.thumb} key={file.name}>

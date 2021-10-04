@@ -13,13 +13,21 @@ import Preferences from "../FormComponents/Preferences";
 import Pricing from "../FormComponents/Pricing";
 import Rules from "../FormComponents/Rules";
 
+// As our id param is a number we take uuid-int
 const UUID = require("uuid-int");
 
 const Admin = ({
+	getter,
 	setSending,
 }: {
+	getter: () => void;
 	setSending: React.Dispatch<React.SetStateAction<object>>;
 }) => {
+	// The huge list of states in this single component is for :
+	// 1. Distribution to various components within the app.
+	// 2. To capture all of them in one place for our postgres code illustration.
+	// 3. To get a count of inputs filled and to be filled.
+
 	// Pricing usestates
 	const [price, setPrice] = useState<number>(0);
 	const [currencyCode, setCurrencyCode] = useState<string>("");
@@ -309,14 +317,16 @@ const Admin = ({
 						<h3>Inputs</h3>{" "}
 					</div>
 					<div className="d-flex counters">
-						<div className="mx-1 col-5 d-flex justify-content-center align-items-center">
+						<div className="mx-1 circle circle-enter d-flex justify-content-center align-items-center">
 							<span className="to-enter d-flex justify-content-center align-items-center px-1">
+								{/* The total number of inputs to be filled */}
 								{22 - nullChecker(data)}
 							</span>
 						</div>
 						{"  "}
-						<div className="mx-1 col-5 d-flex justify-content-center align-items-center">
+						<div className="mx-1 circle circle-entered d-flex justify-content-center align-items-center">
 							<span className="entered d-flex justify-content-center align-items-center px-1">
+								{/* The total number of inputs already filled */}
 								{nullChecker(data)}
 							</span>
 						</div>
@@ -563,7 +573,7 @@ const Admin = ({
 						onClick={(e) => {
 							e.preventDefault();
 							setSending(data);
-							apicalls.insertData(data);
+							apicalls.insertData(data, getter);
 						}}
 					>
 						Submit

@@ -7,7 +7,7 @@ const RulesComponent = ({ rules }: { rules: Rules }) => {
 			<summary>
 				<strong>Rules</strong>
 			</summary>
-			<ul>
+			<ul className="rules-details">
 				<li id="pets">Pets:{rules?.pets === "yes" ? "✅" : "❌"}</li>
 				<li id="cleaningCommonRoomsIncluded">
 					Cleaning Common Rooms Included:

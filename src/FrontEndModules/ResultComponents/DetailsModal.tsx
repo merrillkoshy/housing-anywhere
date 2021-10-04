@@ -45,6 +45,7 @@ const DetailsModal = ({
 							<div className="d-flex justify-content-center align-items-center">
 								<span>Edit entry</span>
 							</div>
+							<img src="/icons/icons8-edit.gif" alt="edit gif" width="25" />
 						</div>
 					</div>
 				</Modal.Title>
@@ -57,7 +58,8 @@ const DetailsModal = ({
 					<div
 						className="d-flex 
                 flex-lg-row flex-xl-row flex-xxl-row
-                flex-column justify-content-center"
+                flex-column justify-content-lg-evenly justify-content-xl-evenly justify-content-xxl-evenly
+				justify-content-center"
 					>
 						<div className="d-flex px-3  justify-content-center align-items-center">
 							<ImageSpace images={details?.images} />

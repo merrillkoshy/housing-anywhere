@@ -27,7 +27,7 @@ const costsSplitter = (cost: string) => {
 		estimated: "",
 		mandatory: "",
 	};
-
+	const resultArray = Array(chunk.length);
 	chunk.forEach((element, i) => {
 		var currentKey = Object.keys(proto)[i];
 		const isAnArray = regex.test(element);
@@ -49,13 +49,15 @@ const costsSplitter = (cost: string) => {
 			childArrayPusher.push(proto[currentKey]);
 			proto[currentKey] = childArrayPusher;
 		}
+		resultArray.push(proto);
 	});
 
 	if (isAnArray) {
 		parentArrayPusher.push(proto);
 		return parentArrayPusher;
 	} else {
-		return proto;
+		resultArray.filter((x) => x);
+		return resultArray;
 	}
 };
 export default costsSplitter;

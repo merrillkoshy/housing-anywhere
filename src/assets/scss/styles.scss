@@ -18,6 +18,7 @@ li[class="address"] {
 	}
 	list-style-type: "›";
 	padding-inline-start: 1ch;
+	padding-inline-end: 2.1ch;
 }
 input:invalid {
 	border: 2px solid red;
@@ -145,19 +146,29 @@ code {
 				@include media-breakpoint-down(md) {
 					width: 23vw;
 				}
-				.to-enter {
-					border: 1px solid $danger;
-					color: $danger;
+				.circle {
 					border-radius: 50%;
-					font-size: 23px;
-					width: 40px;
-				}
-				.entered {
-					border: 1px solid $success;
-					color: $success;
-					border-radius: 50%;
-					font-size: 23px;
-					width: 40px;
+					width: 36px;
+					height: 36px;
+					padding: 8px;
+
+					background: #fff;
+
+					text-align: center;
+
+					font: 22px Arial, sans-serif;
+					&.circle-enter {
+						border: 2px solid $danger;
+					}
+					&.circle-entered {
+						border: 2px solid $success;
+					}
+					.to-enter {
+						color: $danger;
+					}
+					.entered {
+						color: $success;
+					}
 				}
 			}
 		}
@@ -225,6 +236,7 @@ code {
 		width: 20vw;
 		height: auto;
 		max-height: 74vh;
+		padding: 2vw;
 		@include media-breakpoint-down(sm) {
 			width: 100%;
 		}
@@ -254,34 +266,51 @@ code {
 			max-width: 100%;
 		}
 	}
+	.rules-details {
+		li {
+			list-style-type: "📜";
+			padding-inline: 2ch;
+		}
+	}
+	.costs-details {
+		li {
+			list-style-type: "💶";
+			padding-inline: 2ch;
+		}
+	}
+	.facility-details {
+		max-height: 12vh;
+		overflow: scroll;
+		li {
+			list-style-type: "💅";
+			padding-inline: 2ch;
+		}
+	}
 	#price,
 	#currencycode {
 		color: #00af9e;
 	}
 }
 #updater-modal {
-	.editor-menu {
-		ul {
-			li {
-				list-style-type: "";
-				border: 1px solid #0000001a;
-				border-radius: 10px;
-				box-shadow: 0px 0px 5px 2px #0000001a;
-				cursor: pointer;
-				padding: 10px;
-				font-size: 30px;
-				margin: 10px 0;
-				transition: 0.5s ease-in-out;
-				&:hover {
-					background-color: $secondary;
-					color: white;
-				}
-			}
-		}
+	.close ::before {
+		content: "X";
+		visibility: visible;
+		color: black;
+		font-weight: bold;
 	}
-	.menu-component {
-		height: 30vh;
-		overflow: scroll;
+
+	.sr-only::before {
+		visibility: hidden;
+	}
+
+	.close {
+		visibility: hidden;
+		position: absolute;
+		right: 32px;
+		top: 10px;
+		width: 20px;
+		height: 20px;
+		background-color: rgba(247, 12, 12, 0.5);
 	}
 }
 .autocomplete-items {

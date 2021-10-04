@@ -11,7 +11,7 @@ const Costing = ({ costsArray }: { costsArray: Array<Costs> }) => {
 			{costsArray &&
 				costsArray?.map((costs) => {
 					return (
-						<ul key={uuidv4()}>
+						<ul key={uuidv4()} className="costs-details">
 							<li id="costtype">Type:{costs?.type}</li>
 							<li id="value">Value:{costs?.value}</li>
 							<li id="payableAt">Payable At:{costs?.payableAt}</li>

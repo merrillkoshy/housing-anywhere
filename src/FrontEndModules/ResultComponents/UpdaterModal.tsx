@@ -22,7 +22,7 @@ const UpdaterModal = ({
 
 	return (
 		<Modal id="updater-modal" centered show={show} size={"lg"}>
-			<Modal.Header>
+			<Modal.Header closeButton>
 				<Modal.Title className="w-75">
 					<h1>Entry Editor (Pricing)</h1>
 				</Modal.Title>

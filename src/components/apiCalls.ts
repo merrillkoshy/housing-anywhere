@@ -3,7 +3,7 @@ import { toast } from "react-toastify";
 import { HAData } from "./dataInterfaces";
 import formatter from "./formatter";
 
-const insertData = (data: HAData) => {
+const insertData = (data: HAData, getter: () => void) => {
 	var {
 		id,
 		price,
@@ -32,7 +32,7 @@ const insertData = (data: HAData) => {
 	} = data;
 
 	//since we dont have an image server, we do temp images here
-	images[0] = { url: "https://picsum.photos/300/300" };
+	images = [{ url: "https://picsum.photos/300/300" }];
 
 	//formatting for psql because js arrays and objects are notated
 	//differently for psql eg: for arrays its ARRAY[(val1,val2)] and
@@ -92,6 +92,7 @@ const insertData = (data: HAData) => {
 				position: "top-center",
 				type: "success",
 			});
+			getter();
 		})
 		.catch((err) => {
 			console.log(err);
@@ -135,7 +136,7 @@ const updateListing = async (id: number, field: any) => {
 			});
 		});
 };
-const deleteListing = async (id: number) => {
+const deleteListing = async (id: number, getter: () => void) => {
 	await axios
 		.delete(`https://ha-server.herokuapp.com/listing/${id}`, {
 			headers: {
@@ -150,6 +151,7 @@ const deleteListing = async (id: number) => {
 				position: "bottom-center",
 				type: "success",
 			});
+			getter();
 		})
 		.catch((err) => {
 			console.log(err);

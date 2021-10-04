@@ -55,7 +55,9 @@ const CalendarOperations = ({
 					type="text"
 					id="dateFrom"
 					value={dateFrom}
-					pattern={"/^d{4}-d{2}-d{2}/"}
+					pattern={
+						"(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))"
+					}
 					onChange={(e) => {
 						e.preventDefault();
 						setDateFrom(e.currentTarget.value);
@@ -69,7 +71,9 @@ const CalendarOperations = ({
 					type="text"
 					id="dateTo"
 					value={dateTo}
-					pattern={"/^d{4}-d{2}-d{2}/"}
+					pattern={
+						"(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))"
+					}
 					onChange={(e) => {
 						e.preventDefault();
 						setDateTo(e.currentTarget.value);
