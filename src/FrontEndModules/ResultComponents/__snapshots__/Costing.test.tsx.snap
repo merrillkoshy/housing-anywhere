@@ -8,7 +8,8 @@ exports[`CostsModule module renders 1`] = `
     </strong>
   </summary>
   <ul
-    key="47fc0472-57b2-4f44-a1be-97388af94a09"
+    className="costs-details"
+    key="17727e7d-2513-4a9f-a408-1ee8d133994f"
   >
     <li
       id="costtype"

@@ -293,6 +293,7 @@ exports[`FacilitiesModule module renders 1`] = `
     </FormLabel>
     <FormControl
       id="freePlaces"
+      min={0}
       onChange={[Function]}
       placeholder="Number of places available for the listing. This Number is just informative and does not have any impact on the booking."
       type="number"
@@ -310,6 +311,7 @@ exports[`FacilitiesModule module renders 1`] = `
     </FormLabel>
     <FormControl
       id="bedrooms"
+      min={0}
       onChange={[Function]}
       placeholder="Number of bedrooms in the listing."
       type="number"
@@ -401,8 +403,10 @@ exports[`FacilitiesModule module renders 1`] = `
     </FormLabel>
     <FormControl
       id="bedroomSize"
+      min={0}
       onChange={[Function]}
       placeholder="Enter Bedroom Size"
+      required={true}
       type="number"
       value={0}
     />
@@ -936,6 +940,7 @@ exports[`FacilitiesModule module renders 1`] = `
     </FormLabel>
     <FormControl
       id="totalSize"
+      min={0}
       onChange={[Function]}
       placeholder="This is the total area of the listing (apartment or house) in square meters, including all private and shared spaces."
       required={true}

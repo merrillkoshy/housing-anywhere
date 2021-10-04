@@ -62,6 +62,7 @@ exports[`Details Modal renders 1`] = `
         "wheelchairAccessible": false,
         "wifi": false,
       },
+      "id": 0,
       "images": Array [],
       "kind": 0,
       "maxage": 0,
@@ -73,7 +74,7 @@ exports[`Details Modal renders 1`] = `
       "rules": Object {
         "cleaningCommonRoomsIncluded": false,
         "cleaningPrivateRoomIncluded": false,
-        "couple": false,
+        "couple": "",
         "pets": "",
         "playMusic": "",
         "smoking": "",
@@ -82,6 +83,7 @@ exports[`Details Modal renders 1`] = `
     }
   }
   handleClose={[Function]}
+  setSending={[Function]}
   show={false}
 >
   <Modal
@@ -136,25 +138,46 @@ exports[`Details Modal renders 1`] = `
                       class="modal-header"
                     >
                       <div
-                        class="w-75 modal-title h4"
+                        class="w-100 modal-title h4"
                       >
                         <div
-                          class="d-flex flex-column"
+                          class="d-flex justify-content-between"
                         >
-                          <h1 />
-                          <ul
-                            class="d-flex flex-row justify-content-evenly m-0 p-0 w-100 flex-wrap"
+                          <div
+                            class="d-flex flex-column"
                           >
-                            <li
-                              class="address"
+                            <h1 />
+                            <ul
+                              class="d-flex flex-row justify-content-evenly m-0 p-0 w-100 flex-wrap"
+                            >
+                              <li
+                                class="address"
+                              />
+                              <li
+                                class="address"
+                              />
+                              <li
+                                class="address"
+                              />
+                            </ul>
+                          </div>
+                          <div
+                            class="d-flex justify-content-center align-items-center flex-lg-row flex-xl-row flex-xxl-row flex-column"
+                            style="cursor: pointer;"
+                          >
+                            <div
+                              class="d-flex justify-content-center align-items-center"
+                            >
+                              <span>
+                                Edit entry
+                              </span>
+                            </div>
+                            <img
+                              alt="edit gif"
+                              src="/icons/icons8-edit.gif"
+                              width="25"
                             />
-                            <li
-                              class="address"
-                            />
-                            <li
-                              class="address"
-                            />
-                          </ul>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -165,11 +188,15 @@ exports[`Details Modal renders 1`] = `
                         class="container d-flex  flex-column justify-content-center"
                       >
                         <div
-                          class="d-flex  flex-lg-row flex-xl-row flex-xxl-row flex-column justify-content-center"
+                          class="d-flex  flex-lg-row flex-xl-row flex-xxl-row flex-column justify-content-lg-evenly justify-content-xl-evenly justify-content-xxl-evenly justify-content-center"
                         >
                           <div
-                            class="d-flex px-3"
-                          />
+                            class="d-flex px-3  justify-content-center align-items-center"
+                          >
+                            <div
+                              class="d-flex card-image-container"
+                            />
+                          </div>
                           <div
                             class="d-flex flex-column px-3"
                           >
@@ -225,7 +252,9 @@ exports[`Details Modal renders 1`] = `
                                     Rules
                                   </strong>
                                 </summary>
-                                <ul>
+                                <ul
+                                  class="rules-details"
+                                >
                                   <li
                                     id="pets"
                                   >
@@ -274,7 +303,9 @@ exports[`Details Modal renders 1`] = `
                                   Facilities
                                 </strong>
                               </summary>
-                              <ul>
+                              <ul
+                                class="facility-details"
+                              >
                                 <li
                                   id="airConditioning"
                                 >
@@ -529,7 +560,7 @@ exports[`Details Modal renders 1`] = `
                             class="mt-5 d-flex flex-wrap w-100 justify-content-stretch"
                           >
                             <div
-                              class="col mx-2"
+                              class="d-flex flex-wrap col m-2  main-details"
                             >
                               <strong
                                 id="type"
@@ -540,7 +571,7 @@ exports[`Details Modal renders 1`] = `
                               
                             </div>
                             <div
-                              class="col mx-2"
+                              class="d-flex flex-wrap col m-2  main-details"
                             >
                               <strong
                                 id="kind"
@@ -551,7 +582,7 @@ exports[`Details Modal renders 1`] = `
                               
                             </div>
                             <div
-                              class="col mx-2"
+                              class="d-flex flex-wrap col m-2  main-details"
                             >
                               <strong
                                 id="deposit"
@@ -561,7 +592,7 @@ exports[`Details Modal renders 1`] = `
                                
                             </div>
                             <div
-                              class="col mx-2"
+                              class="d-flex flex-wrap col m-2  main-details"
                             >
                               <strong
                                 id="estimatedbills"
@@ -571,7 +602,7 @@ exports[`Details Modal renders 1`] = `
                                
                             </div>
                             <div
-                              class="col mx-2"
+                              class="d-flex flex-wrap col m-2  main-details"
                             >
                               <strong
                                 id="minimumstaymonths"
@@ -583,7 +614,7 @@ exports[`Details Modal renders 1`] = `
                                Months
                             </div>
                             <div
-                              class="col mx-2"
+                              class="d-flex flex-wrap col m-2  main-details"
                             >
                               <strong
                                 id="maxbookabledays"
@@ -594,7 +625,7 @@ exports[`Details Modal renders 1`] = `
                                days
                             </div>
                             <div
-                              class="col mx-2"
+                              class="d-flex flex-wrap col m-2  main-details"
                             >
                               <strong
                                 id="moveinwindow"
@@ -606,7 +637,7 @@ exports[`Details Modal renders 1`] = `
                                days
                             </div>
                             <div
-                              class="col mx-2"
+                              class="d-flex flex-wrap col m-2  main-details"
                             >
                               <strong
                                 id="currentoccupancy"
@@ -617,7 +648,7 @@ exports[`Details Modal renders 1`] = `
                               0
                             </div>
                             <div
-                              class="col mx-2"
+                              class="d-flex flex-wrap col m-2  main-details"
                             >
                               <strong
                                 id="minage"
@@ -628,7 +659,7 @@ exports[`Details Modal renders 1`] = `
                               0
                             </div>
                             <div
-                              class="col mx-2"
+                              class="d-flex flex-wrap col m-2  main-details"
                             >
                               <strong
                                 id="maxage"
@@ -639,7 +670,7 @@ exports[`Details Modal renders 1`] = `
                               0
                             </div>
                             <div
-                              class="col mx-2"
+                              class="d-flex flex-wrap col m-2  main-details"
                             >
                               <strong
                                 id="preferredgender"
@@ -650,7 +681,7 @@ exports[`Details Modal renders 1`] = `
                               
                             </div>
                             <div
-                              class="col mx-2"
+                              class="d-flex flex-wrap col m-2  main-details"
                             >
                               <strong
                                 id="alias"
@@ -661,7 +692,7 @@ exports[`Details Modal renders 1`] = `
                               
                             </div>
                             <div
-                              class="col mx-2"
+                              class="d-flex flex-wrap col m-2  main-details"
                             >
                               <strong
                                 id="externalreference"
@@ -672,7 +703,7 @@ exports[`Details Modal renders 1`] = `
                               
                             </div>
                             <div
-                              class="col mx-2"
+                              class="d-flex flex-wrap col m-2  main-details"
                             >
                               <strong
                                 id="extradata"
@@ -729,25 +760,46 @@ exports[`Details Modal renders 1`] = `
                           class="modal-header"
                         >
                           <div
-                            class="w-75 modal-title h4"
+                            class="w-100 modal-title h4"
                           >
                             <div
-                              class="d-flex flex-column"
+                              class="d-flex justify-content-between"
                             >
-                              <h1 />
-                              <ul
-                                class="d-flex flex-row justify-content-evenly m-0 p-0 w-100 flex-wrap"
+                              <div
+                                class="d-flex flex-column"
                               >
-                                <li
-                                  class="address"
+                                <h1 />
+                                <ul
+                                  class="d-flex flex-row justify-content-evenly m-0 p-0 w-100 flex-wrap"
+                                >
+                                  <li
+                                    class="address"
+                                  />
+                                  <li
+                                    class="address"
+                                  />
+                                  <li
+                                    class="address"
+                                  />
+                                </ul>
+                              </div>
+                              <div
+                                class="d-flex justify-content-center align-items-center flex-lg-row flex-xl-row flex-xxl-row flex-column"
+                                style="cursor: pointer;"
+                              >
+                                <div
+                                  class="d-flex justify-content-center align-items-center"
+                                >
+                                  <span>
+                                    Edit entry
+                                  </span>
+                                </div>
+                                <img
+                                  alt="edit gif"
+                                  src="/icons/icons8-edit.gif"
+                                  width="25"
                                 />
-                                <li
-                                  class="address"
-                                />
-                                <li
-                                  class="address"
-                                />
-                              </ul>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -758,11 +810,15 @@ exports[`Details Modal renders 1`] = `
                             class="container d-flex  flex-column justify-content-center"
                           >
                             <div
-                              class="d-flex  flex-lg-row flex-xl-row flex-xxl-row flex-column justify-content-center"
+                              class="d-flex  flex-lg-row flex-xl-row flex-xxl-row flex-column justify-content-lg-evenly justify-content-xl-evenly justify-content-xxl-evenly justify-content-center"
                             >
                               <div
-                                class="d-flex px-3"
-                              />
+                                class="d-flex px-3  justify-content-center align-items-center"
+                              >
+                                <div
+                                  class="d-flex card-image-container"
+                                />
+                              </div>
                               <div
                                 class="d-flex flex-column px-3"
                               >
@@ -818,7 +874,9 @@ exports[`Details Modal renders 1`] = `
                                         Rules
                                       </strong>
                                     </summary>
-                                    <ul>
+                                    <ul
+                                      class="rules-details"
+                                    >
                                       <li
                                         id="pets"
                                       >
@@ -867,7 +925,9 @@ exports[`Details Modal renders 1`] = `
                                       Facilities
                                     </strong>
                                   </summary>
-                                  <ul>
+                                  <ul
+                                    class="facility-details"
+                                  >
                                     <li
                                       id="airConditioning"
                                     >
@@ -1122,7 +1182,7 @@ exports[`Details Modal renders 1`] = `
                                 class="mt-5 d-flex flex-wrap w-100 justify-content-stretch"
                               >
                                 <div
-                                  class="col mx-2"
+                                  class="d-flex flex-wrap col m-2  main-details"
                                 >
                                   <strong
                                     id="type"
@@ -1133,7 +1193,7 @@ exports[`Details Modal renders 1`] = `
                                   
                                 </div>
                                 <div
-                                  class="col mx-2"
+                                  class="d-flex flex-wrap col m-2  main-details"
                                 >
                                   <strong
                                     id="kind"
@@ -1144,7 +1204,7 @@ exports[`Details Modal renders 1`] = `
                                   
                                 </div>
                                 <div
-                                  class="col mx-2"
+                                  class="d-flex flex-wrap col m-2  main-details"
                                 >
                                   <strong
                                     id="deposit"
@@ -1154,7 +1214,7 @@ exports[`Details Modal renders 1`] = `
                                    
                                 </div>
                                 <div
-                                  class="col mx-2"
+                                  class="d-flex flex-wrap col m-2  main-details"
                                 >
                                   <strong
                                     id="estimatedbills"
@@ -1164,7 +1224,7 @@ exports[`Details Modal renders 1`] = `
                                    
                                 </div>
                                 <div
-                                  class="col mx-2"
+                                  class="d-flex flex-wrap col m-2  main-details"
                                 >
                                   <strong
                                     id="minimumstaymonths"
@@ -1176,7 +1236,7 @@ exports[`Details Modal renders 1`] = `
                                    Months
                                 </div>
                                 <div
-                                  class="col mx-2"
+                                  class="d-flex flex-wrap col m-2  main-details"
                                 >
                                   <strong
                                     id="maxbookabledays"
@@ -1187,7 +1247,7 @@ exports[`Details Modal renders 1`] = `
                                    days
                                 </div>
                                 <div
-                                  class="col mx-2"
+                                  class="d-flex flex-wrap col m-2  main-details"
                                 >
                                   <strong
                                     id="moveinwindow"
@@ -1199,7 +1259,7 @@ exports[`Details Modal renders 1`] = `
                                    days
                                 </div>
                                 <div
-                                  class="col mx-2"
+                                  class="d-flex flex-wrap col m-2  main-details"
                                 >
                                   <strong
                                     id="currentoccupancy"
@@ -1210,7 +1270,7 @@ exports[`Details Modal renders 1`] = `
                                   0
                                 </div>
                                 <div
-                                  class="col mx-2"
+                                  class="d-flex flex-wrap col m-2  main-details"
                                 >
                                   <strong
                                     id="minage"
@@ -1221,7 +1281,7 @@ exports[`Details Modal renders 1`] = `
                                   0
                                 </div>
                                 <div
-                                  class="col mx-2"
+                                  class="d-flex flex-wrap col m-2  main-details"
                                 >
                                   <strong
                                     id="maxage"
@@ -1232,7 +1292,7 @@ exports[`Details Modal renders 1`] = `
                                   0
                                 </div>
                                 <div
-                                  class="col mx-2"
+                                  class="d-flex flex-wrap col m-2  main-details"
                                 >
                                   <strong
                                     id="preferredgender"
@@ -1243,7 +1303,7 @@ exports[`Details Modal renders 1`] = `
                                   
                                 </div>
                                 <div
-                                  class="col mx-2"
+                                  class="d-flex flex-wrap col m-2  main-details"
                                 >
                                   <strong
                                     id="alias"
@@ -1254,7 +1314,7 @@ exports[`Details Modal renders 1`] = `
                                   
                                 </div>
                                 <div
-                                  class="col mx-2"
+                                  class="d-flex flex-wrap col m-2  main-details"
                                 >
                                   <strong
                                     id="externalreference"
@@ -1265,7 +1325,7 @@ exports[`Details Modal renders 1`] = `
                                   
                                 </div>
                                 <div
-                                  class="col mx-2"
+                                  class="d-flex flex-wrap col m-2  main-details"
                                 >
                                   <strong
                                     id="extradata"
@@ -1330,25 +1390,46 @@ exports[`Details Modal renders 1`] = `
                       class="modal-header"
                     >
                       <div
-                        class="w-75 modal-title h4"
+                        class="w-100 modal-title h4"
                       >
                         <div
-                          class="d-flex flex-column"
+                          class="d-flex justify-content-between"
                         >
-                          <h1 />
-                          <ul
-                            class="d-flex flex-row justify-content-evenly m-0 p-0 w-100 flex-wrap"
+                          <div
+                            class="d-flex flex-column"
                           >
-                            <li
-                              class="address"
+                            <h1 />
+                            <ul
+                              class="d-flex flex-row justify-content-evenly m-0 p-0 w-100 flex-wrap"
+                            >
+                              <li
+                                class="address"
+                              />
+                              <li
+                                class="address"
+                              />
+                              <li
+                                class="address"
+                              />
+                            </ul>
+                          </div>
+                          <div
+                            class="d-flex justify-content-center align-items-center flex-lg-row flex-xl-row flex-xxl-row flex-column"
+                            style="cursor: pointer;"
+                          >
+                            <div
+                              class="d-flex justify-content-center align-items-center"
+                            >
+                              <span>
+                                Edit entry
+                              </span>
+                            </div>
+                            <img
+                              alt="edit gif"
+                              src="/icons/icons8-edit.gif"
+                              width="25"
                             />
-                            <li
-                              class="address"
-                            />
-                            <li
-                              class="address"
-                            />
-                          </ul>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -1359,11 +1440,15 @@ exports[`Details Modal renders 1`] = `
                         class="container d-flex  flex-column justify-content-center"
                       >
                         <div
-                          class="d-flex  flex-lg-row flex-xl-row flex-xxl-row flex-column justify-content-center"
+                          class="d-flex  flex-lg-row flex-xl-row flex-xxl-row flex-column justify-content-lg-evenly justify-content-xl-evenly justify-content-xxl-evenly justify-content-center"
                         >
                           <div
-                            class="d-flex px-3"
-                          />
+                            class="d-flex px-3  justify-content-center align-items-center"
+                          >
+                            <div
+                              class="d-flex card-image-container"
+                            />
+                          </div>
                           <div
                             class="d-flex flex-column px-3"
                           >
@@ -1419,7 +1504,9 @@ exports[`Details Modal renders 1`] = `
                                     Rules
                                   </strong>
                                 </summary>
-                                <ul>
+                                <ul
+                                  class="rules-details"
+                                >
                                   <li
                                     id="pets"
                                   >
@@ -1468,7 +1555,9 @@ exports[`Details Modal renders 1`] = `
                                   Facilities
                                 </strong>
                               </summary>
-                              <ul>
+                              <ul
+                                class="facility-details"
+                              >
                                 <li
                                   id="airConditioning"
                                 >
@@ -1723,7 +1812,7 @@ exports[`Details Modal renders 1`] = `
                             class="mt-5 d-flex flex-wrap w-100 justify-content-stretch"
                           >
                             <div
-                              class="col mx-2"
+                              class="d-flex flex-wrap col m-2  main-details"
                             >
                               <strong
                                 id="type"
@@ -1734,7 +1823,7 @@ exports[`Details Modal renders 1`] = `
                               
                             </div>
                             <div
-                              class="col mx-2"
+                              class="d-flex flex-wrap col m-2  main-details"
                             >
                               <strong
                                 id="kind"
@@ -1745,7 +1834,7 @@ exports[`Details Modal renders 1`] = `
                               
                             </div>
                             <div
-                              class="col mx-2"
+                              class="d-flex flex-wrap col m-2  main-details"
                             >
                               <strong
                                 id="deposit"
@@ -1755,7 +1844,7 @@ exports[`Details Modal renders 1`] = `
                                
                             </div>
                             <div
-                              class="col mx-2"
+                              class="d-flex flex-wrap col m-2  main-details"
                             >
                               <strong
                                 id="estimatedbills"
@@ -1765,7 +1854,7 @@ exports[`Details Modal renders 1`] = `
                                
                             </div>
                             <div
-                              class="col mx-2"
+                              class="d-flex flex-wrap col m-2  main-details"
                             >
                               <strong
                                 id="minimumstaymonths"
@@ -1777,7 +1866,7 @@ exports[`Details Modal renders 1`] = `
                                Months
                             </div>
                             <div
-                              class="col mx-2"
+                              class="d-flex flex-wrap col m-2  main-details"
                             >
                               <strong
                                 id="maxbookabledays"
@@ -1788,7 +1877,7 @@ exports[`Details Modal renders 1`] = `
                                days
                             </div>
                             <div
-                              class="col mx-2"
+                              class="d-flex flex-wrap col m-2  main-details"
                             >
                               <strong
                                 id="moveinwindow"
@@ -1800,7 +1889,7 @@ exports[`Details Modal renders 1`] = `
                                days
                             </div>
                             <div
-                              class="col mx-2"
+                              class="d-flex flex-wrap col m-2  main-details"
                             >
                               <strong
                                 id="currentoccupancy"
@@ -1811,7 +1900,7 @@ exports[`Details Modal renders 1`] = `
                               0
                             </div>
                             <div
-                              class="col mx-2"
+                              class="d-flex flex-wrap col m-2  main-details"
                             >
                               <strong
                                 id="minage"
@@ -1822,7 +1911,7 @@ exports[`Details Modal renders 1`] = `
                               0
                             </div>
                             <div
-                              class="col mx-2"
+                              class="d-flex flex-wrap col m-2  main-details"
                             >
                               <strong
                                 id="maxage"
@@ -1833,7 +1922,7 @@ exports[`Details Modal renders 1`] = `
                               0
                             </div>
                             <div
-                              class="col mx-2"
+                              class="d-flex flex-wrap col m-2  main-details"
                             >
                               <strong
                                 id="preferredgender"
@@ -1844,7 +1933,7 @@ exports[`Details Modal renders 1`] = `
                               
                             </div>
                             <div
-                              class="col mx-2"
+                              class="d-flex flex-wrap col m-2  main-details"
                             >
                               <strong
                                 id="alias"
@@ -1855,7 +1944,7 @@ exports[`Details Modal renders 1`] = `
                               
                             </div>
                             <div
-                              class="col mx-2"
+                              class="d-flex flex-wrap col m-2  main-details"
                             >
                               <strong
                                 id="externalreference"
@@ -1866,7 +1955,7 @@ exports[`Details Modal renders 1`] = `
                               
                             </div>
                             <div
-                              class="col mx-2"
+                              class="d-flex flex-wrap col m-2  main-details"
                             >
                               <strong
                                 id="extradata"

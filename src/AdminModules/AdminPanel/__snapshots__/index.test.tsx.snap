@@ -2,6 +2,7 @@
 
 exports[`Admin panel renders 1`] = `
 <section
+  className="mx-2"
   id="admin-side"
 >
   <Form
@@ -22,19 +23,27 @@ exports[`Admin panel renders 1`] = `
          
       </div>
       <div
-        className="d-flex"
+        className="d-flex counters"
       >
-        <span
-          className="to-enter p-2 mx-1 d-flex justify-content-center align-items-center"
+        <div
+          className="mx-1 circle circle-enter d-flex justify-content-center align-items-center"
         >
-          19
-        </span>
+          <span
+            className="to-enter d-flex justify-content-center align-items-center px-1"
+          >
+            12
+          </span>
+        </div>
           
-        <span
-          className="entered p-2 mx-1 d-flex justify-content-center align-items-center"
+        <div
+          className="mx-1 circle circle-entered d-flex justify-content-center align-items-center"
         >
-          3
-        </span>
+          <span
+            className="entered d-flex justify-content-center align-items-center px-1"
+          >
+            10
+          </span>
+        </div>
       </div>
     </FormLabel>
     <Pricing
@@ -126,16 +135,16 @@ exports[`Admin panel renders 1`] = `
             <Rules
               cleaningCommonRoomsIncluded={false}
               cleaningPrivateRoomIncluded={false}
-              couple={false}
-              pets=""
-              playMusic=""
+              couple="no"
+              pets="no"
+              playMusic="no"
               setCleaningCommonRoomsIncluded={[Function]}
               setCleaningPrivateRoomIncluded={[Function]}
               setCouple={[Function]}
               setPets={[Function]}
               setPlayMusic={[Function]}
               setSmoking={[Function]}
-              smoking=""
+              smoking="no"
             />
           </CardBody>
         </AccordionCollapse>
@@ -144,8 +153,8 @@ exports[`Admin panel renders 1`] = `
         alias=""
         externalReference=""
         extraData=""
-        maxAge={0}
-        minAge={0}
+        maxAge={35}
+        minAge={18}
         preferredGender="No Preference"
         setAlias={[Function]}
         setExternalReference={[Function]}
@@ -197,7 +206,7 @@ exports[`Admin panel renders 1`] = `
               housematesGender=""
               internet={false}
               internetCost={false}
-              kitchen=""
+              kitchen="no"
               kitchenware=""
               livingRoom=""
               parking=""
@@ -241,7 +250,7 @@ exports[`Admin panel renders 1`] = `
               setWheelchairAccessible={[Function]}
               setWifi={[Function]}
               tenantStatus="Any"
-              toilet=""
+              toilet="no"
               totalSize={0}
               tv={false}
               washingMachine={false}

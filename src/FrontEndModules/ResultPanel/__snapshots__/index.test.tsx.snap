@@ -2,10 +2,15 @@
 
 exports[`Result Panel renders 1`] = `
 <section
+  className="mx-2"
   id="result-panel"
 >
   <div
-    className="d-flex justify-content-center w-100 result-panel"
-  />
+    className="d-flex flex-column justify-content-center w-100 result-panel"
+  >
+    <p>
+      There are no listings available
+    </p>
+  </div>
 </section>
 `;

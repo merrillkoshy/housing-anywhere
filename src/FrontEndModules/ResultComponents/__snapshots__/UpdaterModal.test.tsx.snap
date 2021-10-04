@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Details Modal renders 1`] = `
+<UpdaterModal
+  details={
+    Object {
+      "address": Object {
+        "city": "",
+        "countryCode": "",
+        "housenumber": "",
+        "neighborhood": "",
+        "postalCode": "",
+        "state": "",
+        "street": "",
+      },
+      "alias": "",
+      "calendaroperations": Array [],
+      "costs": Array [],
+      "currencycode": "",
+      "currentoccupancy": 0,
+      "description": "",
+      "externalreference": "",
+      "extradata": "",
+      "facilities": Object {
+        "additionalCosts": Object {
+          "electricity": false,
+          "gas": false,
+          "internet": false,
+          "water": false,
+        },
+        "airConditioning": false,
+        "allergyFriendly": false,
+        "balconyTerrace": "",
+        "basement": "",
+        "bathroom": "",
+        "bed": false,
+        "bedroomFurnished": false,
+        "bedroomLock": false,
+        "bedroomSize": 0,
+        "bedrooms": 0,
+        "closet": false,
+        "desk": false,
+        "dishwasher": false,
+        "dryer": false,
+        "flooring": "",
+        "freePlaces": 0,
+        "garden": "",
+        "heating": "",
+        "housematesGender": "",
+        "internet": false,
+        "kitchen": "",
+        "kitchenware": "",
+        "livingRoom": "",
+        "parking": "",
+        "registrationPossible": "",
+        "roomFurniture": "",
+        "tenantStatus": "",
+        "toilet": "",
+        "totalSize": 0,
+        "tv": false,
+        "washingMachine": false,
+        "wheelchairAccessible": false,
+        "wifi": false,
+      },
+      "id": 0,
+      "images": Array [],
+      "kind": 0,
+      "maxage": 0,
+      "minage": 0,
+      "minimumstaymonths": "",
+      "moveinwindow": 0,
+      "preferredgender": "",
+      "price": 0,
+      "rules": Object {
+        "cleaningCommonRoomsIncluded": false,
+        "cleaningPrivateRoomIncluded": false,
+        "couple": "",
+        "pets": "",
+        "playMusic": "",
+        "smoking": "",
+      },
+      "type": 0,
+    }
+  }
+  handleUpdaterClose={[Function]}
+  setSending={[Function]}
+  show={false}
+>
+  <Modal
+    animation={true}
+    autoFocus={true}
+    backdrop={true}
+    centered={true}
+    dialogAs={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "render": [Function],
+      }
+    }
+    enforceFocus={true}
+    id="updater-modal"
+    keyboard={true}
+    restoreFocus={true}
+    show={false}
+    size="lg"
+  >
+    <Modal
+      autoFocus={true}
+      backdrop={true}
+      backdropTransition={[Function]}
+      containerClassName="modal-open"
+      enforceFocus={true}
+      keyboard={true}
+      manager={
+        BootstrapModalManager {
+          "containers": Array [],
+          "data": Array [],
+          "handleContainerOverflow": true,
+          "hideSiblingNodes": true,
+          "modals": Array [],
+          "scrollbarSize": 0,
+        }
+      }
+      onEnter={[Function]}
+      onEntering={[Function]}
+      onEscapeKeyDown={[Function]}
+      onExit={[Function]}
+      onExited={[Function]}
+      renderBackdrop={[Function]}
+      renderDialog={[Function]}
+      restoreFocus={true}
+      show={false}
+      transition={[Function]}
+    />
+  </Modal>
+</UpdaterModal>
+`;

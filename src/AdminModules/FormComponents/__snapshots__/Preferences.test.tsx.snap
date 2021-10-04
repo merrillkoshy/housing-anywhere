@@ -39,6 +39,12 @@ exports[`Preferences module renders 1`] = `
   <FormGroup
     className="mb-3"
   >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Preferred Gender :
+    </FormLabel>
     <Dropdown
       navbar={false}
     >

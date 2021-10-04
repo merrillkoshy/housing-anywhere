@@ -7,7 +7,9 @@ exports[`Address module renders 1`] = `
       Rules
     </strong>
   </summary>
-  <ul>
+  <ul
+    className="rules-details"
+  >
     <li
       id="pets"
     >

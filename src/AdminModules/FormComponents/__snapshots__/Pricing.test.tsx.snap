@@ -13,6 +13,7 @@ exports[`Pricing module renders 1`] = `
     </FormLabel>
     <FormControl
       id="price"
+      min={100}
       onChange={[Function]}
       placeholder="Enter Price"
       required={true}

@@ -158,6 +158,7 @@ exports[`Description module renders 1`] = `
     </FormLabel>
     <FormControl
       id="deposit"
+      min={0}
       onChange={[Function]}
       placeholder="Enter deposit"
       type="number"
@@ -175,6 +176,7 @@ exports[`Description module renders 1`] = `
     </FormLabel>
     <FormControl
       id="estimatedBills"
+      min={0}
       onChange={[Function]}
       placeholder="Enter estimatedBills"
       type="number"
@@ -209,6 +211,7 @@ exports[`Description module renders 1`] = `
     </FormLabel>
     <FormControl
       id="maxBookableDays"
+      min={0}
       onChange={[Function]}
       placeholder="Enter Max Bookable Days"
       type="number"
@@ -226,6 +229,7 @@ exports[`Description module renders 1`] = `
     </FormLabel>
     <FormControl
       id="moveInWindow"
+      min={0}
       onChange={[Function]}
       placeholder="Enter Move In Window"
       type="number"
@@ -243,6 +247,7 @@ exports[`Description module renders 1`] = `
     </FormLabel>
     <FormControl
       id="currentOccupancy"
+      min={0}
       onChange={[Function]}
       placeholder="Enter Current Occupancy"
       type="number"

@@ -7,7 +7,9 @@ exports[`FacilitiesModule module renders 1`] = `
       Facilities
     </strong>
   </summary>
-  <ul>
+  <ul
+    className="facility-details"
+  >
     <li
       id="airConditioning"
     >
